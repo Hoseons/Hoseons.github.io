@@ -66,25 +66,29 @@ nav > ul{
     right: 100%;
     top: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
+    
+    justify-content: space-between;
+    align-items: flex-start;
     position: fixed;
     text-align: right;
     width: 100%;
     height: 100vh;
-
+    /* border: 1px solid #f00; */
     background-color: rgba(255,255,255,.8);
-    padding-top: 124px;
-    padding-right: 42px;
+    padding: 100px;
+   
     transition: all .3s;
 
 }
 
 nav > ul>li{
-    margin-bottom: 16px;
+  width: 15%;
+  /* border: 1px solid #f00; */
+  text-align: center;
 }
-
+nav > ul>li~li{
+    margin-left: 20px;
+}
 
 .header_logo{
     width: 135px;
@@ -100,18 +104,40 @@ nav > ul>li{
 
 nav ul > li > strong >.nav_color
 {
-    color: #000;
-    font-size: 18px;
-    font-weight: 500;
+    color: #1d1d1d;
+    font-size: 25px;
+    font-weight: 600;
     text-transform: uppercase;
+    text-align: center;
   
 }
 
+nav ul > li:hover > strong >.nav_color{
+    color: #8f81c7;
+}
 
 
 nav ul > li > ul{
-    display: none;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+nav ul > li > ul li{
+    /* border: 1px solid #f00; */
+    width: 50%;
+    padding: 16px 0;
+    cursor: pointer;
+}
+nav ul > li > ul li:hover{
+    color: #8f81c7;
+}
+
+nav ul > li > ul li:hover,
+nav ul > li > ul li a:hover{
+    color: #8f81c7;
+}
+
 input{
     visibility: hidden;
 }
