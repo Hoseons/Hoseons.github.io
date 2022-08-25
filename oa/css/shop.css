@@ -16,6 +16,12 @@ body{
 /* 헤더 */
 header{
     width: 100%;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
     
 }
 /* 최상단 미니배너 */
@@ -26,6 +32,7 @@ header .min_banner{
     font-size: 14px;
     text-align: center;
     line-height: 52px;
+
     cursor: pointer;
 }
 header .min_banner span{
@@ -50,6 +57,7 @@ header .min_banner span::after{
 header .first{
     height: 50px;
     background: #F0F0F0;
+
 }
 header .first .inner{
     display: flex;
@@ -76,6 +84,7 @@ header .logo_part .inner{
     display: flex;
     height: 96px;
     padding: 24px 0;
+   
     /* border: 1px solid #f00; */
 }
 header .tran{
@@ -246,6 +255,7 @@ header .second  .inner .sub li:hover span{
 /* 배너 container1 */
 section:nth-of-type(1){
   width: 100%;
+  margin-top: 290px;
  
 }
 .container1{
@@ -2534,6 +2544,13 @@ header .second  .inner .sub li img{
 
 
 /* 배너 container1 */
+section:nth-of-type(1){
+  width: 100%;
+  margin-top: 200px;
+ 
+}
+
+
 
 .container1{
   width: 100%;
@@ -3389,7 +3406,7 @@ header .logo_part .inner{
   /* border: 1px solid #f00; */
   top: 40px;
   z-index: 99;
-  background: rgba(255, 255, 255, .5)
+  background: rgba(255, 255, 255, .8)
 
 }
 
@@ -3434,7 +3451,7 @@ header .second .inner >ul:after{
 z-index: -1;
  top: 0;
 left: 0;
-background: rgba(255, 255, 255, 0.8)
+background: rgba(255, 255, 255, 0.9)
 
 }
 header .second .inner >ul{
@@ -3579,6 +3596,13 @@ header .second  .inner .sub li img{
 
 /* 배너 container1 */
 
+section:nth-of-type(1){
+  width: 100%;
+  margin-top: 100px;
+ 
+}
+
+
 .container1{
   width: 100%;
   height: 150px;
@@ -3672,9 +3696,9 @@ header .second  .inner .sub li img{
 }
 
 .container2 .arrow div{
-  top:40%;
+  top:55%;
   z-index: 5;
-
+transform: translateY(-40%);
   position: absolute;
   width: 40px;
   height: 40px;
@@ -4214,6 +4238,7 @@ section:nth-of-type(7){
   z-index: 5;
   opacity: 0;
   transition: .3s;
+  
 }
 .container7 .how_list ul li:hover .text_list{
   opacity: 1;
@@ -4226,7 +4251,7 @@ section:nth-of-type(7){
   line-height: 1.68;
   /* border: 1px solid #f00; */
   display: block;
-  width: 205px;
+  width: 100%;
 }
 
 .container7 .how_list ul div .text_list > strong{
