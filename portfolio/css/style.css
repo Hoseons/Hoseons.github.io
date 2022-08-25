@@ -51,7 +51,9 @@ header .menu li:hover a{
 header .menu li.active a{
     color: #0D477D;
 }
-
+.logo{
+    width: 48px;
+}
 
 header .menu li~li{
     margin-left: 40px;
@@ -787,15 +789,18 @@ main .project .keyword ul li:nth-of-type(4){
     width: 115%;
     height: 115%;
     object-fit: cover;
-    object-position: -13px -10px;
+    object-position:-9px -10px;
     border-radius: 30px;
    transition: .3s;
    cursor: pointer;
 }
-
+.project_list li ul li {
+    width: 150px;
+}
 .project_list li ul li .desc{
     text-align: center;
     width: 100%;
+    /* border: 1px solid #f00; */
 }
 
 .project_list li ul li:hover .desc p,
@@ -808,6 +813,9 @@ main .project .keyword ul li:nth-of-type(4){
     margin-top: 16px;
     margin-bottom: 8px;
     cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.2;
 }
 
 .project_list li ul li .desc span{
@@ -873,11 +881,14 @@ main .project .keyword ul li:nth-of-type(4){
 /* read+ */
 .project_list .Only_Design ul li:nth-of-type(3){
     position: absolute;
-    
+
     left: 17%;
     top: 34%;
 }
-
+.project_list .Only_Design ul li:nth-of-type(3) img{
+    object-fit: contain;
+    object-position: center 30%;
+}
 /* 공공디자인 */
 .project_list .Only_Design ul li:nth-of-type(4){
     position: absolute;
@@ -1116,7 +1127,7 @@ main .contact .inner .insert li textarea:active{
     main .profile img{
         position: absolute;
         bottom:-5.9vh;
-        right: -18vw;
+        right: -10vw;
         height: 100vh;
     
         
@@ -3476,9 +3487,11 @@ main .profile button{
   font-size: 13px;
   position: relative;
   padding-left: 24px;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 75px;
+  left: 60%;
+
+  
+  transform: translateX(0);
 }
 
 main .profile img{
@@ -3489,6 +3502,7 @@ main .profile img{
     transform: translateX(20%);
     
 }
+
 main .profile button span{
     height: 24px;
     width: 24px;
@@ -3560,7 +3574,7 @@ main .profile button span{
             align-items: center;
            justify-content: center;
            /* background-color: #cde7ff; */
-           /* margin: 40px 0; */
+           margin: 40px 0;
         
         }
         
@@ -3765,7 +3779,7 @@ main .profile button span{
             align-items: center;
            justify-content: center;
            /* background-color: #cde7ff; */
-            /* margin: 40px 0; */
+            margin: 40px 0;
         }
         
         main .skills .inner{
@@ -3924,7 +3938,7 @@ main .profile button span{
            position: relative;
             display: flex;
             margin-bottom: 0px;
-            /* margin: 40px 0; */
+            margin: 40px 0;
         }
         
         main .project .inner{
