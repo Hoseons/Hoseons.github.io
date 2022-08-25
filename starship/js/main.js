@@ -72,8 +72,8 @@ function prevAni2(){
 
 $('#next1').click(function(){
 clearInterval(intv2);
-nextAni();
-let intv2 = setInterval(function(){
+nextAni2();
+var  intv2 = setInterval(function(){
   nextAni2();
 },4000);
 return false
@@ -83,7 +83,7 @@ return false
 $('#prev1').click(function(){
   clearInterval(intv2);
   prevAni2();
-  let intv2 = setInterval(function(){
+  var  intv2 = setInterval(function(){
     nextAni2();
   },4000);
   return false
@@ -126,7 +126,7 @@ function prevAni3(){
 $('#next2').click(function(){
 clearInterval(intv3);
 nextAni3();
-let intv3 = setInterval(function(){
+var  intv3 = setInterval(function(){
   nextAni3();
 },4000);
 return false
@@ -136,7 +136,7 @@ return false
 $('#prev2').click(function(){
   clearInterval(intv3);
   prevAni3();
-  let intv3 = setInterval(function(){
+  var  intv3 = setInterval(function(){
     nextAni3();
   },4000);
   return false
@@ -154,7 +154,7 @@ $('.pegnination span').click(function(){
   $('.pegnination span').removeClass('on');
   $(this).addClass('on');
 
-  intv= setInterval(function(){
+  intv4= setInterval(function(){
   nextAni4()
 },5000); 
 });
@@ -173,13 +173,12 @@ function nextAni4(){
     $('.multi_div').css({'margin-top':'0px'});
     
     $('.pegnination span').eq(0).appendTo($('.pegnination'));
-    $('.pegnination span').removeClass('on');
     $('.pegnination span').eq(0).addClass('on')
-  
+    $(".pegnination span").not(":first-child").removeClass("on");
 
 
   });
-  return false
+  return false;
 
 
 }
@@ -191,13 +190,12 @@ function prevAni4(){
       'margin-top': '0px'
     },1000)
 
-    $('.pegnination span').eq(-1).prependTo($('.pegnination'));
-    $('.pegnination span').removeClass('on');
-    $('.pegnination span').eq(1).addClass('on');
+    $('.pegnination span').eq(2).prependTo($('.pegnination'));
+    $('.pegnination span').eq(0).addClass('on');
+    $(".pegnination span").not(":first-child").removeClass("on");
 
 
-
-    return false
+    return false;
   }
   
 
@@ -205,7 +203,7 @@ function prevAni4(){
 $('.next4').click(function(){
 clearInterval(intv4);
 nextAni4();
-let intv4 = setInterval(function(){
+var  intv4 = setInterval(function(){
   nextAni4();
 },4000);
 return false
@@ -215,13 +213,27 @@ return false
 $('.prev4').click(function(){
   clearInterval(intv4);
   prevAni4();
-  let intv4 = setInterval(function(){
+  var intv4 = setInterval(function(){
     nextAni4();
   },4000);
   return false;
 
 
 });
+
+$('.pegnination span').click(function(){
+  clearInterval(intv4);
+      var idx = $(this).index()-1;
+      for(var i=0;i<idx;i++){
+          $(".multi_div .media").eq(0).appendTo($(".multi_div"));
+          $(".pegnination span").eq(0).appendTo($(".pegnination"));
+      }
+      nextAni4();
+      intv4 = setInterval(function(){ nextAni4(); }, 3000);
+});
+
+
+
 
 //상단스크롤
 window.addEventListener('scroll',function(){
@@ -244,7 +256,7 @@ $('#menu1').click(function(){
     $('html,body').animate({scrollTop:0},1000);
     $('.page_nav span').removeClass('select');
     $('#menu1').addClass('select');
-    return false;
+    
 })
 $('#menu2').click(function(){
     $('html,body').animate({scrollTop:$('.artist_con').offset().top},1000);
