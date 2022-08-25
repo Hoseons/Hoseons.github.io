@@ -20,22 +20,43 @@ $(document).ready(function(){
 // 스크롤 
                       
           const navClass = document.getElementById("#fixed")
+    
           const navChange=()=>{
               let pageY = window.pageYOffset;
               if(pageY > 50){
                   navClass.style.top = "0px";
-                  
+             
               }else{
                 navClass.style.top = "100px";
+           
               }
           }
           navClass.addEventListener('scroll',navChange)
-
+          
+          const min = document.querySelectorAll(".min_banner")
+          const firstnav = document.querySelectorAll(".first")
+          const navTop=()=>{
+            let pageY = window.pageYOffset;
+            if(pageY > 100){
+                min.style.display = 'none';
+                firstnav.style.display = 'none';
+            }else{
+              min.style.display = 'block';
+              firstnav.style.display = 'block';
+            }
+        }
+        
+        min.addEventListener('scroll',navTop)
 
 
             $('.cate').mouseenter(function(){
               $(this,'> .sub_bg').stop().slideDown(500)
             })
+
+
+
+
+
 
       
           } else if(window.innerWidth > 767){
@@ -49,9 +70,22 @@ $(document).ready(function(){
               $(sub).stop().slideUp(500);
             })
           }
+
+
+
+
+
         }).resize(); 
   
-         
+
+
+
+
+
+
+
+
+ 
       
   $('header .ham').on('click',function(){
     $(this).toggleClass('on')
@@ -70,9 +104,35 @@ $(document).ready(function(){
             $('header .second .inner >ul').fadeIn(500);
           })
          }
-       
+       //슬라이더
+
+       $( '#example1' ).sliderPro({
+         width: 102,
+         height: 235,
+         arrows: true,
+         buttons: false,
+         waitForLayers: true,
+         thumbnailWidth: 200,
+         thumbnailHeight: 100,
+         thumbnailPointer: true,
+         autoplay: false,
+         autoScaleLayers: false,
+         breakpoints: {
+           500: {
+             thumbnailWidth: 120,
+             thumbnailHeight: 50
+           }
+         }
+       });
+
+
       
       } else if(window.innerWidth < 768){
+
+        
+
+
+
 
       if($('header .second .inner >ul:after').css({'left':'-300px'})){
         $('header .second .inner >ul:after').animate({'margin-left':'300px'},300)
@@ -107,7 +167,7 @@ $(document).ready(function(){
     // 날씨추천 키워드 선택
     $('.select ul').hover(function(){
         $('.select ul > div').stop().slideDown();
-        $('.container4 .select ul strong::before').style.background = 'url(../images/sub_store/fi-rs-angle-small-up.svg)'
+        $('.container4 .select ul strong::before').style.background = 'url(../images/sub_store/fi-rs-angle-small-up.svg)';
         
     },function(){
         $('.select ul > div').stop().slideUp();
@@ -204,7 +264,7 @@ $(document).ready(function(){
     clearInterval(intv1)
    //자동동작 멈추고
     nextAni1();//nextAni() 함수 실행
-    let intv1=setInterval(function(){//자동 반복 함수
+    var intv1=setInterval(function(){//자동 반복 함수
       nextAni1()
     },2000);
   });
@@ -212,7 +272,7 @@ $(document).ready(function(){
   $('.prev1').click(function(){
     clearInterval(intv1)
     prevAni1();
-    let intv1=setInterval(function(){//자동 반복 함수
+    var intv1=setInterval(function(){//자동 반복 함수
       nextAni1()
     },2000);
   });
@@ -245,7 +305,7 @@ $('.next2').click(function(){
   clearInterval(intv2)
  //자동동작 멈추고
   nextAni2();//nextAni() 함수 실행
-  let intv2=setInterval(function(){//자동 반복 함수
+  var intv2=setInterval(function(){//자동 반복 함수
     nextAni2()
   },2000);
 });
@@ -253,7 +313,7 @@ $('.next2').click(function(){
 $('.prev2').click(function(){
  clearInterval(intv2)
   prevAni2();
-  let intv2=setInterval(function(){//자동 반복 함수
+  var intv2=setInterval(function(){//자동 반복 함수
     nextAni2()
   },2000);
 });
@@ -292,24 +352,6 @@ $('.prev3').click(function(){
 prevAni3();
 
 });
-// 슬라이더
-// $( '#example1' ).sliderPro({
-//   width: 300,
-//   height: 235,
-//   arrows: true,
-//   buttons: false,
-//   waitForLayers: true,
-//   thumbnailWidth: 200,
-//   thumbnailHeight: 100,
-//   thumbnailPointer: true,
-//   autoplay: false,
-//   autoScaleLayers: false,
-//   breakpoints: {
-//     500: {
-//       thumbnailWidth: 120,
-//       thumbnailHeight: 50
-//     }
-//   }
-// });
+
 
 });

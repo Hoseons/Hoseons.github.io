@@ -36,51 +36,64 @@ $(document).ready(function(){
       }
       
       }).resize(); 
-
-
-
+      
+    // 햄버거 메뉴관련 수정 
+      var ck1 = true, ck2 = true;  
+      //펼침 메뉴의 열기/닫기 모션
+     $(".ham").click(function(){
+           if(ck1){
+               $("nav .main_nav ").addClass("on");
+               $(" .ham").addClass("on");
+               $("nav .main_nav2").addClass("on");
+           } else {
+               $("nav .main_nav").removeClass("on");
+               $(".ham").removeClass("on");
+               $("nav .main_nav2").removeClass("on");
+           }
+           ck1 = !ck1;
+     }); 
 
       // 햄버거 메뉴관련
 
-  $('header .ham').on('click',function(){
-    $(this).toggleClass('on')
+  // $('header .ham').on('click',function(){
+  //   $(this).toggleClass('on');
  
-    $(window).resize(function(){ 
-      if (window.innerWidth < 480) {  // 다바이스 크기가 480이상일때 
+  //   $(window).resize(function(){ 
+  //     if (window.innerWidth < 480) {  // 다바이스 크기가 480이상일때 
       
-        if($('nav .main_nav > ul').css({'opacity':'0'})){
-          $('.nav_bg').css({'opacity':'1'})
-          $('nav .main_nav2').css({'opacity':'1'});
-          $('nav .main_nav > ul').css({'opacity':'1'});
+  //       if($('nav .main_nav > ul').css({'opacity':'0'})){
+  //         $('.nav_bg').css({'opacity':'1'})
+  //         $('nav .main_nav2').css({'opacity':'1'});
+  //         $('nav .main_nav > ul').css({'opacity':'1'});
         
-        } else if($('nav .main_nav > ul').css({'opacity':'1'})){
+  //       } else if($('nav .main_nav > ul').css({'opacity':'1'})){
   
-          $('.nav_bg').hide()
-          $('nav .main_nav2').css({'opacity':'0'});
-          $('nav .main_nav > ul').css({'opacity':'0'});
-        }
+  //         $('.nav_bg').hide()
+  //         $('nav .main_nav2').css({'opacity':'0'});
+  //         $('nav .main_nav > ul').css({'opacity':'0'});
+  //       }
 
 
        
       
-      } else if(window.innerWidth < 768){
+  //     } else if(window.innerWidth < 768){
 
-      if($('nav .main_nav > ul').css({'rigt':'-300px'})){
-        $('.nav_bg').animate({'margin-right':'300px'},300)
-        $('nav .main_nav2').animate({'margin-right':'410px'},600)
-        $('nav .main_nav > ul').animate({'margin-right':'390px'},600)
+  //     if($('nav .main_nav > ul').css({'rigt':'-300px'})){
+  //       $('.nav_bg').animate({'margin-right':'300px'},300)
+  //       $('nav .main_nav2').animate({'margin-right':'410px'},600)
+  //       $('nav .main_nav > ul').animate({'margin-right':'390px'},600)
       
-      } else {
+  //     } else {
 
-        $('.nav_bg').animate({'margin-right':'-300px'},300)
-        $('nav .main_nav2').animate({'margin-right':'-300px'},600)
-        $('nav .main_nav > ul').animate({'margin-right':'-300px'},600)
-      }
-      }
+  //       $('.nav_bg').animate({'margin-right':'-300px'},300)
+  //       $('nav .main_nav2').animate({'margin-right':'-300px'},600)
+  //       $('nav .main_nav > ul').animate({'margin-right':'-300px'},600)
+  //     }
+  //     }
         
-      }).resize(); 
+  //     }).resize(); 
       
-      })
+  //     })
   
 
 
@@ -112,7 +125,7 @@ function prevAni4(){
 $('.next1').click(function(){
 clearInterval(intvb);
 nextAni4();
-let intvb = setInterval(function(){
+var intvb = setInterval(function(){
   nextAni4();
 },4000);
 
@@ -122,7 +135,7 @@ let intvb = setInterval(function(){
 $('.prev1').click(function(){
   clearInterval(intvb);
   prevAni4();
-  let intvb = setInterval(function(){
+  var intvb = setInterval(function(){
     nextAni4();
   },4000);
   
@@ -176,7 +189,7 @@ $('.prev1').click(function(){
     clearInterval(intv2)
    //자동동작 멈추고
     nextAni();//nextAni() 함수 실행
-    let intv2=setInterval(function(){//자동 반복 함수
+    var intv2=setInterval(function(){//자동 반복 함수
       nextAni()
     },2000);
   });
@@ -184,7 +197,7 @@ $('.prev1').click(function(){
   $('.prev2').click(function(){
    clearInterval(intv2)
     prevAni();
-    let intv2=setInterval(function(){//자동 반복 함수
+    var intv2=setInterval(function(){//자동 반복 함수
       nextAni()
     },2000);
   });
