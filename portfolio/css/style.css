@@ -966,10 +966,12 @@ main .log  .card li img{
 
 main .log  .card li:hover{
     background-color: #0D477D;
-    color: #fff;
+
     transform: translateY(-20px);
 }
-
+main .log  .card li:hover p{
+    color: #fff;
+}
 
 main .log  .card li p{
     text-align: center;
