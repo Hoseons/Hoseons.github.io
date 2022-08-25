@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+   
+    <meta name="description" content="오아한 소형가전 오아 - 디자인에 반하고 성능에 놀라다.">
+    <meta property="og:title" content="오아 스토어">
+    <meta property="og:description" content="오아한 소형가전 오아 - 디자인에 반하고 성능에 놀라다.">
+    <meta property="og:image" content="https://dsfjpb8zhc170.cloudfront.net/static/img/icon/oa_meta.jpg">
+    <meta property="og:url" content=https://hoseons.github.io/oa/shop.html">
+
+   
     <link rel="shortcut icon" href="./fabicon/16PX.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/shop.css">
     <link rel="stylesheet" href="./css/reset.css">
@@ -102,15 +110,12 @@
                     <span>바로가기</span>
                 </div>
             </div>
-            <div class="arrow">
-                <div class="arrow_left"></div>
-                <div class="arrow_right"></div>
-            </div>
-            <div class="peg">
+     
+            <!-- <div class="peg">
                 <span class="on"></span>
                 <span></span>
                 <span></span>
-            </div>
+            </div> -->
         </div>
         </section>
         <section>
@@ -318,7 +323,7 @@
         </section>
         <section>
             <div class="inner">
-                <div class="container4">
+                <div class="container4 slider-pro" id="example1">
                     <h2 class="title">이 날씨에는 이 제품 어때?</h2>
                     <div class="select">오늘같이 
                         <ul>
@@ -332,9 +337,9 @@
                         </ul>
                         엔 이거 어때?
                     </div>
-   
-                <ul id="wea1">
-                    <li>
+            
+                <ul id="wea1" class="sp-slides">
+                    <li class="sp-slide">
                         <img src="./images/sub_store/product_26.jpg" alt="26">
                         <div class="text_list">
                             <strong>보아르 모아 M1000 공기청정 제습기</strong>
@@ -343,7 +348,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="sp-slide">
                         <img src="./images/sub_store/product_57.jpg" alt="57">
                         <div class="text_list">
                             <strong>보아르 모아 파인 F2000 미니 제습기</strong>
@@ -353,7 +358,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="sp-slide">
                         <img src="./images/sub_store/product_10.jpg" alt="10">
                         <div class="text_list">
                             <strong>보아르 모아 7L 파워 제습기</strong>
@@ -363,7 +368,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="sp-slide">
                         <img src="./images/sub_store/product_58.jpg" alt="58">
                         <div class="text_list">
                             <strong>보아르 모아 14L 대용량 스마트 공기청정 제습기</strong>
@@ -373,7 +378,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="sp-slide">
                         <img src="./images/sub_store/product_55.jpg" alt="55">
                         <div class="text_list">
                             <strong>오아 보아르 클린에어 소형 공기청정기</strong>
@@ -382,7 +387,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="sp-slide">
                         <img src="./images/sub_store/product_56.jpg" alt="56">
                         <div class="text_list">
                             <strong>보아르 모아 파워 18L 가정용 대용량 제습기</strong>
@@ -391,7 +396,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="sp-slide">
                         <img src="./images/sub_store/product_59.jpg" alt="59">
                         <div class="text_list">
                             <strong>보아르 모아 M600 미니 제습기</strong>
@@ -402,8 +407,8 @@
                         </div>
                     </li>
                 </ul>
-                <ul id="wea2">
-                    <li>
+                <ul id="wea2" class="sp-slides">
+                    <li class="sp-slide">
                         <img src="./images/sub_store/product_67.jpg" alt="67">
                         <div class="text_list">
                             <strong>오아 메가 에어 탁상형 써큘레이터</strong>
@@ -412,7 +417,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="sp-slide">
                         <img src="./images/sub_store/product_32.jpg" alt="32">
                         <div class="text_list">
                             <strong>오아 메가 에어 스탠드형 써큘레이터</strong>
@@ -422,7 +427,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="sp-slide">
                         <img src="./images/sub_store/product_68.jpg" alt="68">
                         <div class="text_list">
                             <strong>오아 스퀘어 미니 탁상용 무선 선풍기</strong>
@@ -432,7 +437,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="sp-slide">
                         <img src="./images/sub_store/product_69.jpg" alt="69">
                         <div class="text_list">
                             <strong>오아 캐치팬 핸디형 무선 미니 선풍기</strong>
@@ -444,8 +449,8 @@
                     </li>
             
                 </ul>
-                <ul id="wea3">
-                    <li>
+                <ul id="wea3" class="sp-slides">
+                    <li class="sp-slide">
                         <img src="./images/sub_store/product_65.jpg" alt="65">
                         <div class="text_list">
                             <strong>오아 큐티E1 블루투스 이어폰</strong>
@@ -455,7 +460,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="sp-slide">
                         <img src="./images/sub_store/product_42.jpg" alt="42">
                         <div class="text_list">
                             <strong>오아 포터블 브릭 블루투스 스피커</strong>
@@ -465,7 +470,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="sp-slide">
                         <img src="./images/sub_store/product_61.jpg" alt="61">
                         <div class="text_list">
                             <strong>오아 셀카프로 짐벌 셀카봉</strong>
@@ -475,7 +480,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="sp-slide">
                         <img src="./images/sub_store/product_64.jpg" alt="64">
                         <div class="text_list">
                             <strong>오아 굿나잇 온열 안대</strong>
@@ -485,7 +490,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="sp-slide">
                         <img src="./images/sub_store/product_63.jpg" alt="63">
                         <div class="text_list">
                             <strong>오아 트래블러 무선 목 마사지기</strong>
@@ -495,7 +500,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="sp-slide">
                         <img src="./images/sub_store/product_62.jpg" alt="62">
                         <div class="text_list">
                             <strong>오아 아이로너 터보 스팀다리미</strong>
