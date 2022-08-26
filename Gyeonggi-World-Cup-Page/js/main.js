@@ -47,8 +47,8 @@ $(document).ready(function(){
 //배너 슬라이드
 
 
-let wd=$('.banner_wrap').width();//
-let intv2=setInterval(function(){//자동 반복 함수
+var wd=$('.banner_wrap').width();//
+var intv2=setInterval(function(){//자동 반복 함수
   nextAni()
 },4000);
 function nextAni(){
@@ -56,11 +56,12 @@ function nextAni(){
     'margin-left':-wd+'px'
   },1000,function(){//콜백함수(앞의 애니메이션이 끝난 후의 동작)
       $('.banner_img img').eq(0).appendTo($('.banner_img'));//A.appendTo(B)-->A를 B의 뒤에 배치해라
-      $('.banner_img img').css({marginLeft:'0px'});
+      $('.banner_img ').css({marginLeft:'0px'});
   });
 
-
-
+  $(".peg span").eq(0).appendTo($(".peg"));
+      $(".peg span").eq(0).addClass("on");
+      $(".peg span").not(":first-child").removeClass("on");
 
 
 }//다음버튼 동작
@@ -71,6 +72,11 @@ function prevAni(){
   $('.banner_img').not(':animated').animate({
     'margin-left':'0px'
   },1000)
+
+  $(".peg span").eq(2).prependTo($(".peg"));
+        $(".peg span").eq(0).addClass("on");
+        $(".peg span").not(":first-child").removeClass("on");
+
 }//이전버튼 동작
 
 /* 다음버튼 클릭 */
@@ -78,7 +84,7 @@ $('#arrow_b_r').click(function(){
 clearInterval(intv2)
 //자동동작 멈추고
 nextAni();//nextAni() 함수 실행
-let intv2=setInterval(function(){//자동 반복 함수
+var intv2=setInterval(function(){//자동 반복 함수
   nextAni()
 },2000);
 });
@@ -86,14 +92,22 @@ let intv2=setInterval(function(){//자동 반복 함수
 $('#arrow_b_l').click(function(){
 clearInterval(intv2)
 prevAni();
-let intv2=setInterval(function(){//자동 반복 함수
+var intv2=setInterval(function(){//자동 반복 함수
   nextAni()
 },2000);
 });
 
 
-
-
+$('.peg span').click(function(){
+  clearInterval(intv2);
+      var idx = $(this).index()-1;
+      for(var i=0;i<idx;i++){
+          $(".banner_img img").eq(0).appendTo($(".banner_img"));
+          $(".peg span").eq(0).appendTo($(".peg"));
+      }
+      nextAni();
+      intv2 = setInterval(function(){ nextAni(); }, 3000);
+});
 
 
 
@@ -184,6 +198,15 @@ function nextAni1(){
 }//다음버튼 동작
 
 function prevAni1(){
+  $('.container1 .top_banner .vs .img_wrap .img_list .img').eq(-1).prependTo($('.container1 .top_banner .vs .img_wrap .img_list'));//4번사진을 슬라이드 앞에 배치해라
+  $('.container1 .top_banner .vs .img_wrap .img_list').css({'margin-left':-wd1+"px"});
+  $('.container1 .top_banner .vs .img_wrap .img_list').not(':animated').animate({
+    'margin-left':'0px'
+  },1000)
+  
+
+
+
   $('.day .wrap div p').eq(-1).prependTo($('.day .wrap div'));//4번사진을 슬라이드 앞에 배치해라
   $('.day .wrap div').css({'margin-left':-wd1+"px"});
   $('.day .wrap div').not(':animated').animate({
@@ -196,7 +219,7 @@ $('#arrow_p_r').click(function(){
 clearInterval(intv)
 //자동동작 멈추고
 nextAni1();//nextAni() 함수 실행
-let intv=setInterval(function(){//자동 반복 함수
+var intv=setInterval(function(){//자동 반복 함수
   nextAni1()
 },2000);
 });
@@ -204,7 +227,7 @@ let intv=setInterval(function(){//자동 반복 함수
 $('#arrow_p_l').click(function(){
 clearInterval(intv)
 prevAni1();
-let intv=setInterval(function(){//자동 반복 함수
+var intv=setInterval(function(){//자동 반복 함수
   nextAni1()
 },2000);
 });

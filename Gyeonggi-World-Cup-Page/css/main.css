@@ -235,7 +235,7 @@ header{
     cursor: pointer;
 }
 .container1 .top_banner .arrow_banner .peg span.on{
-  background: #004097;
+  background: #eedf8c;
 }
 
 .container1 .top_banner .arrow_banner .peg span~span{
@@ -348,6 +348,7 @@ header{
 .container1 .top_banner .vs .img_list p{
     font-size: 35px;
   font-weight: 500;
+
 }
 
 .container1 .top_banner .day{
@@ -358,7 +359,11 @@ header{
 
 
 .container1 .top_banner .day .wrap{
-    width: 298px;
+    width: 200px;   
+ 
+   overflow: hidden;
+   text-align: center;
+   margin: 0 auto;
 }
 
 .container1 .top_banner .day .wrap div{
@@ -371,7 +376,7 @@ header{
     width: 298px;
     text-align: center;
     line-height: 44px;
-    
+
 }
 
 
@@ -670,7 +675,7 @@ display: flex;
 .container3 .contents ul li span{
     font-size: 14px;
   font-weight: 400;
-  color: #4d4d4d;
+  color: #727272;
 }
 
 
@@ -1298,9 +1303,6 @@ header{
 }
 
 
-.container1 .top_banner .day .wrap{
-    width: 298px;
-}
 
 .container1 .top_banner .day .wrap div{
     display: flex;
@@ -1641,7 +1643,6 @@ display: flex;
 .container3 .contents ul li span{
     font-size: 14px;
   font-weight: 400;
-  color: #4d4d4d;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2330,9 +2331,6 @@ input:checked ~ .sub_bg{
 }
 
 
-.container1 .top_banner .day .wrap{
-    width: 100%;
-}
 
 .container1 .top_banner .day .wrap div{
     display: flex;
@@ -2506,14 +2504,16 @@ input:checked ~ .sub_bg{
 .service .container2 ul{
    display: inline-block;
    width: 100%;
+   text-align: center;
    /* border: 1px solid #f00; */
 }
 .service .container2 ul li{
-  width: 32%;
+  width: 32.5%;
   display: inline-block;
   /* border: 1px solid #f00; */
-  margin-left: 1%;
+  margin-left: 0%;
   margin-bottom: 4%;
+  text-align: center;
 }
 .service .container2 ul li:nth-of-type(1),
 .service .container2 ul li:nth-of-type(4){
@@ -3294,9 +3294,7 @@ input:checked ~ .sub_bg{
 }
 
 
-.container1 .top_banner .day .wrap{
-    width: 100%;
-}
+
 
 .container1 .top_banner .day .wrap div{
     display: flex;
