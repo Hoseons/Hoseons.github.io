@@ -146,6 +146,11 @@ $('#prev2').click(function(){
 
 // 멀티메디아
 
+
+
+$(window).resize(function(){ 
+  if (window.innerWidth > 767) {  // 다바이스 크기가 480이상일때 
+    
 let cnt =0;
 
 
@@ -231,6 +236,100 @@ $('.pegnination span').click(function(){
       nextAni4();
       intv4 = setInterval(function(){ nextAni4(); }, 3000);
 });
+
+   
+}else if(window.innerWidth < 768){
+
+   
+    let cnt =0;
+
+
+    $('.pegnination span').click(function(){
+      clearInterval(intv4);
+      $('.pegnination span').removeClass('on');
+      $(this).addClass('on');
+    
+      intv4= setInterval(function(){
+      nextAni4()
+    },5000); 
+    });
+    
+    
+    let wd4 = $('.multi_div .media iframe').width();
+    let intv4 = setInterval(function(){
+      nextAni4();
+    },4000);
+    
+    function nextAni4(){
+      $('.multi_div').not(':animated').animate({
+        'margin-left': -wd4+'px'
+      },1000,function(){
+        $('.multi_div .media').eq(0).appendTo($('.multi_div'));
+        $('.multi_div').css({'margin-left':'0px'});
+        
+        $('.pegnination span').eq(0).appendTo($('.pegnination'));
+        $('.pegnination span').eq(0).addClass('on')
+        $(".pegnination span").not(":first-child").removeClass("on");
+    
+    
+      });
+      return false;
+    
+    
+    }
+    
+    function prevAni4(){
+        $('.multi_div .media').eq(-1).prependTo($('.multi_div'));
+        $('.multi_div').css({'margin-left':-wd4+'px'});
+        $('.multi_div').not(':animated').animate({
+          'margin-left': '0px'
+        },1000)
+    
+        $('.pegnination span').eq(2).prependTo($('.pegnination'));
+        $('.pegnination span').eq(0).addClass('on');
+        $(".pegnination span").not(":first-child").removeClass("on");
+    
+    
+        return false;
+      }
+      
+    
+    
+    $('.next4').click(function(){
+    clearInterval(intv4);
+    nextAni4();
+    var  intv4 = setInterval(function(){
+      nextAni4();
+    },4000);
+    return false
+    
+    });
+    
+    $('.prev4').click(function(){
+      clearInterval(intv4);
+      prevAni4();
+      var intv4 = setInterval(function(){
+        nextAni4();
+      },4000);
+      return false;
+    
+    
+    });
+    
+    $('.pegnination span').click(function(){
+      clearInterval(intv4);
+          var idx = $(this).index()-1;
+          for(var i=0;i<idx;i++){
+              $(".multi_div .media").eq(0).appendTo($(".multi_div"));
+              $(".pegnination span").eq(0).appendTo($(".pegnination"));
+          }
+          nextAni4();
+          intv4 = setInterval(function(){ nextAni4(); }, 3000);
+  });
+  }
+
+}).resize(); 
+
 
 
 
