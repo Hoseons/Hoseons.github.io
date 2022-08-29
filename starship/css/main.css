@@ -1863,7 +1863,7 @@ header{
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: 144px;
+    height: 130px;
 }
 
 .nav_inner.scroll{
@@ -1902,10 +1902,10 @@ nav > ul>li{
 }
 
 .header_logo{
-    width: 135px;
-    height: 48.5px;
+    width: 115px;
+    height: 30px;
     display: block;
-    top: 50px;
+    top: 55px;
     left: 50%;
     transform: translateX(-50%);
     position: fixed;
@@ -2723,27 +2723,19 @@ footer{
     
 /* 낮은 해상도의 PC, 태블릿 가로 */
 @media screen and (max-width:479px){
-    header{
-        width: 100%;
-        height: 100vh;
     
-       
-        
-    }
+header{
+    width: 100%;
+    height: 100vh; 
+}
     
+.inner{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px ;
+    position: relative;
+}
     
-    .inner{
-        width: 100%;
-        margin: 0 auto;
-        padding: 0 20px ;
-        position: relative;
-        
-        /* border: 1px solid #f00; */
-    }
-    
-
-
-
 .header_logo{
     width: 100px;
     height: 20px;
@@ -2753,451 +2745,355 @@ footer{
     transform: translateX(-50%);
     position: fixed;
     z-index: 99;
-    /* border: 1px solid #f00; */
 }
 
-nav ul > li > strong >.nav_color
-{
+nav ul > li > strong >.nav_color{
     color: #000;
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
-  
 }
 
-
-
     /* 배너 */
-    
-    .header_banner{
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        overflow: hidden;
-        position: relative;
-        /* border: 1px solid #f00; */
-        left: 50%;
-        transform: translate(-50%);
-    }
-    .video_div{
-        height: 100vh;
-        width: 100vw;
-        
-    }
-    .header_banner video{
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-        
-    }
-    
-    
-    
-    .header_banner .page_nav{
-        display: none;
-        
-    }
-    
-    .header_banner .page_nav span{
-        display: none;
-    }
-    
-    .header_banner .sns{
-        position: absolute;
-        bottom: 50%;
-        transform: translateY(50%);
-        right: 20px;
-        /* border: 1px solid #f00; */
-    }
-    
-    .header_banner .sns ul{
-        display: flex;
-        flex-direction: column;
-        /* border: 1px solid #f00; */
-        
-    }
-    
-    
-    
-    .scroll2{
-        display: none;
-    }
-    
-    
-    
-    
-    
-    /* 아티스트 */
-    
-    section:nth-of-type(1){
-        position: relative;
-       padding-top: 50px;
-        height: 420px;
-        /* border: 1px solid #f00; */
-        width: 100%;
-    }
-    .bg_gra{
-        /* border: 1px solid #f00; */
-        display: none;
-    }
-    .artist_bg{
-        position: absolute;
-        top: -180px;
-        z-index: -1 ;
-        width: 100%;
-        height: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        background: url(../images/main/artist_bg.svg) center center / cover;
-    }
-    .container1{
-        
-        width: 100%;
-        margin-top: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-       
-     
-    }
-    .container1 .wrap{
-        width: 100%;
-        overflow: hidden;
-        /* border: 1px solid #f00; */
-    }
-    .title{
-        font-size: 20px;
-      font-weight: 600;
-      color: #000;
-      text-transform: uppercase;
-      margin-bottom: 32px;
-        display: block;
-        /* border: 1px solid #f00; */
-        text-align: center;
-    }
-    
-    .more{
-        position: absolute;
-        right: 10%;
-        top: 0;
-        line-height: 20px;
-        cursor: pointer;font-size: 13px;
-    }
-    .more::after{
-        position: absolute;
-        width: 18px;
-        height: 18px;
-        display: block;
-        content: '';
-        right: -20px;
-        top: 50%;
-        transform: translateY(-50%);
-        background: url(../images/common/icon_plus.svg) no-repeat center center/ cover;
-    }
-    .more:hover {
-        color: #b09dfe;
-    }.container1 .wrap ul{
-        width: 700%;
-        height: 250px;
-        
-    }
-    
-    
-    
-    
-    .container1 .wrap ul .page .artist:nth-of-type(1) a{
-        width: 100%;
-        height: 250px;
-        display: inline-block;
-        border-radius: 20px;
-    }
-    
-    /* .container1 .wrap ul .page .artist:nth-of-type(1) a img{
-       object-position: center;
-       width: 100%;
-       height: 100%;
-       border-radius: 20px;
-    } */
-    .container1 .wrap ul .page >div:nth-of-type(2){
-        width: 23%;
-        height: 250px;
-        display: inline-block;
-        border-radius: 20px;
-        border: 3px solid  #8f81c7;
-        background-color: #fff;
-        /* margin-top: 2px; */
-        transition: .3s;
-        position: relative;
-        text-align: center;
-        
-    }
-        
-    
-    .container1 .wrap ul .page >div:nth-of-type(2):hover{
-        background-color:#8f81c7;
-    }
-    .container1 .wrap ul .page >div:nth-of-type(2):hover p{
-        color: #fff;
-    }
-    
-    .container1 .wrap ul .page .two .artist{
-        width: 100%;
-        height:  120px;
-        border-radius: 20px;
-        position: relative;
-        /* border: 1px solid #f00; */
-    }
-    
-    .container1 .wrap ul .page .two .artist >div{
-        width: 100%;
-        height:  120px;
-        /* border: 1px solid #f00; */
-        border-radius: 20px;
-        position: relative;
-        /* border: 1px solid #f00; */
-    }
-    
-    .container1 .wrap ul .page .two  >div a{
-        width:100%;
-        height:  120px;
-      display: inline-block;
-      /* border: 1px solid #f00; */
-      border-radius: 20px;
-      position: relative;
-    }
-    
-    
-    
-    .container1 .wrap ul .page .two{
-        display: flex;
-        flex-direction: column;
-        width: 22%;
-        height: 250px;
-        justify-content: space-between;
-        /* border: 1px solid #f00; */
-    }
-    .container1 .wrap ul .page .two .artist:nth-of-type(1) img{
-        height:  120px;
-    }
-    .container1 .wrap ul .page  >div > p{
-        font-size: 16px;
-      font-weight: 600;
-      line-height: 1.44;
-      text-align: center;
-      color: #514f58;
-      padding: 0;
-      text-transform: uppercase;
-      width: 100%;
-    /* border: 1px solid #f00; */
-        margin: 95px auto;
 
-    }
+.header_banner{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative; 
+    left: 50%;
+    transform: translate(-50%);
+}
     
-    .artist_div .page  >div img{
+.video_div{
+    height: 100vh;
+    width: 100vw;
+}
+
+.header_banner video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.header_banner .page_nav{display: none;}
+.header_banner .page_nav span{display: none;}
+    
+.header_banner .sns{
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    right: 20px;
+}
+    
+.header_banner .sns ul{
+    display: flex;
+    flex-direction: column;
+}
+    
+.scroll2{display: none;}
+    
+ /* 아티스트 */
+    
+section:nth-of-type(1){
+    position: relative;
+    padding-top: 50px;
+    height: 420px;
+    width: 100%;
+}
+
+.bg_gra{display: none;}
+    
+.artist_bg{
+    position: absolute;
+    top: -180px;
+    z-index: -1 ;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../images/main/artist_bg.svg) center center / cover;
+}
+
+.container1{
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container1 .wrap{
+    width: 100%;
+    overflow: hidden;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    display: block;
+    text-align: center;
+}
+    
+.more{
+    position: absolute;
+    right: 10%;
+    top: 0;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.more::after{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    display: block;
+    content: '';
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(../images/common/icon_plus.svg) no-repeat center center/ cover;
+}
+
+.more:hover {color: #b09dfe;}
+
+.container1 .wrap ul{
+    width: 700%;
+    height: 250px; 
+}
+
+.container1 .wrap ul .page .artist:nth-of-type(1) a{
+    width: 100%;
+    height: 250px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.container1 .wrap ul .page >div:nth-of-type(2){
+    width: 23%;
+    height: 250px;
+    display: inline-block;
+    border-radius: 20px;
+    border: 3px solid  #8f81c7;
+    background-color: #fff;
+    transition: .3s;
+    position: relative;
+    text-align: center;
+}
+        
+    
+.container1 .wrap ul .page >div:nth-of-type(2):hover{background-color:#8f81c7;}
+.container1 .wrap ul .page >div:nth-of-type(2):hover p{color: #fff;}
+    
+.container1 .wrap ul .page .two .artist{
+    width: 100%;
+    height:  120px;
+    border-radius: 20px;
+    position: relative;
+}
+    
+.container1 .wrap ul .page .two .artist >div{
+    width: 100%;
+    height:  120px;
+    border-radius: 20px;
+    position: relative;
+}
+    
+.container1 .wrap ul .page .two  >div a{
+    width:100%;
+    height:  120px;
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+}
+    
+.container1 .wrap ul .page .two{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    height: 250px;
+    justify-content: space-between;
+}
+
+.container1 .wrap ul .page .two .artist:nth-of-type(1) img{height:  120px;}
+
+.container1 .wrap ul .page  >div > p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.44;
+    text-align: center;
+    color: #514f58;
+    padding: 0;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 95px auto;
+}
+    
+.artist_div .page  >div img{
      width: 100%;
      height: 100%;   
      object-fit: cover;
      border-radius: 20px;
      object-position: center;
-     /* border: 1px solid #f00; */
-     /* 비율조정 */
-    }
+}
     
-    .artist_div .page  >div .artist_list::after{
-        display: block;
-        width: 100%;
-        height: 100%;
-        background: rgba(255,255,255,.7);
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        z-index: 2;
-        content: '';
-        border-radius: 15px;
-    }
-    .artist_div .page >div:hover .artist_list::after{
-        opacity: 1;
-    }
-    
-    
-    .artist_div .page .two  >div .artist_list::after{
-        display: block;
-        width: 100%;
-        height: 100%;
-        background: rgba(255,255,255,.7);
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        z-index: 2;
-        /* border: 1px solid #f00; */
-        border-radius: 15px;
-        content: '';
-    }
-    .artist_div .page .two .artist:hover .artist_list::after{
-        opacity: 1;
-    }
-    
-    
-    .artist_list .artist_name{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        z-index: 5;
-        width: 100%;
-        opacity: 0;
-        /* border: 1px solid #f00; */
-    
-    }
-    
-    .artist_list .artist_name span{
-        display: block;
-        text-align: center;
-        margin-bottom: 8px;
-    
-    }
-    
-    .artist_list .artist_name p{
-        display: block;
-        text-align: center;
-        font-size: 16px;
-        font-weight: 600;
-        width: 100%;
-        text-align: center;
-        
-    }
-    
-    
-    /* 뉴릴리즈 */
-    
-    .container2{
-       
-        height: 300px;
-        position: relative;
-        padding-top: 50px;
-        margin-bottom: 0;
-           /* border: 1px solid #f00; */
-    }
-    .container2 .album_list{
-        width: 100%;
-        /* margin: 0 auto; */
-        overflow: visible;
-        /* border: 1px solid #f00; */
-        margin-left: -140px;
-        
-    }
-    .container2 .album_list ul{
-        /* width: 350%; */
-        /* width: 100%; */
-        display: flex;
-       align-items: center;
-       /* justify-content: space-between; */
-       /* border: 1px solid #f00; */
-       
-    }
-    
-    .container2 .album_list ul li{
-        width: 100px;
-      height: 100px;
-      border-radius: 15px;
-      overflow: hidden;
-      transition: .3s;
-    }
-    
-    
-    .container2 .album_list ul li:hover img{
-        transform: scale(110%);
-        transition: .3s;
-    }
-    
-    
-    .container2 .album_list ul li.middle{
-        width: 158px;
-        height: 158px;
-        /* border: 1px solid #f00; */
-        margin: 0 0 0 10px;
-        transform: scale(100%);
-        transition: .3s;
-    
-    }
-    .container2 .album_list ul li.middle a{
-        width: 158px;
-        height: 158px;
-        position: relative;
-      
-       margin: 0  10px 0 0;
-        /* border: 1px solid #f00; */
-        display: block;
-       
-    }
-    .container2 .album_list ul li.middle:hover{
-        width: 158px;
-        translate: all .3s;
-        transform: scale(110%);
-    }
-    .container2 .album_list ul li.middle:hover a{
-        margin: 0;
-        transition: all .3s;
-    }
-    
+.artist_div .page  >div .artist_list::after{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    content: '';
+    border-radius: 15px;
+}
 
+.artist_div .page >div:hover .artist_list::after{opacity: 1;}
     
-    .container2 .album_list ul li.middle img:nth-of-type(2){
-       display: none;
-    }
     
-    .container2 .album_list ul li~li{
-        margin-left: 10px;
-    }
+.artist_div .page .two  >div .artist_list::after{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    border-radius: 15px;
+    content: '';
+}
+
+.artist_div .page .two .artist:hover .artist_list::after{opacity: 1;}
     
-    .container2 .bar{
-       display: none;
-       
-    }
+.artist_list .artist_name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    width: 100%;
+    opacity: 0;
+}
+    
+.artist_list .artist_name span{
+    display: block;
+    text-align: center;
+     margin-bottom: 8px;
+}
+    
+.artist_list .artist_name p{
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;  
+}
+    
+    
+/* 뉴릴리즈 */
+    
+.container2{ 
+    height: 300px;
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 0;
+}
+
+.container2 .album_list{
+    width: 100%;
+    overflow: visible;
+    margin-left: -140px;  
+}
+    
+.container2 .album_list ul{
+    display: flex;
+    align-items: center;
+}
+    
+.container2 .album_list ul li{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .3s;
+}
+    
+.container2 .album_list ul li:hover img{
+    transform: scale(110%);
+    transition: .3s;
+}
+    
+    
+.container2 .album_list ul li.middle{
+    width: 158px;
+    height: 158px;
+    margin: 0 0 0 10px;
+    transform: scale(100%);
+    transition: .3s;
+}
+
+.container2 .album_list ul li.middle a{
+    width: 158px;
+    height: 158px;
+    position: relative;
+    margin: 0  10px 0 0;
+    display: block;
+}
+
+.container2 .album_list ul li.middle:hover{
+    width: 158px;
+    translate: all .3s;
+    transform: scale(110%);
+}
+
+.container2 .album_list ul li.middle:hover a{
+    margin: 0;
+    transition: all .3s;
+}
+    
+.container2 .album_list ul li.middle img:nth-of-type(2){ display: none;}
+    
+.container2 .album_list ul li~li{margin-left: 10px;}
+    
+.container2 .bar{display: none;}
   
+.container2 .artist_arrow span{
+    width: 48px;
+    height: 48px;
+    content: '';
+    display: block;
+    cursor: pointer;
+}
     
+.container2 .artist_arrow{
+    bottom: 40%;
+    left: 50%;
+    width: 95%;
+}
     
-    .container2 .artist_arrow span{
-        width: 48px;
-      height: 48px;
-      content: '';
-      display: block;
-     cursor: pointer;
-    
-    }
-    
-    .container2 .artist_arrow .arrow_left{
-    
-        background: url(../images/common/arrow_left.svg) no-repeat center center/cover;
-    }
-    
-    .container2 .artist_arrow .arrow_right{
-        background: url(../images/common/arrow_right.svg) no-repeat center center/cover;
-    }
-    
-    .container2  .artist_arrow{
-      
-        bottom: 40%;
-        left: 50%;
-        width: 95%;
-        
-    
-    }
-    
-    .container2  .new_bg{
-        background: url(../images/main/Group\ 10315.svg) no-repeat center center / cover;
-        width: 400px;
-        height: 300px;
-        position: absolute;
-        top: 0;
-        z-index: -1;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+.container2 .new_bg{
+     background: url(../images/main/Group\ 10315.svg) no-repeat center center / cover;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
-    /* 멀티메디아 */
+/* 멀티메디아 */
     
 .container3 .more{
     right: 6%;
@@ -3249,7 +3145,6 @@ nav ul > li > strong >.nav_color
 }
     
 .container3 .multi_div .media .con2_text_list::before{display: none;}
-    
     
 .container3 .multi_div .media .con2_text_list strong{display: none;}
     
