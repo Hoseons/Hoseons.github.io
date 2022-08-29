@@ -53,28 +53,28 @@ $(document).ready(function(){
 
     }//이전버튼 동작
    
-    /* 다음버튼 클릭 */
-  $('.next2').click(function(){
-    clearInterval(intv1)
-   //자동동작 멈추고
-    nextAni();//nextAni() 함수 실행
-    var intv1 = setInterval(function(){
-      nextAni()
-    },4000);
-  });
-  /* 이전버튼 클릭 */
-  $('.prev2').click(function(){
-    clearInterval(intv1)
-    prevAni();
-    var intv1 = setInterval(function(){
-      nextAni()
-    },4000);
-  });
-    // 오아스토리
+      /* 다음버튼 클릭 */
+    $('.next2').click(function(){
+      clearInterval(intv1)
+    //자동동작 멈추고
+      nextAni();//nextAni() 함수 실행
+      var intv1 = setInterval(function(){
+        nextAni()
+      },4000);
+    });
+    /* 이전버튼 클릭 */
+    $('.prev2').click(function(){
+      clearInterval(intv1)
+      prevAni();
+      var intv1 = setInterval(function(){
+        nextAni()
+      },4000);
+    });
+      // 오아스토리
 
-    var intv2 = setInterval(function(){
-      nextAni2()
-    },4000);
+      var intv2 = setInterval(function(){
+        nextAni2()
+      },4000);
 
     
     let wdd2=$('.container3 .text_list ul li').width();//
@@ -113,107 +113,117 @@ $(document).ready(function(){
 
     }//이전버튼 동작
    
-    /* 다음버튼 클릭 */
-  $('.next3').click(function(){
-    clearInterval(intv2)
-   //자동동작 멈추고
-    nextAni2();//nextAni() 함수 실행
-    var intv2 = setInterval(function(){
-      nextAni2()
-    },4000);
-  });
-  /* 이전버튼 클릭 */
-  $('.prev3').click(function(){
-    clearInterval(intv2)
-    prevAni2();
-    var intv2 = setInterval(function(){
-      nextAni2()
-    },4000);
-  });
-//스폰서
-let wd=$('.container5 .img li').width();//400px
-let intv3=setInterval(function(){//자동 반복 함수
-  nextAni4()
-},2000);
+      /* 다음버튼 클릭 */
+    $('.next3').click(function(){
+      clearInterval(intv2)
+    //자동동작 멈추고
+      nextAni2();//nextAni() 함수 실행
+      var intv2 = setInterval(function(){
+        nextAni2()
+      },4000);
+    });
+    /* 이전버튼 클릭 */
+    $('.prev3').click(function(){
+      clearInterval(intv2)
+      prevAni2();
+      var intv2 = setInterval(function(){
+        nextAni2()
+      },4000);
+    });
+    //스폰서
+    let wd=$('.container5 .img li').width();//400px
+    let intv3=setInterval(function(){//자동 반복 함수
+      nextAni4()
+    },2000);
 
-function nextAni4(){
-  $('.container5 .img').not(':animated').animate({
-    'margin-left':-20-wd*2+'px'
-  },700,function(){//콜백함수(앞의 애니메이션이 끝난 후의 동작)
-      $('.container5 .img li').eq(0).appendTo($('.container5 .img'));//A.appendTo(B)-->A를 B의 뒤에 배치해라
-      $('.container5 .img').css({marginLeft:'0px'});
+    function nextAni4(){
+      $('.container5 .img').not(':animated').animate({
+        'margin-left':-20-wd*2+'px'
+      },700,function(){//콜백함수(앞의 애니메이션이 끝난 후의 동작)
+          $('.container5 .img li').eq(0).appendTo($('.container5 .img'));//A.appendTo(B)-->A를 B의 뒤에 배치해라
+          $('.container5 .img').css({marginLeft:'0px'});
 
-  });
-}
+      });
+    }
 
-//탭
-$('.tabb').hide();
-$('#home').show();
-$('.tab li').click(function(){
-  var Tab2 = $(this).children('a').attr('href')
-
-  $('.tab li').removeClass('on')
-  $(this).addClass('on')
-  
+  //탭
   $('.tabb').hide();
-  $(Tab2).show();
-  return false
-});
+  $('#home').show();
+  $('.tab li').click(function(){
+    var Tab2 = $(this).children('a').attr('href')
 
-$('.container3 .more').click(function(){
-  var Tab3 = $(this).children('a').attr('href')
-
-  $('.tab li').removeClass('on')
-  $('.tab1').addClass('on')
-  
-  $('.tabb').hide();
-  $(Tab3).show();
-  return false
-});
-
-
-$('header .ham').on('click',function(){
-  $(this).toggleClass('on')
-
-  $(window).resize(function(){ 
-    if (window.innerWidth < 480) {  // 다바이스 크기가 480이상일때 
+    $('.tab li').removeClass('on')
+    $(this).addClass('on')
     
-      if($('nav .main_nav > ul').css({'opacity':'0'})){
-        $('.nav_bg').css({'opacity':'1'})
-        $('nav .main_nav2').css({'opacity':'1'});
-        $('nav .main_nav > ul').css({'opacity':'1'});
-      
-      } else if($('nav .main_nav > ul').css({'opacity':'1'})){
+    $('.tabb').hide();
+    $(Tab2).show();
+    return false
+  });
 
-        $('.nav_bg').hide()
-        $('nav .main_nav2').css({'opacity':'0'});
-        $('nav .main_nav > ul').css({'opacity':'0'});
+  $('.container3 .more').click(function(){
+    var Tab3 = $(this).children('a').attr('href')
+
+    $('.tab li').removeClass('on')
+    $('.tab1').addClass('on')
+    
+    $('.tabb').hide();
+    $(Tab3).show();
+    return false
+  });
+
+  // 햄버거 메뉴
+  $('header .ham').on('click',function(){
+    $(this).toggleClass('on')
+
+    $(window).resize(function(){ 
+      if (window.innerWidth < 480) {  // 다바이스 크기가 480이상일때 
+      
+        if($('nav .main_nav > ul').css({'opacity':'0'})){
+          $('.nav_bg').css({'opacity':'1'})
+          $('nav .main_nav2').css({'opacity':'1'});
+          $('nav .main_nav > ul').css({'opacity':'1'});
+        
+        } else if($('nav .main_nav > ul').css({'opacity':'1'})){
+
+          $('.nav_bg').hide()
+          $('nav .main_nav2').css({'opacity':'0'});
+          $('nav .main_nav > ul').css({'opacity':'0'});
+        }
+
+
+      
+      
+      } else if(window.innerWidth < 768){
+
+      if($('nav .main_nav > ul').css({'rigt':'-300px'})){
+        $('.nav_bg').animate({'margin-right':'300px'},300)
+        $('nav .main_nav2').animate({'margin-right':'410px'},600)
+        $('nav .main_nav > ul').animate({'margin-right':'390px'},600)
+      
+      } else {
+
+        $('.nav_bg').animate({'margin-right':'-300px'},300)
+        $('nav .main_nav2').animate({'margin-right':'-300px'},600)
+        $('nav .main_nav > ul').animate({'margin-right':'-300px'},600)
       }
-
-
-     
-    
-    } else if(window.innerWidth < 768){
-
-    if($('nav .main_nav > ul').css({'rigt':'-300px'})){
-      $('.nav_bg').animate({'margin-right':'300px'},300)
-      $('nav .main_nav2').animate({'margin-right':'410px'},600)
-      $('nav .main_nav > ul').animate({'margin-right':'390px'},600)
-    
-    } else {
-
-      $('.nav_bg').animate({'margin-right':'-300px'},300)
-      $('nav .main_nav2').animate({'margin-right':'-300px'},600)
-      $('nav .main_nav > ul').animate({'margin-right':'-300px'},600)
-    }
-    }
+      }
+        
+      }).resize(); 
       
-    }).resize(); 
-    
-    })
+      })
+
+  // 상단 메뉴 스크롤
 
 
+  window.addEventListener('scroll',function(){
+    scrollAmount= this.pageYOffset;
+    if(scrollAmount>20){
+      $('nav > label .nav_div span').css({'background':'#000'});
 
+    }else{
+      $('nav > label .nav_div span').css({'background':'#fff'});
+    }
+  });
 
 
 
