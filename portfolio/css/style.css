@@ -600,7 +600,7 @@ main .project{
     max-width: 1920px;
     position: relative;
     display: flex;
-    margin-bottom: 220px;
+    margin-bottom: 40px;
 }
 
 main .project .inner{
@@ -618,53 +618,16 @@ main .project .inner{
 main .project .title{
     font-size: 35px;
     line-height: 1.7;
-    margin-bottom: 180px;
+    margin-bottom: 100px;
 }
 
 main .project .title span{font-weight: bold;}
 
-main .project .keyword{
-    width: 330px;
-    height: 330px;
-    border: solid 1px #005EA6;
-    border-radius: 100%;
+.project_list{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto 200px;
+    width: 100vw; 
+    height: 400px;
 }
-
-main .project .keyword strong{
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-main .project .keyword ul{margin-top: 16px;}
-
-main .project .keyword ul .wrap{
-     width: 87%;
-     margin: 0 auto;
-}
-
-main .project .keyword ul li{
-    display: inline-block;
-    padding: 8px 16px;
-    margin: 8px 4px;
-    border-radius:16px;
-    background-color: #cde7ff;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-main .project .keyword ul li.on{
-    background-color: #005EA6;
-    color: #fff;
-}
-
-main .project .keyword ul li:nth-of-type(4){margin-left: 3%;}
-
-.project_list{display: flex;}
 
 .project_list li ul{display: flex;}
 
@@ -689,7 +652,7 @@ main .project .keyword ul li:nth-of-type(4){margin-left: 3%;}
     width: 115%;
     height: 115%;
     object-fit: cover;
-    object-position:-9px -10px;
+    object-position:-11px -10px;
     border-radius: 30px;
     transition: .3s;
     cursor: pointer;
@@ -706,7 +669,7 @@ main .project .keyword ul li:nth-of-type(4){margin-left: 3%;}
 .project_list li ul li:hover .desc span{color: #0D477D;}
 
 .project_list li ul li .desc p{
-    margin-top: 16px;
+    margin-top: 14px;
     margin-bottom: 8px;
     cursor: pointer;
     width: 100%;
@@ -749,38 +712,39 @@ main .project .keyword ul li:nth-of-type(4){margin-left: 3%;}
 /* 마르디 */
 .project_list .desktop ul li:nth-of-type(1){
     position: absolute;
-    top: 20%;
-    right: 32%;
+    top: 27%;
+    right: 45%;
+    
 }
 /* 라라스윗 */
 .project_list .desktop ul li:nth-of-type(2){
     position: absolute;
-    top: 47%;
+    top: 33%;
     
-    right: 28%;
+    right: 30%;
 }
 /* 땡캠*/
 .project_list .mobile ul li:nth-of-type(1){
     position: absolute;
     
-    left: 32%;
-    top: 73%;
+    right: 30%;
+    top: 63%;
 }
 
 /* 오아 */
 .project_list .responsive ul li:nth-of-type(1){
     position: absolute;
     
-    right: 17%;
-    top: 34%;
+    right: 45%;
+    top: 57%;
 }
 
 /* 스타쉽 */
 .project_list .responsive ul li:nth-of-type(2){
     position: absolute;
     
-    right: 17%;
-    top: 63%;
+    right: 15%;
+    top: 60%;
 }
 
 
@@ -788,24 +752,24 @@ main .project .keyword ul li:nth-of-type(4){margin-left: 3%;}
 .project_list .Only_Design ul li:nth-of-type(1){
     position: absolute;
     
-    top: 20%;
-    left: 32%;
+    top: 27%;
+    left: 15%;
 }
-/* 가쓰우 우동 */
+/* 가쓰오*/
 .project_list .Only_Design ul li:nth-of-type(2){
     position: absolute;
     
-    top: 47%;
+    top: 33%;
     
-    left: 28%;
+    left: 30%;
 }
 
-/* read+ */
+/* 경기도 */
 .project_list .Only_Design ul li:nth-of-type(3){
     position: absolute;
 
-    left: 17%;
-    top: 34%;
+    right: 15%;
+    top: 27%;
 }
 .project_list .Only_Design ul li:nth-of-type(3) img{
     object-fit: contain;
@@ -815,15 +779,15 @@ main .project .keyword ul li:nth-of-type(4){margin-left: 3%;}
 .project_list .Only_Design ul li:nth-of-type(4){
     position: absolute;
     
-    left: 17%;
-    top: 63%;
+    left: 15%;
+    top: 60%;
 }
 /* 댕댕한바퀴 */
 .project_list .Only_Design ul li:nth-of-type(5){
     position: absolute;
     
-    right: 32%;
-    top: 73%;
+    left: 30%;
+    top: 63%;
 }
 
 
@@ -1012,7 +976,7 @@ main .contact .inner .insert li textarea:active{
 
 
 
-@media screen and (max-width:1440px){
+@media screen and (max-width:1280px){
 
 
     .inner{
@@ -1424,7 +1388,7 @@ main .contact .inner .insert li textarea:active{
         max-width: 1920px;
        position: relative;
         display: flex;
-        margin-bottom: 220px;
+        margin-bottom: 100px;
     }
     
     main .project .inner{
@@ -1505,6 +1469,14 @@ main .contact .inner .insert li textarea:active{
     .project_list li ul{
         display: flex;
     }
+
+    .project_list li ul li{
+        width: 150px;
+        border-radius: 30px;
+        height: 150px;
+        position: relative;
+    }
+
     .project_list li ul li div:first-of-type{
         width: 150px;
         border-radius: 30px;
@@ -1549,83 +1521,90 @@ main .contact .inner .insert li textarea:active{
         cursor: pointer;
     }
     
+
     /* 마르디 */
     .project_list .desktop ul li:nth-of-type(1){
         position: absolute;
-        top: 16%;
-        right: 25%;
+        top: 25%;
+        right: 50%;
+        transform: translateX(75px);
+        
     }
     /* 라라스윗 */
     .project_list .desktop ul li:nth-of-type(2){
         position: absolute;
-        top: 47%;
+        top: 31%;
         
-        right: 20%;
+        right: 27%;
     }
     /* 땡캠*/
     .project_list .mobile ul li:nth-of-type(1){
         position: absolute;
         
-        left: 25%;
-        top: 73%;
+        right: 27%;
+        top: 63%;
     }
-    
+
     /* 오아 */
     .project_list .responsive ul li:nth-of-type(1){
         position: absolute;
         
-        right: 4%;
-        top: 30%;
+        right: 50%;
+        transform: translateX(75px);
+        top: 57%;
     }
-    
+
     /* 스타쉽 */
     .project_list .responsive ul li:nth-of-type(2){
         position: absolute;
         
-        right: 4%;
-        top: 66%;
+        right: 10%;
+        top: 60%;
     }
-    
-    
+
+
     /* betteren */
     .project_list .Only_Design ul li:nth-of-type(1){
         position: absolute;
         
-        top: 16%;
-        left: 25%;
+        top: 25%;
+        left: 10%;
     }
-    /* 가쓰우 우동 */
+    /* 가쓰오*/
     .project_list .Only_Design ul li:nth-of-type(2){
         position: absolute;
         
-        top: 47%;
+        top: 31%;
         
-        left: 20%;
+        left: 27%;
     }
-    
-    /* read+ */
+
+    /* 경기도 */
     .project_list .Only_Design ul li:nth-of-type(3){
         position: absolute;
-        
-        left: 4%;
-        top: 34%;
+
+        right: 10%;
+        top: 25%;
     }
-    
+    .project_list .Only_Design ul li:nth-of-type(3) img{
+        object-fit: contain;
+        object-position: center 30%;
+    }
     /* 공공디자인 */
     .project_list .Only_Design ul li:nth-of-type(4){
         position: absolute;
         
-        left: 4%;
-        top: 63%;
+        left: 10%;
+        top: 60%;
     }
     /* 댕댕한바퀴 */
     .project_list .Only_Design ul li:nth-of-type(5){
         position: absolute;
         
-        right: 25%;
-        top: 73%;
+        left: 27%;
+        top: 63%;
     }
-    
+
     
 
     
@@ -1910,7 +1889,7 @@ main .contact .inner .insert li textarea:active{
     main .project .title{
         font-size: 35px;
         line-height: 1.7;
-        margin-bottom: 180px;
+        margin-bottom: 100px;
     }
     
     main .project .title span{
@@ -1918,56 +1897,6 @@ main .contact .inner .insert li textarea:active{
        
     }
     
-    
-    
-    main .project .keyword{
-        width: 250px;
-        height: 250px;
-        border: solid 1px #005EA6;
-        border-radius: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto 200px;
-    }
-    main .project .keyword strong{
-        font-size: 18px;
-        text-transform: uppercase;
-    }
-    
-    main .project .keyword ul{
-        margin-top: 16px;
-    }
-    main .project .keyword ul .wrap{
-         /* border: 1px solid #f00; */
-         text-align: center;
-         width: 87%;
-         margin: 0 auto;
-    }
-    main .project .keyword ul li{
-        display: inline-block;
-        /* border: 1px solid #f00; */
-        padding: 8px 16px;
-        margin: 8px 4px;
-        border-radius:16px;
-        background-color: #cde7ff;
-        text-transform: uppercase;
-        cursor: pointer;
-        font-size: 14px;
-     /* text-align: center; */
-      
-    }
-    
-    
-    main .project .keyword ul li.on{
-        background-color: #005EA6;
-        color: #fff;
-    }
-    
-    main .project .keyword ul li:nth-of-type(4){
-        margin-left: 0%;
-    }
     .project_list{
         display: flex;
     }
@@ -1976,7 +1905,11 @@ main .contact .inner .insert li textarea:active{
     }
     .project_list li ul li{
         width: 120px;
+        height: 120px;
+        border-radius: 30px;
+        position: relative;
     }
+
     .project_list li ul li div:first-of-type{
         width: 120px;
         border-radius: 30px;
@@ -2013,91 +1946,100 @@ main .contact .inner .insert li textarea:active{
     .project_list li ul li .desc p{
         margin-top: 16px;
         margin-bottom: 8px;
+        font-size: 14px;
         cursor: pointer;
     }
     
     .project_list li ul li .desc span{
-        font-size: 13px;
+        font-size: 12px;
         color: #4d4d4d;
         cursor: pointer;
     }
     
+   
     /* 마르디 */
     .project_list .desktop ul li:nth-of-type(1){
         position: absolute;
-        top: 16%;
-        right: 25%;
+        top: 25%;
+        right: 50%;
+        transform: translateX(60px);
+        
     }
     /* 라라스윗 */
     .project_list .desktop ul li:nth-of-type(2){
         position: absolute;
-        top: 47%;
+        top: 31%;
         
-        right: 20%;
+        right: 24%;
     }
     /* 땡캠*/
     .project_list .mobile ul li:nth-of-type(1){
         position: absolute;
         
-        left: 25%;
-        top: 73%;
+        right: 24%;
+        top: 65%;
     }
-    
+
     /* 오아 */
     .project_list .responsive ul li:nth-of-type(1){
         position: absolute;
         
-        right: 4%;
-        top: 30%;
+        right: 50%;
+        transform: translateX(60px);
+        top: 59%;
     }
-    
+
     /* 스타쉽 */
     .project_list .responsive ul li:nth-of-type(2){
         position: absolute;
         
-        right: 4%;
-        top: 66%;
+        right: 5%;
+        top: 62%;
     }
-    
-    
+
+
     /* betteren */
     .project_list .Only_Design ul li:nth-of-type(1){
         position: absolute;
         
-        top: 16%;
-        left: 25%;
+        top: 25%;
+        left: 5%;
     }
-    /* 가쓰우 우동 */
+    /* 가쓰오*/
     .project_list .Only_Design ul li:nth-of-type(2){
         position: absolute;
         
-        top: 47%;
+        top: 31%;
         
-        left: 20%;
+        left: 24%;
     }
-    
-    /* read+ */
+
+    /* 경기도 */
     .project_list .Only_Design ul li:nth-of-type(3){
         position: absolute;
-        
-        left: 4%;
-        top: 34%;
+
+        right: 5%;
+        top: 25%;
     }
-    
+    .project_list .Only_Design ul li:nth-of-type(3) img{
+        object-fit: contain;
+        object-position: center 30%;
+    }
     /* 공공디자인 */
     .project_list .Only_Design ul li:nth-of-type(4){
         position: absolute;
         
-        left: 4%;
-        top: 63%;
+        left: 5%;
+        top: 62%;
     }
     /* 댕댕한바퀴 */
     .project_list .Only_Design ul li:nth-of-type(5){
         position: absolute;
         
-        right: 25%;
-        top: 73%;
+        left: 24%;
+        top: 65%;
     }
+
     
     
     
@@ -2903,7 +2845,7 @@ main .profile .desc strong{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin: 0 auto 200px;
+        margin: 0 auto 100px;
     }
     main .project .keyword strong{
         font-size: 16px;
@@ -2947,6 +2889,13 @@ main .profile .desc strong{
     .project_list li ul{
         display: flex;
     }
+    .project_list li ul li{
+        width: 100px;
+        height: 100px;
+        border-radius: 15px;
+        position: relative;
+    }
+
     .project_list li ul li div:first-of-type{
         width: 100px;
         border-radius: 15px;
@@ -3000,85 +2949,90 @@ main .profile .desc strong{
         display: none;
     }
     
-    /* 마르디 */
-    .project_list .desktop ul li:nth-of-type(1){
-        position: absolute;
-        top: 19%;
-        right: 25%;
-       
+   /* 마르디 */
+   .project_list .desktop ul li:nth-of-type(1){
+    position: absolute;
+    top: 25%;
+    right: 50%;
+    transform: translateX(50px);
+    
     }
     /* 라라스윗 */
     .project_list .desktop ul li:nth-of-type(2){
         position: absolute;
-        top: 47%;
+        top: 31%;
         
-        right: 19%;
+        right: 24%;
     }
     /* 땡캠*/
     .project_list .mobile ul li:nth-of-type(1){
         position: absolute;
         
-        left: 27%;
-        top: 73%;
+        right: 24%;
+        top: 60%;
     }
-    
+
     /* 오아 */
     .project_list .responsive ul li:nth-of-type(1){
         position: absolute;
         
-        right: 2%;
-        top: 30%;
+        right: 50%;
+        transform: translateX(50px);
+        top: 57%;
     }
-    
+
     /* 스타쉽 */
     .project_list .responsive ul li:nth-of-type(2){
         position: absolute;
         
-        right: 2%;
-        top: 66%;
+        right: 5%;
+        top: 57%;
     }
-    
-    
+
+
     /* betteren */
     .project_list .Only_Design ul li:nth-of-type(1){
         position: absolute;
         
-        top: 19%;
-        left: 25%;
+        top: 25%;
+        left: 5%;
     }
-    /* 가쓰우 우동 */
+    /* 가쓰오*/
     .project_list .Only_Design ul li:nth-of-type(2){
         position: absolute;
         
-        top: 47%;
+        top: 31%;
         
-        left: 19%;
+        left: 24%;
     }
-    
-    /* read+ */
+
+    /* 경기도 */
     .project_list .Only_Design ul li:nth-of-type(3){
         position: absolute;
-        
-        left: 2;
-        top: 34%;
+
+        right: 5%;
+        top: 25%;
     }
-    
+    .project_list .Only_Design ul li:nth-of-type(3) img{
+        object-fit: contain;
+        object-position: center 30%;
+    }
     /* 공공디자인 */
     .project_list .Only_Design ul li:nth-of-type(4){
         position: absolute;
         
-        left: 2;
-        top: 63%;
+        left: 5%;
+        top: 57%;
     }
     /* 댕댕한바퀴 */
     .project_list .Only_Design ul li:nth-of-type(5){
         position: absolute;
         
-        right: 27%;
-        top: 73%;
+        left: 24%;
+        top: 60%;
     }
-    
-    
+
+
 
     
     /* log */
@@ -3882,7 +3836,7 @@ main .profile button span{
         main .project .title{
             font-size: 20px;
             line-height: 1.7;
-            margin-bottom: 8px;
+            margin-bottom: 200px;
         }
         
      
@@ -3962,9 +3916,9 @@ main .profile button span{
             
         }
         .project_list li ul li div:first-of-type{
-            width: 95%;
+            width: 100%;
             border-radius: 15px;
-            height: 110px;
+            height: 100px;
             display: inline-block;
             box-shadow: 0 3px 11.1px 0 rgba(0, 0, 0, 0.15);
             overflow: hidden;
@@ -3973,10 +3927,10 @@ main .profile button span{
          transform: scale(110%);
         }
         .project_list li ul li img{
-            width: 115%;
-            height: 115%;
+            width: 110%;
+            height: 110%;
             object-fit: cover;
-            object-position: -8px -8px;
+            object-position: -5px -6px;
             border-radius: 15px;
            transition: .3s;
            cursor: pointer;
@@ -4013,80 +3967,98 @@ main .profile button span{
             display: none;
         }
         
-        /* 마르디 */
-        .project_list .desktop ul li:nth-of-type(1){
-            position: absolute;
-            top: 23%;
-            left: 50%;
-            transform: translateX(-50%);
-           
-        }
-        /* 라라스윗 */
-        .project_list .desktop ul li:nth-of-type(2){
-            position: absolute;
-            top: 23%;
-            left: 10%;
-        }
-        /* 땡캠*/
-        .project_list .mobile ul li:nth-of-type(1){
-            position: absolute;
-            top: 23%;
-             left: 67%;
-           
-        }
+    /* 마르디 */
+   .project_list .desktop ul li:nth-of-type(1){
+        position: absolute;
+        top: 15%;
+        right: 50%;
+        transform: translateX(50px);
+    
+    }
+    /* 라라스윗 */
+    .project_list .desktop ul li:nth-of-type(2){
+        position: absolute;
+        top: 15%;
         
-        /* 오아 */
-        .project_list .responsive ul li:nth-of-type(1){
-            position: absolute;
-            top: 45%;
-            left: 10%;
-           
+        left: 10%;
+    }
+    /* 땡캠*/
+    .project_list .mobile ul li:nth-of-type(1){
+        position: absolute;
+        
+        right: 10%;
+        top: 35%;
+    }
 
-        }
+    /* 오아 */
+    .project_list .responsive ul li:nth-of-type(1){
+        position: absolute;
         
-        /* 스타쉽 */
-        .project_list .responsive ul li:nth-of-type(2){
-            position: absolute;
-            top: 45%;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+        right: 50%;
+        transform: translateX(50px);
+        top: 35%;
+    }
+
+    /* 스타쉽 */
+    .project_list .responsive ul li:nth-of-type(2){
+        position: absolute;
         
+        left: 10%;
+        top: 35%;
+    }
+
+
+    /* betteren */
+    .project_list .Only_Design ul li:nth-of-type(1){
+        position: absolute;
         
-        /* betteren */
-        .project_list .Only_Design ul li:nth-of-type(1){
-            position: absolute;
-            top: 87%;
-            left: 10%;
-        }
-        /* 가쓰우 우동 */
-        .project_list .Only_Design ul li:nth-of-type(2){
-            position: absolute;
-            top: 66%;
-            left: 67%;
-        }
+       top: 55%;
+        left: 70%;
+    }
+    .project_list .Only_Design ul li:nth-of-type(1) img{
+        object-fit: contain;
+        object-position:  -7px -4px;
+        width: 120%;
+    }
+    /* 가쓰오*/
+    .project_list .Only_Design ul li:nth-of-type(2){
+        position: absolute;
+        transform: translateX(-50px);
+        top: 55%;
+        left: 50%;
+    }
+    .project_list .Only_Design ul li:nth-of-type(2) img{
+        object-fit: contain;
+        object-position:  -8px center;
+        width: 120%;
+    }
+    /* 경기도 */
+    .project_list .Only_Design ul li:nth-of-type(3){
+        position: absolute;
+        right: 10%;
+        top: 15%;
+    }
+    .project_list .Only_Design ul li:nth-of-type(3) img{
+        object-fit: contain;
+        object-position: center 30%;
+    }
+    /* 공공디자인 */
+    .project_list .Only_Design ul li:nth-of-type(4){
+        position: absolute;
         
-        /* read+ */
-        .project_list .Only_Design ul li:nth-of-type(3){
-            position: absolute;
-            top: 66%;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+        left: 10%;
+        top: 75%;
+    }
+    /* 댕댕한바퀴 */
+    .project_list .Only_Design ul li:nth-of-type(5){
+        position: absolute;
+        left: 10%;
         
-        /* 공공디자인 */
-        .project_list .Only_Design ul li:nth-of-type(4){
-            position: absolute;
-            top: 66%;
-           left: 10%;
-        }
-        /* 댕댕한바퀴 */
-        .project_list .Only_Design ul li:nth-of-type(5){
-            position: absolute;
-            top: 45%;
-            right: 10%;
-        }
-  
+        top: 55%;
+    }
+
+
+
      
         /* log */
         
