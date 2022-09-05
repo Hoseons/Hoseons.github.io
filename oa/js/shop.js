@@ -75,25 +75,6 @@ $(document).ready(function(){
           })
         }
 
-         //슬라이더
-        $( '#example1' ).sliderPro({
-          width: 102,
-          height: 235,
-          arrows: true,
-          buttons: false,
-          waitForLayers: true,
-          thumbnailWidth: 200,
-          thumbnailHeight: 100,
-          thumbnailPointer: true,
-          autoplay: false,
-          autoScaleLayers: false,
-          breakpoints: {
-            500: {
-              thumbnailWidth: 120,
-              thumbnailHeight: 50
-            }
-          }
-        });
 
       } else if(window.innerWidth < 768){
 
@@ -327,41 +308,6 @@ $(document).ready(function(){
     var intv2=setInterval(function(){//자동 반복 함수
       nextAni2()
     },2000);
-  });
-
-//날씨추천 슬라이드
-
-  let wd3=$('.container4 ul li').width();//
-
-  function nextAni3(){
-    $('.container4 ul').not(':animated').animate({
-      'margin-left':-wd2+'px'
-    },1000,function(){//콜백함수(앞의 애니메이션이 끝난 후의 동작)
-        $('.container4 ul li').eq(0).appendTo($('.container4 ul'));//A.appendTo(B)-->A를 B의 뒤에 배치해라
-        $('.container4 ul').css({marginLeft:'0px'});
-    });
-
-  }//다음버튼 동작
-
-  function prevAni3(){
-    $('.container4 ul li').eq(-1).prependTo($('.container4 ul'));//4번사진을 슬라이드 앞에 배치해라
-    $('.container4 ul').css({'margin-left':-wd2+"px"});
-    $('.container4 ul').not(':animated').animate({
-      'margin-left':'0px'
-    },1000)
-  }//이전버튼 동작
-
-  /* 다음버튼 클릭 */
-  $('.next3').click(function(){
-  //자동동작 멈추고
-  nextAni3();//nextAni() 함수 실행
-
-  });
-  /* 이전버튼 클릭 */
-  $('.prev3').click(function(){
-
-  prevAni3();
-
   });
 
 
