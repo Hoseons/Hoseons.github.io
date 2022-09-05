@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
 
 
     <meta name="description" content="국내 오토캠핑 글램핑 카라반 등 이벤트 캠핑 여행상품을 지금 바로 실시간으로 예약하세요.">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="author" content="habb communication Co., Ltd.">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -45,11 +45,11 @@
             <span class="bell"></span>
             <input type="checkbox" id="check">
             <label for="check">
-                <div class="ham">
+                <span class="ham">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </span>
             </label>
             <div class="inner_nav">
                 <div class="top">
@@ -127,8 +127,10 @@
                     <h2>멋진 여행을 <br>
                         기대하고 계신가요?</h2>
                         <div class="search_wrap">
-                            <a href="search.html"><input type="text" placeholder="빈 자리를 빠르게 찾아보세요." ></a>
-                            <span class="search"></span>
+                            
+                                <input type="text" placeholder="빈 자리를 빠르게 찾아보세요." >
+                            
+                            <a href="search.html"><span class="search"></span></a>
                         </div>
                
                 <ul class="kate">
@@ -179,48 +181,50 @@
             <div class="inner">
                 <div class="container2">
                     <h2>지금 뜨고있는 추천 캠핑장</h2>
-                    <ul>
-                        <li>
-                            <div class="img"></div>
-                            <div class="text_list">
-                                <div class="name">
-                                    <strong>몬테비얀코 캠핑장</strong>
-                                    <span>경기 이동면 이동면</span>
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="img"></div>
+                                <div class="text_list">
+                                    <div class="name">
+                                        <strong>몬테비얀코 캠핑장</strong>
+                                        <span>경기 이동면 이동면</span>
+                                    </div>
+                                    <div class="buy">
+                                        <span>전자결제</span>
+                                            <p>40,000원~</p>
+                                    </div>
                                 </div>
-                                <div class="buy">
-                                    <span>전자결제</span>
-                                        <p>40,000원~</p>
+                                
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="img"></div>
+                                <div class="text_list">
+                                    <div class="name">
+                                        <strong>몬테비얀코 캠핑장</strong>
+                                        <span>경기 이동면 이동면</span>
+                                    </div>
+                                    <div class="buy">
+                                        <span>전자결제</span>
+                                            <p>40,000원~</p>
+                                    </div>
                                 </div>
-                            </div>
-                            
-                        </li>
-                        <li>
-                            <div class="img"></div>
-                            <div class="text_list">
-                                <div class="name">
-                                    <strong>몬테비얀코 캠핑장</strong>
-                                    <span>경기 이동면 이동면</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="img"></div>
+                                <div class="text_list">
+                                    <div class="name">
+                                        <strong>몬테비얀코 캠핑장</strong>
+                                        <span>경기 이동면 이동면</span>
+                                    </div>
+                                    <div class="buy">
+                                        <span>전자결제</span>
+                                            <p>40,000원~</p>
+                                    </div>
                                 </div>
-                                <div class="buy">
-                                    <span>전자결제</span>
-                                        <p>40,000원~</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"></div>
-                            <div class="text_list">
-                                <div class="name">
-                                    <strong>몬테비얀코 캠핑장</strong>
-                                    <span>경기 이동면 이동면</span>
-                                </div>
-                                <div class="buy">
-                                    <span>전자결제</span>
-                                        <p>40,000원~</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -326,41 +330,43 @@
                         <h2>캠톡</h2>
                         <span>더보기</span>
                     </div>
-                   <ul>
-                       <li>
-                           <img src="./images/camptalk_1.png" alt="talk">
-                           <div class="text_list">
-                               <strong>고릴라캠핑&펜션</strong>
-                               <p>두번째 갔다 왔습니다. 낮에 멀리 산 풍경이 보이긴하는데 정말 좋아요</p>
-                               <div class="user">
-                                   <span>곰곰히</span>
-                                   <p>2022-05-23</p>
-                               </div>
-                           </div>
-                       </li>
-                       <li>
-                           <img src="./images/camptalk_2.png" alt="talk">
-                           <div class="text_list">
-                               <strong>포천 유식물원 캠핑장</strong>
-                               <p>친절하게 잘 답변해 주셔서 너무 감사해요. 금방 해결이 되어서 기쁘네요</p>
-                               <div class="user">
-                                   <span>오리는덕</span>
-                                   <p>2022-05-22</p>
-                               </div>
-                           </div>
-                       </li>
-                       <li>
-                           <img src="./images/camptalk_2.png" alt="talk">
-                           <div class="text_list">
-                               <strong>포천 유식물원 캠핑장</strong>
-                               <p>친절하게 잘 답변해 주셔서 너무 감사해요. 금방 해결이 되어서</p>
-                               <div class="user">
-                                   <span>오리는덕</span>
-                                   <p>2022-05-22</p>
-                               </div>
-                           </div>
-                       </li>
-                   </ul>
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="./images/camptalk_1.png" alt="talk">
+                                <div class="text_list">
+                                    <strong>고릴라캠핑&펜션</strong>
+                                    <p>두번째 갔다 왔습니다. 낮에 멀리 산 풍경이 보이긴하는데 정말 좋아요</p>
+                                    <div class="user">
+                                        <span>곰곰히</span>
+                                        <p>2022-05-23</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./images/camptalk_2.png" alt="talk">
+                                <div class="text_list">
+                                    <strong>포천 유식물원 캠핑장</strong>
+                                    <p>친절하게 잘 답변해 주셔서 너무 감사해요. 금방 해결이 되어서 기쁘네요</p>
+                                    <div class="user">
+                                        <span>오리는덕</span>
+                                        <p>2022-05-22</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./images/camptalk_2.png" alt="talk">
+                                <div class="text_list">
+                                    <strong>포천 유식물원 캠핑장</strong>
+                                    <p>친절하게 잘 답변해 주셔서 너무 감사해요. 금방 해결이 되어서</p>
+                                    <div class="user">
+                                        <span>오리는덕</span>
+                                        <p>2022-05-22</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
