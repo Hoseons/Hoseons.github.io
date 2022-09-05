@@ -158,26 +158,14 @@ var intv2 = setInterval(function(){
 });
 
 // 슬라이더
-$( '#example1' ).sliderPro({
-  width: 1300,
-  height: 374,
-  arrows: false,
-  buttons: false,
-  waitForLayers: true,
-  thumbnailWidth: 400,
-  thumbnailHeight: 374,
-  thumbnailPointer: true,
-  autoplay: false,
-  fullScreen: true,
-  autoScaleLayers: false,
-  breakpoints: {
-    500: {
-      thumbnailWidth: 120,
-      thumbnailHeight: 50
-    }
-  }
- 
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 3,
+  spaceBetween: 5,
+  freeMode: true,
+  scrollbar: {
+  el: '.swiper-scrollbar', 
+draggable: true,
+},
 });
 
-return false
 });
