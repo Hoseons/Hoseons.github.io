@@ -21,7 +21,7 @@
     <link rel="shortcut icon" href="./images/common/web_icon.png" type="image/x-icon">
     
     
-    
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script defer src="./js/sub.js"></script>
     <title>스타쉽엔터테인먼트</title>
 </head>
@@ -35,16 +35,13 @@
            
             <input type="checkbox" id="nav">
             <label for="nav"> 
-                <div class="nav_div">
-                    <div>
+                <span class="nav_div">
+                    <span class="ham_wrap">
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div>
-                   
-                </div>
-                
-    
+                    </span>
+                </span>
             </label>
                 <ul>
                     <li>
@@ -123,86 +120,157 @@
         <div class="kate">
             <strong class="title">Artist</strong>
             <ul>
-                <li class="on"><span>Musician</span></li>
-                <li><span>actor</span></li>
+                <li class="on"><a href="#Musician"><span>Musician</span></a></li>
+                <li><a href="#Actor"><span>actor</span></a></li>
             </ul>
         </div>
-        <div class="inner">
-            <span>Home / artist / artists</span>
-            <p class="title">MUSICIAN</p>
-
-            <ul>
-                <li>
-                    <a href="sub_detailed.html"><img src="./images/sub/profile_img.jpg" alt="ive"></a>
-                    <div class="artist_name">
-                        <p>아이브</p>
-                        <span>IVE</span>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/common/artist_yjsn.jpg" alt="yjsn"></a>
-                    <div class="artist_name">
-                        <p>우주소녀</p>
-                        <span>yjsn</span>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/common/artist_sehun.jpg" alt="sehun"></a>
-                    <div class="artist_name">
-                        <p>정세훈</p>
-                        <span>JEONG SEWOON</span>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/common/artist_mindU.jpg" alt="mindU"></a>
-                    <div class="artist_name">
-                        <p>마인드유</p>
-                        <span>MIND U</span>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/common/artist_cravitiy.jpg" alt="cravitiy"></a>
-                    <div class="artist_name">
-                        <p>크래비티</p>
-                        <span>cravitiy</span>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/common/artist_mostaX.jpg" alt="mostaX"></a>
-                    <div class="artist_name">
-                        <p>몬스타엑스</p>
-                        <span>mostaX</span>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/common/artist_gun.jpg" alt="gun"></a>
-                    <div class="artist_name">
-                        <p>샵건</p>
-                        <span>#Gun</span>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/common/artist_kwill.jpg" alt="kwill"></a>
-                    <div class="artist_name">
-                        <p>케이윌</p>
-                        <span>k.will</span>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/common/artist_brother.jpg" alt="brother"></a>
-                    <div class="artist_name">
-                        <p>브라더수</p>
-                        <span>BROTHERSU</span>
-                    </div>
-                </li>
-            </ul>
-        </div>
+            <div class="inner">
+                <div  id="Musician">
+                    <span>Home / artist / artists</span>
+                    <p class="title">MUSICIAN</p>
+                    <ul>
+                        <li>
+                            <a href="sub_detailed.html"><img src="./images/sub/profile_img.jpg" alt="ive"></a>
+                            <div class="artist_name">
+                                <p>아이브</p>
+                                <span>IVE</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/common/artist_yjsn.jpg" alt="yjsn"></a>
+                            <div class="artist_name">
+                                <p>우주소녀</p>
+                                <span>yjsn</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/common/artist_sehun.jpg" alt="sehun"></a>
+                            <div class="artist_name">
+                                <p>정세훈</p>
+                                <span>JEONG SEWOON</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/common/artist_mindU.jpg" alt="mindU"></a>
+                            <div class="artist_name">
+                                <p>마인드유</p>
+                                <span>MIND U</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/common/artist_cravitiy.jpg" alt="cravitiy"></a>
+                            <div class="artist_name">
+                                <p>크래비티</p>
+                                <span>cravitiy</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/common/artist_mostaX.jpg" alt="mostaX"></a>
+                            <div class="artist_name">
+                                <p>몬스타엑스</p>
+                                <span>mostaX</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/common/artist_gun.jpg" alt="gun"></a>
+                            <div class="artist_name">
+                                <p>샵건</p>
+                                <span>#Gun</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/common/artist_kwill.jpg" alt="kwill"></a>
+                            <div class="artist_name">
+                                <p>케이윌</p>
+                                <span>k.will</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/common/artist_brother.jpg" alt="brother"></a>
+                            <div class="artist_name">
+                                <p>브라더수</p>
+                                <span>BROTHERSU</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div  id="Actor">
+                    <span>Home / artist / Actor</span>
+                    <p class="title">Actor</p>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="./images/common/actor_01.jpg" alt="ive"></a>
+                            <div class="artist_name">
+                                <p>김범</p>
+                                <span>KIM BEOM</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/common/actor_02.jpg" alt="yjsn"></a>
+                            <div class="artist_name">
+                                <p>박주비</p>
+                                <span>PARK JUBI</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/common/actor_03.jpg" alt="sehun"></a>
+                            <div class="artist_name">
+                                <p>손우현</p>
+                                <span>SON WOOHYEON</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/common/actor_04.jpg" alt="mindU"></a>
+                            <div class="artist_name">
+                                <p>손승헌</p>
+                                <span>SONG SEUNGHEON</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/common/actor_05.jpg" alt="cravitiy"></a>
+                            <div class="artist_name">
+                                <p>송하윤</p>
+                                <span>SONG HAYOON</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/common/actor_06.jpg " alt="mostaX"></a>
+                            <div class="artist_name">
+                                <p>신승호</p>
+                                <span>SHIN SEUNGHO</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/common/actor_08.jpg" alt="gun"></a>
+                            <div class="artist_name">
+                                <p>안소요</p>
+                                <span>AHN SOYO</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/common/actor_07.jpg" alt="kwill"></a>
+                            <div class="artist_name">
+                                <p>신현수</p>
+                                <span>SHIN HYUNSOO </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/common/actor_10.jpg" alt="brother"></a>
+                            <div class="artist_name">
+                                <p>오혜원</p>
+                                <span>OH HYEWON</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
     </main>
     <footer>
         <div class="container6">
             <div class="left_footer">
                 <img src="./images/common/CI_footer.svg" alt="logo_g">
-                <a href=" +82-2-592-4000" type="tel"> +82-2-592-4000</a>
+                <a href=" +82-2-592-4000"> +82-2-592-4000</a>
             </div>
             <div class="mid_footer">
                 <div>

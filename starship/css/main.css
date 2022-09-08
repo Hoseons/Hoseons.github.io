@@ -7,9 +7,9 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
-.font{
-    font-family: 'Playfair Display', serif;
-}
+.font{font-family: 'Playfair Display', serif;}
+
+h3{display: none;}
 
 /* 오리진피씨형 헤더 */
 
@@ -118,9 +118,9 @@ input{visibility: hidden;}
 
 input:checked~ul{left: 0;}
 
-nav > label .nav_div div{display: flex;}
+nav > label .nav_div .ham_wrap{display: flex;}
 
-nav > label .nav_div span{
+nav > label .ham_wrap span{
     height: 2px;
     width: 20px;
     background: #fff;
@@ -130,9 +130,9 @@ nav > label .nav_div span{
     position: absolute;
 }
 
-nav > label .nav_div span:nth-of-type(1){top: 35%;}
+nav > label .ham_wrap span:nth-of-type(1){top: 35%;}
 
-nav > label .nav_div span:nth-of-type(3){bottom: 30%;}
+nav > label .ham_wrap  span:nth-of-type(3){bottom: 30%;}
 
 .nav_div{
     width: 44px;
@@ -148,19 +148,19 @@ nav > label .nav_div span:nth-of-type(3){bottom: 30%;}
     justify-content: center;
 }
 
-input:checked~label .nav_div span:nth-of-type(2){
+input:checked~label .ham_wrap span:nth-of-type(2){
     background: #fff;
     opacity: 0;
 }
 
-input:checked~label .nav_div span:nth-of-type(1){
+input:checked~label .ham_wrap span:nth-of-type(1){
     transform: rotate(-45deg);
     opacity: 1;
     top: 45%;
     background: #000;
 }
 
-input:checked~label .nav_div span:nth-of-type(3){
+input:checked~label .ham_wrap span:nth-of-type(3){
     transform: rotate(45deg);
     opacity: 1;
     top: 45%;
@@ -236,8 +236,8 @@ input:checked~label .nav_div span:nth-of-type(3){
 .scroll2{
     position: absolute;
     bottom: 80px;
-    right: 48%;
-    transform: translateX(-50%);
+    right: 50%;
+    margin-left: 24px;
     font-size: 20px;
     color: #FFF;
 }
@@ -733,6 +733,7 @@ section:nth-of-type(1){
     margin-right: 80px;
     width: 60%;
     height: 495px;
+    border: 0;
 }
 
 .container3 .multi_div .media .con2_text_list{
@@ -1925,9 +1926,9 @@ input{visibility: hidden;}
 
 input:checked~ul{left: 0;}
 
-nav > label .nav_div div{display: flex;}
+nav > label .nav_div .ham_wrap{display: flex;}
 
-nav > label .nav_div span{
+nav > label .ham_wrap span{
     height: 2px;
     width: 20px;
     background: #fff;
@@ -1937,9 +1938,9 @@ nav > label .nav_div span{
     position: absolute;
 }
 
-nav > label .nav_div span:nth-of-type(1){top: 35%;}
+nav > label .ham_wrap span:nth-of-type(1){top: 35%;}
 
-nav > label .nav_div span:nth-of-type(3){bottom: 30%;}
+nav > label .ham_wrap span:nth-of-type(3){bottom: 30%;}
 
 .nav_div{
     width: 44px;
@@ -1955,19 +1956,19 @@ nav > label .nav_div span:nth-of-type(3){bottom: 30%;}
     justify-content: center;
 }
 
-input:checked~label .nav_div span:nth-of-type(2){
+input:checked~label .ham_wrap span:nth-of-type(2){
     background: #fff;
     opacity: 0;
 }
 
-input:checked~label .nav_div span:nth-of-type(1){
+input:checked~label .ham_wrap span:nth-of-type(1){
     transform: rotate(-45deg);
     opacity: 1;
     top: 45%;
     background: #000;
 }
 
-input:checked~label .nav_div span:nth-of-type(3){
+input:checked~label .ham_wrap span:nth-of-type(3){
     transform: rotate(45deg);
     opacity: 1;
     top: 45%;
@@ -2015,14 +2016,7 @@ input:checked~label .nav_div span:nth-of-type(3){
     flex-direction: column;
 }
 
-.scroll2{
-    position: absolute;
-    bottom: 80px;
-    right: 42%;
-    transform: translateX(-50%);
-    font-size: 20px;
-    color: #FFF;
-}
+.scroll2{display: none;}
 
 /* 아티스트 */
 

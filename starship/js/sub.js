@@ -13,4 +13,17 @@ window.addEventListener('scroll',function(){
     }
   });
   
+
+  $('.inner > div').hide()
+  $('#Musician').show()
+  $('.kate ul li').click(function(){
+    $('.kate ul li').removeClass('on')
+    $(this).addClass('on')
+
+    $('.inner > div').hide()
+    var Tab = $(this).children('a').attr('href')
+    $(Tab).show()
+    return false
+  })
+
 });
