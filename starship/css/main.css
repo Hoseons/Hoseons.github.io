@@ -237,9 +237,11 @@ input:checked~label .ham_wrap span:nth-of-type(3){
     position: absolute;
     bottom: 80px;
     right: 50%;
-    margin-left: 24px;
+    margin-right: -25px;
     font-size: 20px;
     color: #FFF;
+    /* border: 1px solid #f00; */
+    width: 50px;
 }
 
 .scroll2::after{
