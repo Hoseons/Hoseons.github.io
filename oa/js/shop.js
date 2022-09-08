@@ -136,11 +136,11 @@ $(document).ready(function(){
         $(this).addClass('on')
         return false
     });
-    $('.container7 .how_list ul').hide();
+    $('.container7 .how_list > ul').hide();
     $('.container7 #how1').show();
     $('.container7 .select li').click(function(){
         var tabbb = $(this).children('a').attr('href');
-        $('.container7 .how_list ul').hide();
+        $('.container7 .how_list >ul').hide();
         $(tabbb).show();
         return false
     });
