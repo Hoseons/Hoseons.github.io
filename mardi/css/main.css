@@ -678,12 +678,18 @@ body{
     text-decoration: line-through;
 }
 
+.Best_section .arrow_div{
+    position: absolute;
+    left: 49%;
+    width: 660px;
+}
+
 .Best_section .arrow_next{
     background: url(../images/main/Chevron_Right.svg) no-repeat center /cover;
     width: 68px;
     height: 68px;
     position: absolute;
-    right: -80px;
+    right: 0;
     top: 40%;
     transform: translateX(-50%);
     cursor: pointer;
@@ -695,7 +701,7 @@ body{
     width: 68px;
     height: 68px;
     position: absolute;
-    left: 600px;
+    left: 0;
     top: 40%;
     transform: translateX(-50%) rotate(180deg);
     cursor: pointer;
