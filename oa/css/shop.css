@@ -11,7 +11,10 @@ body{
     width: 1180px;
     margin: 0 auto;
     position: relative;
-    
+}
+
+h3{
+  display: none;
 }
 /* 헤더 */
 header{
@@ -644,7 +647,7 @@ section:nth-of-type(4){
   justify-content: center;
   
 }
-.container4 .select ul{
+.container4 .select .select_wrap{
   display: flex;
   flex-direction: column;
   color: #f99;
@@ -654,13 +657,13 @@ section:nth-of-type(4){
   position: relative;
   
 }
-.container4 .select ul strong{
+.container4 .select .select_wrap strong{
   font-size: 25px;
   color: #f99;
   position: relative;
   cursor: pointer;
 }
-.container4 .select ul strong::after{
+.container4 .select .select_wrap strong::after{
   content: '';
   display: block;
   width: 120%;
@@ -672,7 +675,7 @@ section:nth-of-type(4){
   transform: translateX(-50%);
 
 }
-.container4 .select ul strong::before{
+.container4 .select .select_wrap strong::before{
   width: 24px;
   height: 24px;
   content: '';
@@ -682,7 +685,7 @@ section:nth-of-type(4){
   right: -24px;
 background: url(../images/sub_store/fi-rs-angle-small-down.svg)
 }
-.container4 .select ul div{
+.container4 .select .select_wrap div{
   border:  1px solid #e1e1e1;
   border-radius: 0 0 15px 15px;
   left: -7px;
@@ -691,17 +694,17 @@ background: url(../images/sub_store/fi-rs-angle-small-down.svg)
   top: 33px;
   background: #fff;
 } 
-.container4 .select ul li{
+.container4 .select .select_list li{
   padding: 16px ;
   width: 209px;
 
   
 }
 
-.container4 .select ul li~li{
+.container4 .select .select_list li~li{
   border-top: 1px solid #e1e1e1;
 }
-.container4 .select ul li a{
+.container4 .select .select_list li a{
   font-size: 20px;
   color: #f99;
   display: block;
@@ -1021,7 +1024,8 @@ section:nth-of-type(7){
   position: relative;
   transition: .3s;
 }
-.container7 .how_list ul li::after{
+.container7 .how_list ul .big_img::after,
+.container7 .how_list .small_img li::after{
   width: 100%;
   height: 80%;
   content: '';
@@ -1034,26 +1038,27 @@ section:nth-of-type(7){
   opacity: 0;
   transition: .3s;
 }
-.container7 .how_list ul li:hover:after{
+.container7 .how_list ul .big_img:hover:after,
+.container7 .how_list .small_img li:hover:after{
   opacity: 0.6;
 }
-.container7 .how_list ul >div:nth-of-type(1) > li{
+.container7 .how_list .big_img{
   width: 580px;
   height: 433px;
   border-radius: 15px;
 }
-.container7 .how_list ul >div:nth-of-type(1) img{
+.container7 .how_list .big_img img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
 }
-.container7 .how_list ul >div:nth-of-type(2){
+.container7 .how_list .small_img{
   margin-left: 20px;
   /* border: 1px solid #f00; */
   
 }
-.container7 .how_list ul >div:nth-of-type(2) li{
+.container7 .how_list .small_img li{
   width: 276.5px;
   height: 206px;
   border-radius: 15px;
@@ -1062,22 +1067,22 @@ section:nth-of-type(7){
   margin-bottom: 20px;
   
 }
-.container7 .how_list ul div:nth-of-type(2) li:nth-of-type(1),
-.container7 .how_list ul div:nth-of-type(2) li:nth-of-type(3){
+.container7 .how_list .small_img li:nth-of-type(1),
+.container7 .how_list .small_img li:nth-of-type(3){
   margin-left: 0;
 }
-.container7 .how_list ul div:nth-of-type(2) li:nth-of-type(4),
-.container7 .how_list ul div:nth-of-type(2) li:nth-of-type(3){
+.container7 .how_list .small_img li:nth-of-type(4),
+.container7 .how_list .small_img li:nth-of-type(3){
   margin-bottom: 0;
 }
-.container7 .how_list ul div:nth-of-type(2) img{
+.container7 .how_list .small_img li img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
   
 }
-.container7 .how_list ul div .text_list{
+.container7 .how_list ul .text_list{
   position: absolute;
   top: 50%;
   display: flex;
@@ -1092,7 +1097,7 @@ section:nth-of-type(7){
 .container7 .how_list ul li:hover .text_list{
   opacity: 1;
 }
-.container7 .how_list ul div .text_list > span{
+.container7 .how_list ul .text_list > span{
   font-size: 20px;
   font-weight: 500;
   color: #646464;
@@ -1103,7 +1108,7 @@ section:nth-of-type(7){
   width: 205px;
 }
 
-.container7 .how_list ul div .text_list > strong{
+.container7 .how_list ul .text_list > strong{
   font-size: 25px;
   font-weight: 600;
   color: #2c2c2c;
@@ -1114,7 +1119,7 @@ object-position: center -60px;
 .container7 #how1 img{
   object-position: center -40px;
 }
-.container7 #how4 div:nth-of-type(1) img{
+.container7 #how4 .big_img img{
   object-position: center -110px;
   }
 

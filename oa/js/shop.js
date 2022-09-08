@@ -102,15 +102,15 @@ $(document).ready(function(){
   });
 
   // 날씨추천 키워드 선택
-  $('.select ul > div').hide()
-    $('.select ul').hover(function(){
-        $('.select ul > div').stop().slideDown();
+  $('.select ul >li> div').hide()
+    $('.select .select_wrap').hover(function(){
+        $('.select ul >li> div').stop().slideDown();
         $('.container4 .select ul strong::before').style.background = 'url(../images/sub_store/fi-rs-angle-small-up.svg)';
     },function(){
-        $('.select ul > div').stop().slideUp();
+        $('.select ul > li > div').stop().slideUp();
     });
 
-    $('.select ul li').click(function(){
+    $('.select .select_list li').click(function(){
         $('.select strong').text($(this).children('a').text());
     });
 
