@@ -45,6 +45,7 @@ body,html{
        top: 30px;
        right: 10px;
        cursor: pointer;
+       display: block;
    }
    
    header nav .ham span{

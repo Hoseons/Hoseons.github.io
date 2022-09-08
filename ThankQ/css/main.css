@@ -44,6 +44,7 @@ header nav .ham{
     top: 30px;
     right: 10px;
     cursor: pointer;
+    display: block;
 }
 
 header nav .ham span{
@@ -483,18 +484,23 @@ header .inner_nav > p span{
     font-weight: bold;
 }
 
-.container2 ul{
-    display: flex;
+.container2 .swiper-container{
+    width: 100%;
+    overflow:hidden;
+}
+
+.container2 .swiper-wrapper{
     width: 246%;
 }
 
-.container2 ul li{
+.container2 .swiper-slide{
     height: 220px;
     width: 80%;
     border-radius: 10px;
     background: #fff;
     margin-right: 2%;
     cursor: pointer;
+    float: left;
 }
 
 
@@ -711,13 +717,13 @@ header .inner_nav > p span{
 /* 캠톡 */
 
 
-.container6 > div{
+.container6 .title{
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
     margin-bottom: 20px;
 }
-.container6 > div >span{
+.container6 .title >span{
     font-size: 14px;
     color: #949494;
     cursor: pointer;
@@ -728,22 +734,31 @@ header .inner_nav > p span{
     
 }
 
-
-.container6 ul{
-    display: flex;
-    width: 186%;
+.container6 .swiper2{
+    width: 100%;
+    overflow: hidden;
 }
 
-.container6 ul li{
+.container6 .swiper-wrapper{
+    width: 250%;
+}
+
+.container6 .swiper-wrapper::after{
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.container6 .swiper-slide{
     height: 285px;
     width: 60%;
     border-radius: 10px;
     background: #EDEDED;
-    margin-right: 2%;
     cursor: pointer;
+    float: left;
 }
 
-.container6 ul li img{
+.container6 .swiper-slide img{
     height: 138px;
     background: url(../images/refer_camping_img1.png) no-repeat center center /cover;
     width: 100%;
@@ -751,27 +766,27 @@ header .inner_nav > p span{
     object-fit: cover;
 }
 
-.container6 ul li .text_list{
+.container6 .swiper-slide .text_list{
     padding: 16px;
 }
 
-.container6 ul li .text_list strong{
+.container6 .swiper-slide .text_list strong{
     font-size: 16px;
     margin-bottom: 10px;
     display: block;
 }
 
-.container6 ul li .text_list > p{
+.container6 .swiper-slide .text_list > p{
     font-size: 14px;
     margin-bottom: 10px;
     line-height: 154.3%;
 }
 
-.container6 ul li .user{
+.container6 .swiper-slide .user{
     font-size: 13px;
     display: flex;
 }
-.container6 ul li .user p{
+.container6 .swiper-slide .user p{
     margin-left: 8px;
 }
 
