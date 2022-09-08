@@ -19,6 +19,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+h3{
+    display: none;
+}
+
 /* header */
 .min_banner{
     width: 100%;

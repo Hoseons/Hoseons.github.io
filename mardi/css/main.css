@@ -645,7 +645,7 @@ body{
     
 .Best_container  .product_list ul li~li{margin-left: 20px;}
 
-.Best_container  ul li div:first-of-type{
+.Best_container  ul li > div:first-of-type{
     width: 280px;
     height: 373px;
     border-radius: 10px;
@@ -687,6 +687,7 @@ body{
     top: 40%;
     transform: translateX(-50%);
     cursor: pointer;
+ 
 }
 
 .Best_section .arrow_prev{
