@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./images/common/web_icon.png" type="image/x-icon">
+    <link href="//vjs.zencdn.net/4.9/video-js.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/4.9/video.js"></script>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script defer src="./js/main.js"></script>
     <title>스타쉽엔터테인먼트</title>
@@ -119,10 +121,10 @@
     </div>
         <div class="header_banner">
             <div class="video_div">
-                <video  autoplay loop poster="./images/main/ive_1080_01.png">
+                <video   width='100vw' height= '100%'  autoplay loop class="video-js vjs-default-skin" data-setup="{}">
                     <source src="./media/ive.mp4" type="video/mp4">
-                </video>
-            </div>
+                    <source src="./media/ive.webm" type="video/webm">
+                </div>
              
                 <div class="sns">
                 <ul>
