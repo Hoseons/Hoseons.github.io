@@ -190,6 +190,8 @@ input:checked~label .ham_wrap span:nth-of-type(3){
     object-fit: cover;
 }
 
+
+
 .page_nav span{
     display: block;
     width: 4px;
@@ -3131,12 +3133,7 @@ section:nth-of-type(1){
 }
 
 .container3 .multi_div .media .con2_text_list{
-    margin-top: 0px;
-    width: 75%;
-    position: absolute;
-    bottom: -44px;
-    display: flex;
-    justify-content: space-between;
+   display: none;
 }
     
 .container3 .multi_div .media .con2_text_list::before{display: none;}
