@@ -505,9 +505,23 @@ header .inner_nav > p span{
 
 
 
-.container2 ul li .img{
+.container2 ul li:nth-of-type(1) .img{
     height: 141px;
     background: url(../images/refer_camping_img1.png) no-repeat center center /cover;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.container2 ul li:nth-of-type(2)  .img{
+    height: 141px;
+    background: url(../images/refer_camping_img2.jpg) no-repeat center center /cover;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.container2 ul li:nth-of-type(3)  .img{
+    height: 141px;
+    background: url(../images/refer_camping_img3.jpg) no-repeat center center /cover;
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
