@@ -646,6 +646,7 @@ section:nth-of-type(4){
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 90;
   
 }
 .container4 .select .select_wrap{
@@ -710,48 +711,51 @@ background: url(../images/sub_store/fi-rs-angle-small-down.svg)
   color: #f99;
   display: block;
 }
-.container4 > ul{
-  display: flex;
+.swiper-container  ul{
+  display: block;
+  width: 300%
 
 }
-.container4 > ul li~li{
+.swiper-container ul li~li{
   margin-left: 20px;
 }
-.container4 > ul li{
+.swiper-container ul li{
  height: 409px;
  width: 280px;
  cursor: pointer;
+ float: left;
 }
-.container4 > ul li img{
-  width: 280px;
+.swiper-container ul li img{
+  width: 100%;
   height: 280px;
   border-radius: 15px;
 }
-.container4 > ul li:hover img{
+.swiper-container ul li:hover img{
   border: 4px solid #ff8484;
 }
-.container4 > ul li .text_list{
+.swiper-container ul li .text_list{
   margin-top: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
-.container4 > ul li .text_list strong{
+.swiper-container ul li .text_list strong{
   font-size: 16px;
   font-weight: 500;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 280px;
+  width: 100%;
   text-align: center;
 }
-.container4 > ul li .text_list .text_desc{
+.swiper-container ul li .text_list .text_desc{
   margin-top: 8px;
   display: block;
 }
 
-.container4 > ul li .text_list .text_desc strong{
+.swiper-container ul li .text_list .text_desc strong{
   font-size: 20px;
   font-weight: 700;
 
@@ -2300,20 +2304,20 @@ header .second .inner >ul>li strong{
 
 header .second.inner >ul>li:hover strong{color: #f02d59;}
 
-header .logo_part .inner .ham.on::before{
+header .logo_part .inner .ham.active-1::before{
   transform: rotate(45deg);
   top: 0;
 }
 
-header .logo_part .inner .ham.on::after{
+header .logo_part .inner .ham.active-1::after{
   transform: rotate(-45deg);
   top: 0;
 }
 
-header .logo_part .inner .ham.on{background: rgba(255, 255, 255, .8)}
+header .logo_part .inner .ham.active-1{background: rgba(255, 255, 255, .8)}
 
-header .logo_part .inner .ham.on::after,
-header .logo_part .inner .ham.on::before{background: #000;}
+header .logo_part .inner .ham.active-1::after,
+header .logo_part .inner .ham.active-1::before{background: #000;}
 
 header .second .inner >ul>li input{display: none;}
 
@@ -2609,7 +2613,8 @@ section:nth-of-type(4){
   font-weight: 700;
   margin: 0 32px 0 16px ;
   position: relative;
-  width: 25%
+  width: 35%;
+  text-align: center;
 }
 
 .container4 .select .select_wrap strong{
@@ -2659,6 +2664,20 @@ section:nth-of-type(4){
 }
 
 .container4 .select .select_list li~li{border-top: 1px solid #e1e1e1;}
+
+.swiper-container ul li{
+  height: 270px;
+  width: 200px;
+  cursor: pointer;
+  float: left;
+ }
+ 
+ .swiper-container ul li img{
+   width: 100%;
+   height: 200px;
+   border-radius: 15px;
+ }
+
 
 /* container5 리뷰 */
 
@@ -3122,7 +3141,7 @@ header .second{
 }
 
 header .second .inner >ul:after{
-  display: block;
+  display: none;
   height: 100vh;
   width: 100%;
   content: '';
@@ -3130,7 +3149,8 @@ header .second .inner >ul:after{
   z-index: -1;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.9)
+  background: rgba(255, 255, 255, 0.9);
+  
 }
 
 header .second .inner >ul{
@@ -3139,16 +3159,15 @@ header .second .inner >ul{
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  /* border: 1px solid #f00; */
   width: 100%;
   margin-top: 0;
-  left: 5%;
   height:100%;
   z-index: 99;
   top: -100px;
   left: 50%;
   padding-top: 50px;
   transform: translateX(-50%);
+  opacity: 0;
 }
 
 header .second .inner >ul >li{
@@ -3197,20 +3216,20 @@ header .second .inner >ul>li strong{
 
 header .second.inner >ul>li:hover strong{color: #f02d59;}
 
-header .logo_part .inner .ham.on::before{
+header .logo_part .inner .ham.active-1::before{
   transform: rotate(45deg);
   top: 0;
 }
 
-header .logo_part .inner .ham.on::after{
+header .logo_part .inner .ham.active-1::after{
   transform: rotate(-45deg);
   top: 0;
 }
 
-header .logo_part .inner .ham.on{background: rgba(255, 255, 255, .8)}
-header .logo_part .inner .ham.on::after,
+header .logo_part .inner .ham.active-1{background: rgba(255, 255, 255, .8)}
+header .logo_part .inner .ham.active-1::after,
 
-header .logo_part .inner .ham.on::before{background: #000;}
+header .logo_part .inner .ham.active-1::before{background: #000;}
 
 header .second .inner >ul>li input{display: none;}
 
@@ -3566,36 +3585,35 @@ background: url(../images/sub_store/fi-rs-angle-small-down.svg)
   display: block;
 }
 
-.container4 > ul li~li{
+.swiper-container  ul li~li{
   margin-left: 10px;
 }
-.container4 > ul li{
+.swiper-container  ul li{
  height: 192px;
  width: 102px;
  cursor: pointer;
 }
-.container4 > ul li img{
+.swiper-container  ul li img{
   width: 102px;
   height: 102px;
   border-radius: 15px;
 }
 
-.container4 > ul li .text_list{
+.swiper-container  ul li .text_list{
   margin-top: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.container4 > ul li .text_list strong{
+.swiper-container ul li .text_list strong{
   width: 100%;
 }
-.container4 > ul li .text_list .text_desc{
+.swiper-container ul li .text_list .text_desc{
   margin-top: 8px;
   display: block;
 }
-
-.container4 > ul li .text_list .text_desc strong{
+.swiper-container  ul li .text_list .text_desc strong{
   font-size: 16px;
   font-weight: 700;
 
