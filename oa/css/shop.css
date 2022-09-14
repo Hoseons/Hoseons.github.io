@@ -2202,7 +2202,7 @@ header .logo_part .inner{
   position: fixed;
   top: 100px;
   z-index: 99;
-  background: rgba(255, 255, 255, .5)
+  background: rgba(255, 255, 255, 1)
 }
 header .tran{
   width: 88px;
@@ -2229,19 +2229,6 @@ header .second{
 
 }
 
-header .second .inner >ul:after{
-  height: 100vh;
-  width: 50%;
-  display: block;
-  height: 100vh;
-  width: 300px;
-  content: '';
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: -300px;
-  background: rgba(255, 255, 255, 0.8)
-}
 
 header .second .inner >ul{
   display: flex;
@@ -2249,13 +2236,14 @@ header .second .inner >ul{
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  width: 400%;
+  width: 300px;
   margin-top: 0;
-  left: 5%;
-  height:300px;
-  z-index: 99;
-  top: 30px;
+  height:100vh;
+  z-index: 999;
+  top: -15px;
+  background: rgba(255, 255, 255, 0.9);
   left: -300px;
+
 }
 
 header .second .inner >ul >li{
@@ -2322,15 +2310,7 @@ header .logo_part .inner .ham.active-1::before{background: #000;}
 header .second .inner >ul>li input{display: none;}
 
 header .second .inner >ul>li::after{
-  content: '';
-  display: block;
-  background: url(../images/sub_store/search.svg) no-repeat center center/ cover;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: -72px;
-  right: 60px;  
-  cursor: pointer;
+  display: none;
 }
 
 /* 서브 카테고리 */
@@ -3112,7 +3092,7 @@ header .logo_part .inner{
   position: fixed;
   top: 40px;
   z-index: 99;
-  background: rgba(255, 255, 255, .8)
+  background: rgba(255, 255, 255, 1)
 }
 
 header .tran{
@@ -3136,39 +3116,11 @@ header .logo_part .icon{cursor: pointer;}
 /* 두번째 네비 */
 header .second{
   position: fixed;
-  top: 102px;
+  top: 70px;
   z-index: 90;
 }
 
-header .second .inner >ul:after{
-  display: none;
-  height: 100vh;
-  width: 100%;
-  content: '';
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  background: rgba(255, 255, 255, 0.9);
-  
-}
 
-header .second .inner >ul{
-  display: flex;
-  position: absolute;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 100%;
-  margin-top: 0;
-  height:100%;
-  z-index: 99;
-  top: -100px;
-  left: 50%;
-  padding-top: 50px;
-  transform: translateX(-50%);
-  opacity: 0;
-}
 
 header .second .inner >ul >li{
   height: 0%;
@@ -3232,18 +3184,6 @@ header .logo_part .inner .ham.active-1::after,
 header .logo_part .inner .ham.active-1::before{background: #000;}
 
 header .second .inner >ul>li input{display: none;}
-
-header .second .inner >ul>li::after{
-  content: '';
-  display: block;
-  background: url(../images/sub_store/search.svg) no-repeat center center/ cover;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: -72px;
-  right: 60px;
-  cursor: pointer;
-}
 
 /* 서브 카테고리 */
 header .second .inner .sub{

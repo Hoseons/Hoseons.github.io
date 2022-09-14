@@ -23,14 +23,13 @@ header{
     position: fixed;
     top: 0;
     z-index: 999;
-    /* border: 1px solid #f00; */
+  
 }
 .nav_inner{
     width: 1280px;
     margin: 0 auto;
     height: 100%;
-    /* border: 1px solid #f00; */
-    /* border: 1px solid #f00; */
+   
 }
 nav{
    display: flex;
@@ -1271,7 +1270,6 @@ footer .bottom .right ul li:hover img{
     width: 100%;
     margin: 0 auto;
     padding:  0 4rem;
-     /* border: 1px solid #f00; */
 }
 
 
@@ -1283,8 +1281,7 @@ footer .bottom .right ul li:hover img{
     width: 100%;
     margin: 0 auto;
     height: 100%;
-    /* border: 1px solid #f00; */
-    /* border: 1px solid #f00; */
+
     padding: 0 2rem;
 }
 nav{
@@ -1995,12 +1992,6 @@ footer .bottom .right ul li:hover img{
 }
 
 
-/* 1023px 테블릿 가로*/
-/* @media screen and (max-width:1023px){
-
-} */
-
-
 /* 768px 모바일 가로, 태블릿*/
 @media screen and (max-width:767px){
   
@@ -2063,15 +2054,14 @@ nav .logo{
 /*추가  */
 nav .main_nav{
   position: fixed;
-  top: 0;right:-100%;
-  width: 50%;
+  top: 0;
+  right:-100%;
+  width: 310px;
   height: 100%;
   padding-top: 200px;
-  /* margin-left: 60px; */
-  border: 1px solid #f00;
-z-index: 2;
-background-color: rgba(225, 225, 225, .8);
-transition: 0.6s;
+  z-index: 2;
+  background-color: rgba(225, 225, 225, .8);
+  transition: 0.6s;
 }
 
 
@@ -2080,26 +2070,21 @@ nav .main_nav.on{
   right: 0;
 }
 
-/* **************************추가 끝******************************************* */
 
 
 nav .main_nav > ul{
   display: flex;
   flex-direction: column;
   position: absolute;
-right: 100px;
-top: 150px;
-
-  /* border: 1px solid #f00; */
+  right: 100px;
+  top: 150px;
   margin-bottom: 0;
-  /* border: 1px solid #f00;  */
 }
 
 nav .main_nav > ul > li{
   width: 100%;
   text-align: center;
    margin-top: 0px;
-   /* border: 1px solid #f00; */
    display: block;
   margin-bottom: 40px;
    
@@ -2129,8 +2114,6 @@ nav .main_nav > ul> li> ul{
   flex-direction: column;
   position: relative;
   z-index: 2;
-  /* border: 1px solid #f00; */
-  /* border: 1px solid #f00; */
   left: 0;
   top: 0;
   width: 100%;
@@ -2159,7 +2142,6 @@ nav .main_nav span{
 
 nav .main_nav > ul > li> ul > li {
   width: 100%;
-  /* border: 1px solid #f00; */
   margin-bottom: 0;
 }
 nav .main_nav ul li> ul > li > a{
@@ -2226,7 +2208,6 @@ nav .main_nav2 ul li a{
   height: 100%;
   width: 100%;
   object-fit: cover;
-  /* border: 1px solid #f00; */
   position: relative;
 }
 .container1 .banner .video span{
@@ -2243,7 +2224,6 @@ nav .main_nav2 ul li a{
 .ham{
 width: 44px;
 height: 44px;
-/* border:1px solid #f00; */
 position: absolute;
 top: 0;
 right: 40px;
@@ -2308,8 +2288,6 @@ cursor: pointer;
   align-items: center;
   height: 557px;
   margin: 0 auto;
-  /* padding: 0 40px; */
-  /* border: 1px solid #f00; */
   line-height: 1.2;
 }
 
@@ -2335,7 +2313,6 @@ section .container3_bg{
  align-items: flex-start;
  height: 912px;
  flex-direction: column;
- /* border: 1px solid #f00; */
  line-height: 1.2;
 }
 .container3 .text_list{
@@ -2387,7 +2364,6 @@ section:nth-of-type(4){
   height: 1000px;
   width: 100%;
   position: relative;
-  /* border: 1px solid #f00; */
 }
 
 .container4_bg{
@@ -2869,9 +2845,6 @@ line-height: 24px;
 }
 
 nav .main_nav > ul> li> ul{
- 
-  /* border: 1px solid #f00; */
-  /* border: 1px solid #f00; */
   left: 0;
   top: 0;
   width: 100%;
@@ -2896,7 +2869,6 @@ nav .main_nav span{
 
 nav .main_nav > ul > li> ul > li {
   width: 100%;
-  /* border: 1px solid #f00; */
   margin-bottom: 0;
 }
 nav .main_nav ul li> ul > li > a{
@@ -2942,7 +2914,6 @@ right: 20px;
 
  section:nth-of-type(2){
   height: 354px;
-  /* border: 1px solid #f00; */
 }
 
 .container2_bg{
@@ -2973,7 +2944,6 @@ right: 20px;
 
 section:nth-of-type(3){
   height: 537px;
-  /* border: 1px solid #f00; */
 }
 
 section .container3_bg{
@@ -3116,7 +3086,6 @@ section:nth-of-type(4){
   width: 100%;
   position: relative;
   border: 1px solid transparent; 
-  /* border: 1px solid #f00; */
 }
 
 
@@ -3125,7 +3094,6 @@ section:nth-of-type(4){
      width: 100%;
      height: 402px;
      margin-top: 50px;
-     /* border: 1px solid #f00; */
      flex-direction: column;
      position: relative;
 }
@@ -3277,9 +3245,7 @@ section:nth-of-type(6){
 
 .container6{
      margin-top: 0px;
-     /* height: 510px; */
      height:474px;
-     /* border: 1px solid #f00; */
 }
 
 

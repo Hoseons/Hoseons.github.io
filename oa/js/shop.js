@@ -77,19 +77,19 @@ $(document).ready(function(){
           if (h == 0) {
             $('header .second .inner >ul').animate({
               left: '0'
-            }, 500);
+            }, 400);
             $('header .second .inner >ul:after').animate({
               left: '0'
-            }, 500);
+            }, 400);
             $(this).addClass('active-1');
             h++;
           } else if (h == 1) {
             $('header .second .inner >ul').animate({
               left: '-300px'
-            }, 500);
+            }, 400);
             $('header .second .inner >ul:after').animate({
               left: '-300px'
-            }, 500);
+            }, 400);
             $(this).removeClass('active-1');
             h--;
           }
@@ -98,10 +98,10 @@ $(document).ready(function(){
             if(sct>30){
               $('header .second .inner >ul').css({
                 left: '-300px'
-              }, 500);
+              }, 400);
               $('header .second .inner >ul:after').animate({
                 left: '-300px'
-              }, 500);
+              }, 400);
               $(burger).removeClass('active-1');
               h=0;
             }
@@ -111,57 +111,9 @@ $(document).ready(function(){
 
       
         
-      } else if(window.innerWidth < 480){
-        
-
-      var burger = $('header .ham');
-
-        burger.each(function(index){
-        var $this = $(this);
-      
-        $this.on('click', function(e){
-          e.preventDefault();
-          $(this).toggleClass('active-' + (index + 1));
-        })
-      });
-
-        var h = 0;
-
-        $(burger).on("click", function () {
-          if (h == 0) {
-            $('header .second .inner >ul').animate({
-              opacity: '1',
-      
-            }, 500);
-            $('header .second .inner >ul:after').fadeIn(500)
-              
-        
-            $(this).addClass('active-1');
-            h++;
-          } else if (h == 1) {
-            $('header .second .inner >ul').animate({
-              opacity: '0',
-             
-            }, 500);
-            $('header .second .inner >ul:after').fadeOut(500)
-            $(this).removeClass('active-1');
-            h--;
-          }
-          $(window).scroll(function() {
-            sct = $(window).scrollTop();
-            if(sct>30){
-              $('header .second .inner >ul').css({
-                opacity: '0',
-         
-              }, 500);
-              $('header .second .inner >ul:after').fadeOut(500)
-              $(burger).removeClass('active-1');
-              h=0;
-            }
-          });
-      
-        })
-      }
+      } 
+       
+    
 
     }).resize(); 
       
@@ -311,13 +263,13 @@ $(window).on('resize', function () {
             $('header .min_banner').css({'display':'none'});
             $('header .first').css({'display':'none'});
             $('header .logo_part .inner').css({'top':'0px'});
-            $('header .logo_part .inner .ham').css({'top':'70px'});
+            $('header .logo_part .inner .ham').css({'top':'110px'});
       
           }else{
             $('header .min_banner').css({'display':'none'});
             $('header .first').css({'display':'block'});
             $('header .logo_part .inner').css({'top':'80px'});
-            $('header .logo_part .inner .ham').css({'top':'145px'});
+            $('header .logo_part .inner .ham').css({'top':'155px'});
           }
         });
        
