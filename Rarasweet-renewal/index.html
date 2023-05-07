@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mediaq.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/swiper.min.js"></script>
+    <script defer src="js/main.js"></script>
+    
+    <meta name="path_role" content="MAIN">
+    <meta name="keywords" content="라라스윗">
+    <meta name="description" content="칼로리가 가벼운 아이스크림. 건강한 달콤함, 라라스윗 아이스크림">
+
+    <meta property="og:url" content="index.html">
+    <meta property="og:title" content="건강한 달콤함, 라라스윗 아이스크림">
+    <meta property="og:description" content="칼로리는 가볍게, 성분은 착하게. 건강한 달콤함, 라라스윗 아이스크림">
+    <meta property="og:site_name" content="라라스윗">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lalasweet.kr/web/upload/share-image-1-5a7aa583221d6681ff0419368bd94ae7.jpg">
+    <link rel="shortcut icon" href="./images/common/pavicon.png">
+
+    <title>rarasweet</title>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <!-- <div class="head_bn">6월 한정! CU 2+1 행사</div> -->
+        <div class="header_nav">
+            <div>
+                <nav>
+                    <a href="index.html">
+                        <img src="./images/common/logo_bk_new.png" alt="logo" class="logo">
+                    </a>
+                    <ul class="main_nav">
+                        <li><a href="#">shop</a></li>
+                        <li><a href="#">story</a></li>
+                        <li><a href="sub.html">flavor</a></li>
+                        <li><a href="#">channel</a></li>
+                        <li><a href="#">event</a></li>
+                    </ul>
+                    <ul class="sub_nav">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">멤버쉽혜택</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- 메인 -->
+    <main>
+        <!-- 메인배너 -->
+        <div class="main-banner">
+            <div class="icon_bg inner">
+                <div class="icon">
+                    <img src="./images/common/Chevron_Left_bg.svg" alt="left_arrow" class="prev1">
+                    <img src="./images/common/Chevron_Right_bg.svg" alt="right_arrow" class="next1">
+                    <div class="bar_item">
+                        <div class="now_bar now"></div>
+                    <div class="now_bar"></div>
+                    <div class="now_bar"></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="bn_video">
+                <div class="bn_inner">
+                    <div class="bn_group">
+                        <video src="./media/strewberry_video.mp4" autoplay loop muted></video>
+                        <video src="./media/yogurt_video.mp4" autoplay loop muted></video>
+                        <video src="./media/monicha.mp4" autoplay loop muted></video>
+                    </div>
+                </div>
+   
+                
+            </div>
+        </div>
+<!-- 베스트아이템 -->
+            <section class="container1 ">
+                <div class="best-item inner">
+                    <h2 class="title font">Best Product</h2>
+                    <div>
+                        <article>
+                            <img src="./images/common/pro_vanilla.png" alt="bestitem_va">
+                            <h5>Vanilla Bean</h5>
+                            <span>₩12,200원</span>
+                        </article>
+                        <article>
+                            <img src="./images/common/pro_cho.png" alt="bestitem_cho">
+                            <h5>Chocolate</h5>
+                            <span>₩12,200원</span>
+                        </article>
+                        <article>
+                            <img src="./images/common/pro_straw.png" alt="bestitem_strew">
+                            <h5>Strawberry</h5>
+                            <span>₩12,200원</span>
+                        </article>
+                        <article>
+                            <img src="./images/common/pro_ma.png" alt="bestitem_ma">
+                            <h5>Match</h5>
+                            <span>₩12,200원</span>
+                        </article>
+                        <article>
+                            <img src="./images/common/pro_yogurt.png" alt="bestitem_ma">
+                            <h5>Yogurt</h5>
+                            <span>₩12,200원</span>
+                        </article>
+                    </div>
+                    
+                </div>
+                <div class="icon_best">
+                    <img src="./images/common/Chevron_Left_small.svg" alt="left_sm_arrow" class="prev2">
+                    <img src="./images/common/Chevron_Right_small.svg" alt="right_sm_arrow" class="next2">
+                </div>
+            <div class="bg_pop"></div>
+            <div class="bg_ice"></div>
+            </section>
+            <!-- 칼로리계산기 -->
+        <section class="container2">
+            <div class="cal-item inner">
+                <h2 class="title font">Calorie calculator</h2>
+                <div class="con2_img_bg">
+                    <div class="con2_img">
+                        <ul class="con2_li" id="c_btn1">
+                            <li><img src="./images/common/pro_mint.png" alt="민트"><span>Mint Choco</span></li>
+                            <li><img src="./images/common/pro_vanilla.png" alt="바닐라"><span>Vanilla Bean</span></li>
+                            <li><img src="./images/common/pro_ma.png" alt="말차"><span>Matcha</span></li>
+                        </ul>
+                        <ul class="con2_li " id="c_btn2">
+                            <li><img src="./images/common/pro_cho.png" alt="초코"><span>Chocolate</span></li>
+                            <li><img src="./images/common/pro_yogurt.png" alt="요거트"><span>Yogurt</span></li>
+                            <li><img src="./images/common/pro_tea.png" alt="밀크티"><span>Milk Tea</span></li>
+                            <li><img src="./images/common/pro_straw.png" alt="딸기"><span>Strawberry</span></li>
+                        </ul>
+                        <ul class="con2_li " id="c_btn3">
+                            <li><img src="./images/common/pro_cheese.png" alt="치즈케이크"><span>Cheese Cake</span></li>
+                            <li><img src="./images/common/pro_cream.png" alt="쿠키앤크림"><span>Cookie Cream</span></li>
+                            <li><img src="./images/common/pro_caramel.png" alt="카라멜"><span>Caramel</span></li>
+                            <li><img src="./images/common/pro_bean.png" alt="팥"><span>Red Bean</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cal_btn_wrap">
+                    <div class="cal_btn on" ><a href="#c_btn1">285</a></div>
+                    <div class="cal_btn" ><a href="#c_btn2">310</a></div>
+                    <div class="cal_btn" > <a href="#c_btn3">355</a></div>
+                </div>
+            </div>
+            <div class="wave_bg "></div>
+        </section>
+        <!-- 레시피 -->
+        <section>
+            <div class="container3">           
+            <div class="con3_width ">
+                <div class="con3_recepit">
+                    <h2 class="font title-2">Ice Cream Receipt</h2>
+                <div class="con3_images">
+                    <ul>
+                        <li>
+                            <div class="receipt2 ">
+                                <div class="receipt2-img Macha">
+                                   <p class="font">
+                                       Green Tea Ice Cream<br>
+                                       Fruits,Cereal,Etc
+                                    </p>
+                                </div>
+                                <div class="receipt2_desc on">
+                                    <div class="desc_inner">
+                                        <h3 class="font">
+                                            Green Tea Ice Cream<br>
+                                       Fruits,Cereal,Etc
+                                        </h3>
+                                        <div class="desc_box ">
+                                            <img src="./images/main/recipe_2.png" alt="">
+                                            <div class="con3-line"> </div>
+                                            <ul>
+                                                <li>5</li>
+                                                <li>녹차 아이스크림을<br>
+                                                    3~4스쿱 넣는다</li>
+  
+                                                
+                                            </ul>
+                                            <ul>
+                                                <li>4</li>
+                                                <li>자른 찹쌀떡을 넣는다</li>
+                                                
+                                                
+                                               
+                                            </ul>
+                                            <ul>
+                                                <li>3</li>
+                                                <li>시리얼을 뿌린다</li>
+                                            </ul>
+                                            <ul>
+                                                <li>2</li>
+                                                <li>휘핑 크림을 더한다</li>
+                                            </ul>
+                                            <ul>
+                                                <li>1</li>
+                                                <li>조각 과일을 넣는다</li>
+                                            </ul>
+                                        </div>
+                                       
+                                    </div>
+                                  
+                                </div>
+                                
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="receipt2">
+                                <div class="receipt2-img beer">
+                                    <p class="font">
+                                        Vanilla Bean Ice Cream,
+                                        Stout Floats
+                                    </p>
+                                </div>
+                                <div class="receipt2_desc">
+                                    <div class="desc_inner ">
+                                        <h3 class="font">
+                                            Vanilla Bean Ice Cream, Stout Floats
+                                        </h3>
+                                        <div class="desc_box beer_desc">
+                                            <img src="./images/main/recipe_1.png" alt="">
+                                            <div class="con3-line "> </div>
+                                            <ul>
+                                                <li>3</li>
+                                                <li>흑맥주를 채운다
+                                                    </li>
+  
+                                                
+                                            </ul>
+                                            <ul>
+                                                <li>2</li>
+                                                <li>바닐라빈 아이스크림을 <br>
+                                                   잔뜩 담는다</li>
+                                                
+                                                
+                                               
+                                            </ul>
+                                            <ul>
+                                                <li>1</li>
+                                                <li>캐러멜 시럽을 잔에 <br>바르고
+                                                     맛있게 먹는다
+                                                </li>
+                                            </ul>
+                                            
+                                        </div>
+                                       
+                                    </div>
+                                  
+                                </div>
+                                
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="receipt2">
+                                <div class="receipt2-img Chocolate">
+                                    <p class="font">
+                                        Chocolate Ice Cream Cookie, Milk, Nute
+                                    </p>
+                                </div>
+                                <div class="receipt2_desc">
+                                    <div class="desc_inner">
+                                        <h3 class="font">
+                                            Chocolate Ice Cream Cookie, Milk, Nute
+                                        </h3>
+                                        <div class="desc_box choco_desc">
+                                            <img src="./images/main/recipe_3.png" alt="">
+                                            <div class="con3-line"></div>
+                                            <ul>
+                                                <li>4</li>
+                                                <li>우유를 붓는다</li>
+  
+                                                
+                                            </ul>
+                                            <ul>
+                                                <li>3</li>
+                                                <li>견과류도 추가한다</li>
+                                                
+                                                
+                                               
+                                            </ul>
+                                            <ul>
+                                                <li>2</li>
+                                                <li>잘게 부순 쿠키를 넣는다</li>
+                                            </ul>
+                                            <ul>
+                                                <li>1</li>
+                                                <li>초콜렛 아이스크림을 <br>3~4스쿱 넣는다</li>
+                                            </ul>
+                                            
+                                        </div>
+                                       
+                                    </div>
+                                  
+                                </div>
+                                
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="receipt2">
+                                <div class="receipt2-img mint_re">
+                                    <p class="font">
+                                        Matcha affogato, Matcha
+                                    </p>
+                                </div>
+                                <div class="receipt2_desc ">
+                                    <div class="desc_inner">
+                                        <h3 class="font">
+                                            Matcha affogato, Matcha
+                                        </h3>
+                                        <div class="desc_box  Matcha_desc">
+                                            <img src="./images/main/recipe_4.png" alt="04">
+                                            <div class="con3-line"> </div>
+                                            <ul>
+                                                <li>3</li>
+                                                <li>녹차 아이스크림을<br>
+                                                    1스쿱 넣는다</li>
+  
+                                        
+                                            </ul>
+                                            <ul>
+                                                <li>2</li>
+                                                <li> 뜨거운 물 약간 <br>넣고 저어준다</li>
+                                                
+                                                
+                                               
+                                            </ul>
+                                            <ul>
+                                                <li>1</li>
+                                                <li>아이스크림에 부어준다.</li>
+                                            </ul>
+                                           
+                                        </div>
+                                       
+                                    </div>
+                                  
+                                </div>
+                                
+                                
+                            </div>
+                        </li>
+                    </ul>
+                   
+                </div>
+                </div>
+                
+                
+                    <div class="icon_receipt">
+                        <img src="./images/common/Chevron_Left_small.svg" alt="left_sm_arrow" class="prev3">
+                        <img src="./images/common/Chevron_Right_small.svg" alt="right_sm_arrow" class="next3">
+                        <div class="bar2_item">
+                            <div class="now2_bar now_2"></div>
+                        <div class="now2_bar"></div>
+                        <div class="now2_bar"></div>
+                        <div class="now2_bar"></div>
+                        </div>
+                    </div>
+    
+            </div>  
+        </div>
+        </section>
+        <section class="container4">
+            <div class="con4-story inner">
+                <div class="con4-story-wrap">
+                    <h2 class="font title-2"> Ice Cream Story</h2>
+                <div class="con4_story_box">
+                    <div class="big-story story">
+                        <div class="mint"></div>
+                        <div class="story-box">
+                            <span class="font">민트초코 이야기</span>
+                        </div>
+                    </div>
+                    <div class="smalls-boxs">
+                        <div class="small-story small-1">
+                            <div class="milk"></div>
+                            <div class="story-box2">
+                                <span class="font">밀크티 이야기</span>
+                            </div>
+                        </div>
+                        <div class="small-story small-2">
+                            <div class="caramel"></div>
+                            <div class="story-box2">
+                                <span class="font">카라멜 이야기</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+                
+            </div>
+
+        </section>
+        <section>
+            <div class="inner">
+            <div class="con4-sns ">
+                <div class="con4-sns-box">
+                    <h2 class="font title-2 ">Instagram</h2>
+                    <div class="con4-sns-imges swiper-container">
+                        <div class="swiper-wrapper">
+                        <a href="#" class="swiper-slide"><img src="./images/main/SNS_1.png" alt="헬로우 모니카" class="sp-image"></a>
+                        <a href="#"  class="swiper-slide"><img src="./images/main/SNS_2.png" alt="댓글이벤트" class="sp-image"></a>
+                        <a href="#"  class="swiper-slide"><img src="./images/main/SNS_3.png" alt="편의점 입점" class="sp-image"></a>
+                        <a href="#"  class="swiper-slide"> <img src="./images/main/SNS_4.png" alt="마켓컬리" class="sp-image"></a>
+                    </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
+    <!-- 푸터 -->
+    <footer>
+
+        <div class="ft-bg1"></div>
+        <div class="ft-bg2">
+            <div class="inner">
+                <div class="ft-con">
+                    <div class="logo_contact">
+                        <div class="ft_logo"></div>
+                    <div class="contact">contact : 1533-3312</div>
+                    </div>
+                    
+                    <div class="ft-desc">
+                        <div>
+                            이용약관 | 개인정보처리
+                        </div>
+                        (주)라라스윗 | 사업자 등록번호 : 262-88-01226 | 통신판매업 신고번호 : 제 2020-서울강남-00234호<br>
+                        입금계좌 : 기업은행 078-203481-04-012 (라라스윗) | 고객센터 : 1533-3312 / contact@lalasweet.kr<br>
+                        대표 : MIN CHAN HONG | 주소 : 서울시 강남구 테헤란로 20길 12 양지빌딩 8층<br>
+                        2020 © LALASWEET All rights reserved
+                    </div>
+                    <div class="fticon">
+                        <div class="fticon-sns">
+                            <img src="./images/common/icon_fb.svg" alt="페이스북">
+                            <img src="./images/common/icon_fb_c.svg" alt="인스타그램">
+                        </div>
+                        <div class="fticon-sns">
+                            <img src="./images/common/icon_insta.svg" alt="페이스북">
+                            <img src="./images/common/icon_insta_c.svg" alt="인스타그램">
+                        </div>
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

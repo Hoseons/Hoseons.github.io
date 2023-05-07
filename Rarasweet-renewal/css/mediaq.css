@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+@media screen and  (max-width: 1280px) {
+    header,main,footer{
+        width: 100%;
+     }
+     .icon_best img:nth-child(1){
+        left: 1rem;
+     }
+     .icon_best img:nth-child(2){
+        right: 1rem;
+     }
+    
+} 
+
+@media screen and (max-width: 768px) {
+
+    .icon_best img:nth-child(1){
+        left: 1rem;
+     }
+     .icon_best img:nth-child(2){
+        right: 1rem;
+     }
+    main,.ft-bg2{
+       width: 100%;
+    }
+    header{
+        width: 90%;
+     }
+}
+@media screen and (max-width: 360px) {
+    main,.ft-bg2{
+        width: 100%;
+     }
+     header{
+         width: 90%;
+      }
+      .icon_best{
+        display: none;
+      }
+}
