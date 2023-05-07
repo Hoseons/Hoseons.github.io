@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hoseon's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+   
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hoseon Portfolio">
+    <meta property="og:description" content="소통하며 명확하게 업하는 퍼블리셔 심호선입니다.">
+    <meta property="og:image" content="{{url_for('image',filename='ol.jpeg')}}">
+    <meta property="og:url" content="https://hoseons.github.io/portfolio/">
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script  src="js/js.js"></script>
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <a href="index.html"><img src="./image/logo.svg" alt="logo" class="logo"></a>
+        <div  id="menubox">
+        <ul class="menu" id="menu">
+            <li data-menuanchor="firstPage"><a href="#firstPage" onfocus="this.blur();">INTRO</a></li>
+            <li data-menuanchor="secondPage"><a href="#secondPage" onfocus="this.blur();">PROFILE</a></li>
+            <li data-menuanchor="3rdPage"><a href="#3rdPage" onfocus="this.blur();">activity</a></li>
+            <li data-menuanchor="4thPage"><a href="#4thPage" onfocus="this.blur();">SKILLS</a></li>
+            <li data-menuanchor="5thPage"><a href="#5thPage" onfocus="this.blur();">PORTFOLIO</a></li>
+            <li data-menuanchor="6thPage"><a href="#6thPage" onfocus="this.blur();">MYLOG</a></li>
+            <li data-menuanchor="7thPage"><a href="#7thPage" onfocus="this.blur();">CONTACT</a></li>
+        </ul>
+        <span class="bg"></span>
+    </div>
+       <input type="checkbox" id="ham">
+       <label for="ham" class="ham">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    </header>
+    <main id="fullpage">
+        <div class="intro section" id="section0">
+            <div class="first_page">
+                Sim Hoseon’s Portfolio
+            </div>
+            <div class="second_page">
+                <div>UI와 UX를</div>
+                <p><span>트렌디</span>하게 설계하는 <span>웹퍼블리셔</span></p>
+                <div>심호선입니다</div>
+            </div>
+            <div class="scroll">
+                <p>Scroll Down</p>
+                <span class="down"></span>
+            </div>
+        </div>
+        <div class="profile section" id="section1">
+            <div class="inner">
+
+          
+            <p class="title"><span>행동</span>을 탐색하고 설계하는<br>
+                <span>웹퍼플리셔</span> 심호선입니다.</p>
+                <ul class="desc">
+                    <li>
+                        <strong>EDUCATION</strong>
+                        
+                        <ul class="list1 list">
+                            <li>
+                                <span>2017. 02</span>
+                                <p>유성여자고등학고 졸업</p>
+                            </li>
+                            <li>
+                                <span>2022. 02</span>
+                                <p>목원대학교 산업디자인학과 졸업</p>
+                            </li>
+                            <li>
+                                <span>2022. 02</span>
+                                <p>목원대학교 시각디자인학과 부전공 졸업</p>
+                            </li>
+                            <span class="line"></span>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>LICENSE</strong>
+                        <ul class="list2 list">
+                            <li>
+                                <span>2021. 06. 21</span>
+                                <p>컬러리스트 산업기사</p>
+                            </li>
+                            <li>
+                                <span>2020. 09. 11</span>
+                                <p>GTQ 1급</p>
+                            </li>
+                            <li>
+                                <span>2022. 06</span>
+                                <p>컴퓨터활용능력 1급</p>
+                            </li>
+                            <li>
+                                <span>2020. 08</span>
+                                <p>운전면허 보통 2종</p>
+                            </li>
+                            <span class="line"></span>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="./pdf/심호선_이력서.pdf" download="Hoseon_application" ><button><span class="icon"></span>이력서 다운로드</button></a>
+               
+        </div>
+        <img src="./image/face_img.png" alt="face">
+    </div>
+    <div class="activity section" id="section2">
+        <div class="inner">
+            <span>award and activity</span>
+            <p class="title">저의 성과를 소개합니다. <span class="good_icon"><img src="./image/good_3d.png" alt=""></span></p>
+            <div class="activity_desc">
+                <ul>
+                    <li class="award_desc">
+                        <strong>AWARD</strong>
+                        <ul class="f_year">
+                            <li>
+                                <span>2019.09</span>
+                                <p>제 21회 경상북도 전통문양 디자인 공모전 입선	</p>
+                            </li>
+                        </ul>
+                        <ul class="m_year">
+                            <li>
+                                <span>2021.11</span>
+                                <p>제 30회 대전디자인 공모전 공공디자인 부분 입선	</p>
+                            </li>
+                            <li>
+                                <span>2021.11</span>
+                                <p>제 30회 대한민국 패키지디자인 대전 입선	</p>
+                            </li>
+                            <li>
+                                <span>2021.11</span>
+                                <p>제 30회 대한민국 패키지디자인 대전 장려</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="year">
+                        <ul>
+                            <li>
+                                <strong>2019</strong>
+                            </li>
+                            <li>
+                                <strong>2021</strong>
+                            </li>
+                            <li>
+                                <strong>2022</strong>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="activity_desc2">
+                        <strong>ACTIVITY</strong>
+                        <ul class="f_year">
+                            <li>
+                                <span>19.03.01 ~ 19.06.01</span>
+                                <p>아트인사이트 에디터 15기</p>
+                            </li>
+                            <li>
+                                <span>19.03.01 ~ 19.06.01</span>
+                                <p>지방분권대학생 서포터즈 13기</p>
+                            </li>
+                        </ul>
+                        <ul class="m_year">
+                            <li>
+                                <span>21.01.01 ~ 21.02.26</span>
+                                <p>소셜스토리미디어 인턴</p>
+                            </li>
+                            <li>
+                                <span>21.07.14 ~ 21.08.26</span>
+                                <p>대전디자인진흥원 유튜브크리에이터 과정 수료</p>
+                            </li>
+                            <li>
+                                <span>21.10.14 ~ 21.10.21</span>
+                                <p>졸업전시회 “MBTI”</p>
+                            </li>
+                        </ul>
+                        <ul class="l_year">
+                            <li>
+                                <span>21.01.01 ~ 21.02.26</span>
+                                <p>컴퓨터활용능력 1급 실기 60 과정 수료</p>
+                            </li>
+                            <li>
+                                <span>22.03.08 ~ 22.04.08</span>
+                                <p>부트캠프 항해99 5기 디자이너</p>
+                            </li>
+                            <li>
+                                <span>22.05.25 ~ 22.08.29</span>
+                                <p>웹디자인기능사(웹퍼블리셔,프론트앤드)취득과정 A 수료</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="line"></div>
+            </div>
+           
+        </div>
+       
+    </div>
+    <div class="skills section" id="section3">
+        <div class="inner">
+            <span>Skills</span>
+            <p class="title">저의 스킬을 한눈에 보여드릴게요.</p>
+    
+        <div class="skills_desc">
+            <ul class="first">
+                <li>
+                    다양한 분야들의<br>
+                    교집합이에요
+                </li>
+                <li>
+                    <span>CSS</span>
+                    <img src="./image/css_icon.svg" alt="css">
+                    <p>95%</p>
+                </li>
+                <li>
+                    <span>JQUERY</span>
+                    <img src="./image//jquery_icon.svg" alt="jquery">
+                    <p>100%</p>
+                </li>
+                <li>
+                    <span>HTML</span>
+                    <img src="./image/html_icon.svg" alt="html">
+                    <p>95%</p>
+                </li>
+                <li>
+                    <span>keyshot</span>
+                    <img src="./image/keyshot_icon.svg" alt="keyshot">
+                    <p>60%</p>
+                </li>
+                <li>
+                    <span>Rhino</span>
+                    <img src="./image/rhino_icon.svg" alt="rhino">
+                    <p>80%</p>
+                </li>
+            </ul>
+            <ul class="second">
+                <li>
+                    <span>indesign</span>
+                    <img src="./image/indesign_icon.svg" alt="indesign">
+                    <p>50%</p>
+                    <div class="desc_vi">
+                        Visual Communication Design
+                    </div>
+                </li>
+                <li>
+                    <span>figma</span>
+                    <img src="./image/figma_cion.svg" alt="figma">
+                    <p>90%</p>
+                </li>
+                <li>
+                    <span>photoshop</span>
+                    <img src="./image/ps_icon.svg" alt="ps">
+                    <p>100%</p>
+                    <div class="desc_pu">
+                        Basic Design Tool
+                    </div>
+                </li>
+                <li>
+                    <span>illustrator</span>
+                    <img src="./image/illust_icon.svg" alt="illust">
+                    <p>90%</p>
+                </li>
+                <li>
+                    <span>3dmax</span>
+                    <img src="./image/3dmax_icon.svg" alt="3dmax">
+                    <p>70%</p>
+                    <div class="desc_in">
+                        industrial design
+                    </div>
+                </li>
+                <li>
+                    <span>Autocad</span>
+                    <img src="./image/autocad_icon.svg" alt="autocad">
+                    <p>80%</p>
+                </li>
+            
+            </ul>
+            <!-- <div class="line2"><img src="./image/line.svg" alt=""></div> -->
+        </div>
+       
+    </div>
+    
+    </div>
+
+   
+    <div class="project section" id="section4">
+        <div class="inner">
+            <span>Project</span>
+            <p class="title">다양한 프로젝트를 해왔어요.</p>
+            <div class="content">
+            <ul class="project_list" id="mixItUp">
+                <li class="desktop">
+                    <ul>
+                        <li  class="mix web" id="d1" data-myorder="1">
+                            <a href="https://hoseons.github.io/mardi/" target="_blank">
+                                <div> <img src="./image/mardi_img.png" alt="mardi"></div>
+                                <div class="desc">
+                                    <p>마르디 웹리뉴얼</p>
+                                    <span>#desktop #의류업</span>
+                                </div>
+                                <div class="contribution">
+                                    <p class="contri_type">개인작업</p>
+                                    <p class="contri_per">기여도 100%</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li  class="mix web" id="d2" data-myorder="2">
+                            <a href="https://hoseons.github.io/Rarasweet-renewal/" target="_blank">
+                                <div><img src="./image/rarsweet.png" alt="rarasweet"></div>
+                                <div class="desc">
+                                    <p>라라스윗 웹리뉴얼</p>
+                                    <span>#Desktop #식품업</span>
+                                </div>
+                                <div class="contribution">
+                                    <p class="contri_type">개인작업</p>
+                                    <p class="contri_per">기여도 100%</p>
+                                </div>
+                            </a>
+                        </li>
+                 
+                    </ul>
+                </li>
+                <li class="mobile">
+                    <ul>
+                        <li class="mix mobile" id="d3" data-myorder="3">
+                            <a href="https://hoseons.github.io/ThankQ/" target="_blank">
+                                <div><img src="./image/thankQ_img.png" alt="tQ"></div>
+                                <div class="desc">
+                                    <p>땡큐캠핑</p>
+                                    <span> #mobile</span>
+                                </div>
+                                <div class="contribution">
+                                    <p class="contri_type">개인작업</p>
+                                    <p class="contri_per">기여도 100%</p>
+                                </div>
+                            </a>
+                        </li>
+                   
+                    </ul>
+                </li>
+                <li class="responsive">
+                    <ul>
+                        <li class="mix responsive" id="d4" data-myorder="4">
+                            <a href="https://hoseons.github.io/oa/" target="_blank">
+                                <div><img src="./image/oa_img.png" alt="oa"></div>
+                                <div class="desc">
+                                    <p>오아 웹리뉴얼</p>
+                                    <span>#responsive #가전제품</span>
+                                </div>
+                                <div class="contribution">
+                                    <p class="contri_type">개인작업</p>
+                                    <p class="contri_per">기여도 100%</p>
+                                </div>
+                            </a>
+                        </li>
+                    
+                        <li class="mix responsive" id="d5" data-myorder="5">
+                            <a href="https://hoseons.github.io/starship/" target="_blank">
+                                <div> <img src="./image/starship_img.png" alt="starship"></div>
+                                <div class="desc">
+                                    <p>스타쉽 웹리뉴얼</p>
+                                    <span>#responsive #엔터테인먼트</span>
+                                </div>
+                                <div class="contribution">
+                                    <p class="contri_type">개인작업</p>
+                                    <p class="contri_per">기여도 100%</p>
+                                </div>
+                            </a>
+                        </li>
+                
+                    </ul>
+                </li>
+                <li class="Only_Design">
+                    <ul>
+                        <li class="pop mix design" id="d6" data-myorder="6">
+                            <a href="./pdf/Betteren.pdf" target="_blank">
+                                <div><img src="./image/betteren_img.png" alt="betteren"></div> 
+                                <div class="desc">
+                                    <p>‘Bettern’ 패키지디자인</p>
+                                    <span>#OnlyDesign<br>
+                                        #2021대한민국패키지대전입선</span>
+                                </div>
+                                <div class="contribution">
+                                    <p class="contri_type">2인 팀작업</p>
+                                    <p class="contri_per">기여도 90%</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pop mix design" id="d7" data-myorder="7">
+                            <a href="./pdf/gastuo.pdf" target="_blank" >
+                                <div><img src="./image/gasu_img.png" alt="gastu"></div>
+                                <div class="desc">
+                                    <p>까쓰오우동 디자인</p>
+                                    <span>#OnlyDesign</span>
+                                </div>
+                                <div class="contribution">
+                                    <p class="contri_type">개인작업</p>
+                                    <p class="contri_per">기여도 100%</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pop mix design" id="d8" data-myorder="8">
+                            <a href="https://hoseons.github.io/Gyeonggi-World-Cup-Page/" target="_blank">
+                                <div> <img src="./image/ci-sg3.png" alt="read+"></div>
+                                <div class="desc">
+                                    <p>경기도수원월드컵경기장관리재단</p>
+                                    <span>#responsive 
+                                        #공공기관</span>
+                                </div>
+                                <div class="contribution">
+                                    <p class="contri_type">개인작업</p>
+                                    <p class="contri_per">기여도 100%</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pop mix design" id="d9" data-myorder="9">
+                            <a href="./pdf/Walkthelink.pdf" target="_blank">
+                                <div> <img src="./image/link_img.png" alt="starship"></div>
+                                <div class="desc">
+                                    <p>Walk The Link</p>
+                                    <span>#OnlyDesign #공공디자인<br>
+                                        #2021대전광역시공모전입선</span>
+                                </div>
+                                <div class="contribution">
+                                    <p class="contri_type">2인 팀작업</p>
+                                    <p class="contri_per">기여도 50%</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class=" mix design" id="d10" data-myorder="10">
+                            <a href="https://full-warlock-e51.notion.site/7b527a8332bf4b79a70dca146ee5794c" target="_blank">
+                                <div> <img src="./image/dangdang_img.png" alt="dang"></div>
+                                <div class="desc">
+                                    <p>댕댕한바퀴</p>
+                                    <span>#OnlyDesign #항해99<br>
+                                        #개발자와의협업</span>
+                                </div>
+                                <div class="contribution">
+                                    <p class="contri_type">7인 팀작업</p>
+                                    <p class="contri_per">디자인 기여도 50%</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                 
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="log section" id="section5" >
+        <div class="inner">
+            <span>MYLOG</span>
+            <p class="title">이런 일상을 기록하고 있어요.</p>
+            <ul class="card">
+                <li>
+                    <a href="https://coding-salmon.tistory.com/47">
+                    <img src="./image/log_hanghea.png" alt="hanghea">
+                    <p>항해99 5기 디자이너 후기</p>
+                </a>
+                </li>
+                <li>
+                    <a href="https://coding-salmon.tistory.com/30?category=1068729">
+                    <img src="./image/log_starship.png" alt="starship">
+                    <p>스타쉽 클론코딩 후기</p>
+                </a>
+                </li>
+                <li>
+                    <a href="https://coding-salmon.tistory.com/22?category=1059624">
+                    <img src="./image/log_miniintern.png" alt="miniintern">
+                    <p>UIUX 미니인턴 후기</p>
+                </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contact section" id="section6" >
+        <div class="inner">
+            <div class="insert_0">
+                <p>simho763@naver.com</p>
+                <div>   
+                    <input type="checkbox" id="check">
+                    <label for="check">개인정보취급 방침에 동의합니다</label>
+                </div>
+               
+                <button>보내기</button>
+            </div>
+     
+            <ul class="insert">
+                <li><input type="text" placeholder="이름"></li>
+                <li><input type="email" placeholder="이메일"></li>
+                <li><textarea cols="30" rows="10">문의사항</textarea></li>
+            </ul>
+        </div>
+        <footer>
+            <div>
+                <a href="">Github</a>
+                <a href="">Tistory</a>
+            </div>
+            <p>&copy; 2022 simhoseon</p>
+            <p>created by hoseon</p>
+        </footer>
+    </div>
+
+    </main>
+</body>
+</html>
