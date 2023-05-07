@@ -1,0 +1,902 @@
+@charset "utf-8";
+
+
+body,html{
+ width: 100%;
+ height: 100%;
+ position: relative;
+ overflow-x: hidden;
+}
+
+.inner{
+    padding: 0 20px;
+}
+
+
+/* 헤더 */
+
+header{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 88px;
+    padding-top: 44px;
+    position: relative;
+}
+
+header > img{
+    width: 92px;
+    height: 30px;
+}
+
+header nav input{
+    display: none;
+}
+
+header nav .ham{
+    width: 48px;
+    height: 48px;
+    /* border: 1px solid #f00; */
+    z-index: 99;
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+header nav .ham span{
+   width: 24px;
+   height: 2px;
+   background-color:  #000;
+   display: block;
+   border-radius: 2px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   transition: .3s;
+}
+header nav .ham span:nth-of-type(1){
+    top: 35%;
+}
+header nav .ham span:nth-of-type(3){
+    top: 65%;
+}
+
+header nav input:checked~label .ham span:nth-of-type(1){
+    transform: rotate(45deg) translateX(-50%);
+    top: 65%;
+    left: 45%;
+
+}
+header nav input:checked~label .ham span:nth-of-type(2){
+    opacity: 0;
+
+}
+
+header nav input:checked~label .ham span:nth-of-type(3){
+    transform: rotate(-45deg) translateX(-50%);
+    top: 30%;
+    left: 45%;
+
+}
+
+header nav input:checked~.inner_nav{
+    opacity: 1;
+    display: block;
+}
+header .inner_nav{
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+   opacity: 0;
+   display: none;
+   transition: .3s;
+   z-index: 90;
+}
+
+header .inner_nav .top{
+    margin-top: 44px;
+    padding: 0 16px;
+}
+
+header .inner_nav .top_top{
+    display: flex;
+    
+}
+
+header .inner_nav .top_top .profile{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+header .inner_nav .top_top .text_list{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   
+}
+
+header .inner_nav .top_top .text_list strong{
+    margin-bottom: 6px;
+    display: block;
+    font-size: 16px;
+   cursor: pointer;
+}
+
+header .inner_nav .top_top .text_list span{
+ 
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+header .inner_nav .activity{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .inner_nav .activity li{
+    width: 49%;
+    text-align: center;
+    background-color: #F8F8F7;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+
+
+header .inner_nav .activity li span{
+   font-size: 14px;
+     color: #949494;
+ }
+
+ header .inner_nav .main_nav{
+    background-color: #F8F8F7;
+    margin-top: 16px;
+    padding: 24px 16px;
+ }
+
+ header .inner_nav .main_nav >li{
+    padding: 16px 0;
+    position: relative;
+    cursor: pointer;
+ }
+
+
+ header .inner_nav .main_nav li:nth-of-type(1) strong::after,
+ header .inner_nav .main_nav li:nth-of-type(2) strong::after{
+    content: '';
+    display: block;
+    background: url(../images/down_arrow.svg) no-repeat center center/cover;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-80%);
+}
+
+
+ header .inner_nav .main_nav >li strong{
+    padding-bottom: 24px;
+     display: block;
+     border-bottom: 1px solid #e2e2e2;
+     
+     text-indent: 48px;
+     color: #525252;
+     position: relative;
+ }
+
+ header .inner_nav .main_nav >li strong .icon{
+   display: block;
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   /* border: 1px solid #f00; */
+   top: -2px;
+   left: 14px;
+   /* transform: translateY(-50%); */
+   
+ }
+ header .inner_nav .main_nav >li:nth-of-type(1) strong .icon{
+    background: url(../images/ico_tot01.png) no-repeat center center/cover;
+ }
+
+ header .inner_nav .main_nav >li:nth-of-type(1):active strong .icon{
+    background: url(../images/ico_tot01_on.png) no-repeat center center/cover;
+ }
+ header .inner_nav .main_nav >li:nth-of-type(1):active strong{
+    color: #FFB265;
+ }
+
+ header .inner_nav .main_nav >li:nth-of-type(2) strong .icon{
+    background: url(../images/ico_tot02.png) no-repeat center center/cover;
+ }
+ header .inner_nav .main_nav >li:nth-of-type(2):active  strong .icon{
+    background: url(../images/ico_tot02_on.png) no-repeat center center/cover;
+ }
+ header .inner_nav .main_nav >li:nth-of-type(2):active  strong{
+   color: #FFB265;
+ }
+ 
+
+ header .inner_nav .main_nav >li:nth-of-type(3) strong .icon{
+    background: url(../images/ico_tot12.png) no-repeat center center/cover;
+ }
+ 
+ header .inner_nav .main_nav >li:nth-of-type(4) strong .icon{
+    background: url(../images/ico_tot03.png) no-repeat center center/cover;
+ }
+ 
+ header .inner_nav .main_nav >li:nth-of-type(5) strong .icon{
+    background: url(../images/ico_tot04.png) no-repeat center center/cover;
+ }
+ 
+ header .inner_nav .main_nav >li:nth-of-type(6) strong .icon{
+    background: url(../images/ico_tot05.png) no-repeat center center/cover;
+ }
+ header .inner_nav .main_nav >li:nth-of-type(7) strong .icon{
+    background: url(../images/ico_tot06.png) no-repeat center center/cover;
+ }
+
+ header .inner_nav .main_nav .sub{
+    display: none;
+    border-bottom: 1px solid #e2e2e2;
+    
+ }
+
+ header .inner_nav .main_nav .sub li{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    /* border: 1px solid #e2e2e2; */
+   
+ }
+
+
+
+ header .inner_nav .main_nav .sub li:nth-of-type(5),
+ 
+ header .inner_nav .main_nav .sub li:nth-of-type(6){
+   margin-bottom: 0;
+   
+ }
+
+
+ header .inner_nav .main_nav .sub li:last-of-type{
+     margin-bottom: 0;
+ }
+
+ header .inner_nav .bottom{
+     padding: 16px 16px 16px;
+ }
+
+ header .inner_nav .bottom li{
+    width: 49%;
+    display: inline-block;
+    text-align: center;
+    background-color: #F8F8F7;
+    height: 60px;
+    border-radius: 10px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+header .inner_nav .bottom li:nth-of-type(1),
+header .inner_nav .bottom li:nth-of-type(2){
+    margin-bottom: 4px;
+}
+
+header .inner_nav > p{
+    font-size: 13px;
+    padding: 0 16px ;
+    text-align: right;
+    margin-bottom: 32px;
+}
+
+
+header .inner_nav > p span{
+    color: #FFB265;
+}
+
+.bell{
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url(../images/bell.svg) no-repeat center center /cover;
+    position: absolute;
+    top: 33%;
+    right: 64px;
+    cursor: pointer;
+  z-index: 5;
+}
+
+/* main  */
+/* 멋진여행 */
+
+.container1{
+    margin-top: 50px;
+    position: relative;
+}
+.container1 h2{
+    font-size: 25px;
+    line-height: 121%;
+}
+
+.container1 input{
+    width: 100%;
+    border: 2px solid #FFB265;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 16px 40px;
+    position: relative;
+}
+.search_wrap{
+    position: relative;
+}
+.container1 .search{
+    width: 44px;
+    height: 44px;
+    display: block;
+    
+    background: url(../images/search.svg) no-repeat center center / cover;
+    position: absolute;
+    top: 62%;
+    left: 4px;
+  transform: translateY(-50%);
+    /* border:1px solid #f00; */
+}
+/* 수정필요 */
+
+.container1 .kate{
+    display: flex;
+    margin-top: 32px;
+    justify-content: space-between;
+}
+.container1 .kate li{
+   width: 20%;
+    height: 85px;
+    cursor: pointer;
+}
+.container1 .kate li:hover .img{
+    border: 2px solid #FF8F20;
+ }
+ .container1 .kate li:hover span{
+    color: #FF8F20;
+ }
+
+
+.container1 .kate li .img{
+ width: 100%;
+   height: 60px;
+   background: #FFEAD6;
+   border-radius: 15px;
+   display: flex;
+   justify-content: center;
+}
+.container1 .kate li .img img{
+    
+    width: 60%;
+}
+
+.container1 .kate li span{
+    
+   text-align: center;
+   width: 100%;
+   font-size: 14px;
+   margin-top: 8px;
+   display: block;
+}
+.container1 .login{
+    width: 100%;
+    background: #FFEAD6;
+    height: 55px;
+    margin-top: 32px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 55px;
+    cursor: pointer;
+}
+
+.container1 .login span{
+    color: #FF9022;
+    font-weight: bold;
+}
+
+.container1 .login span:nth-of-type(1){
+    color: #4A4A4A;
+ 
+}
+
+/* 미니 배너 */
+.banner_div{
+    margin: 32px 0;
+    cursor: pointer;
+}
+.banner_div .banner{
+    background: url(../images/banner_min.png) no-repeat center center /cover;
+    width: 100%;
+    height: 158px;
+}
+
+/* 빠른 선택 버튼 */
+.button {
+    margin-bottom: 32px;
+}
+.button ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button ul li{
+   
+    height: 35px;
+    width: 23%;
+    background-color: #FFEAD6;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+
+.button ul li:hover{
+    background-color: #FF8F20;
+    color: #fff;
+}
+
+/* 지금뜨고 있는 캠핌장 */
+
+.refer_bg{
+    width: 100%;
+    height: 318px;
+    background: #EDEDED;
+}
+
+.container2 h2{
+    padding-top: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.container2 .swiper-container{
+    width: 100%;
+    overflow:hidden;
+}
+
+.container2 .swiper-wrapper{
+    width: 246%;
+}
+
+.container2 .swiper-slide{
+    height: 220px;
+    width: 80%;
+    border-radius: 10px;
+    background: #fff;
+    margin-right: 2%;
+    cursor: pointer;
+    float: left;
+}
+
+
+
+.container2 ul li:nth-of-type(1) .img{
+    height: 141px;
+    background: url(../images/refer_camping_img1.png) no-repeat center center /cover;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.container2 ul li:nth-of-type(2)  .img{
+    height: 141px;
+    background: url(../images/refer_camping_img2.jpg) no-repeat center center /cover;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.container2 ul li:nth-of-type(3)  .img{
+    height: 141px;
+    background: url(../images/refer_camping_img3.jpg) no-repeat center center /cover;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.container2 ul li .text_list{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container2 ul li .text_list div{
+
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.container2 ul li .text_list .name strong{
+    margin-bottom: 8px;
+}
+
+.container2 ul li .text_list .name span{
+    font-size: 13px;
+    color: #525252;
+}
+
+.container2 ul li .text_list .buy span{
+    font-size: 11px;
+   color: #525252;
+   /* padding: 0; */
+   height: 24px;
+   background-color: #D9D9D9;
+   display: block;
+   margin-bottom: 4px;
+   text-align: center;
+   line-height: 24px;
+   border-radius: 24px;
+}
+
+.container2 ul li .text_list .buy p{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* q가이드 */
+
+.container3 > div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+.container3 > div >span{
+    font-size: 14px;
+    color: #949494;
+    cursor: pointer;
+}
+
+.container3 > div >span:hover{
+
+    color: #FF8F20;
+
+}
+
+.container3 h2{
+  
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.container3 ul li{
+    width: 48%;
+    display: inline-block;
+    position: relative;
+    margin-left: 1%;
+    cursor: pointer;
+}
+.container3 ul li:nth-of-type(1),
+.container3 ul li:nth-of-type(3)
+{
+    margin-left: none;
+}
+
+.container3 ul li:nth-of-type(1),
+.container3 ul li:nth-of-type(2)
+{
+    margin-bottom: 2%;
+}
+
+
+.container3 ul li img{
+    width: 100%;
+}
+.container3 ul li span{
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    color: #fff;
+}
+
+/* 새로운업체 추가! */
+
+
+.container4 > div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+.container4 > div >span{
+    font-size: 14px;
+    color: #949494;
+    cursor: pointer;
+}
+.container4 > div >span:hover{
+
+    color: #FF8F20;
+
+}
+
+.container4 h2{
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.container4 ul{
+}
+
+.container4 ul li{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.container4 ul li~li{
+   margin-top: 8px;
+    
+}
+
+.container4 ul li img{
+    height: 98px;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.container4 ul li .text_list {
+    width: 50%;
+    padding: 0 10px;
+}
+.container4 ul li .text_list strong{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container4 ul li .text_list span{
+    display: block;
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #525252;
+}
+
+.container4 ul li .text_list p{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FF8F20;
+}
+
+/* 기획전 */
+
+
+.container5 > div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 20px;
+  
+}
+.container5 > div >span{
+    font-size: 14px;
+    color: #949494;
+    cursor: pointer;
+}
+.container5 > div >span:hover{
+
+    color: #FF8F20;
+
+}
+
+
+.container5 h2{
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.container5 img{
+    height: 165px;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+/* 캠톡 */
+
+
+.container6 .title{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+.container6 .title >span{
+    font-size: 14px;
+    color: #949494;
+    cursor: pointer;
+}
+.container6 h2{
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.container6 .swiper2{
+    width: 100%;
+    overflow: hidden;
+}
+
+.container6 .swiper-wrapper{
+    width: 250%;
+}
+
+.container6 .swiper-wrapper::after{
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.container6 .swiper-slide{
+    height: 285px;
+    width: 60%;
+    border-radius: 10px;
+    background: #EDEDED;
+    cursor: pointer;
+    float: left;
+}
+
+.container6 .swiper-slide img{
+    height: 138px;
+    background: url(../images/refer_camping_img1.png) no-repeat center center /cover;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.container6 .swiper-slide .text_list{
+    padding: 16px;
+}
+
+.container6 .swiper-slide .text_list strong{
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.container6 .swiper-slide .text_list > p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 154.3%;
+}
+
+.container6 .swiper-slide .user{
+    font-size: 13px;
+    display: flex;
+}
+.container6 .swiper-slide .user p{
+    margin-left: 8px;
+}
+
+/* 하단 메뉴 */
+
+.bottom_nav{
+    position: fixed;
+    bottom: 0;
+    /* height: 48px; */
+    height: 90px;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #E4E4E4;
+}
+
+.bottom_nav ul{
+    width: 100%;
+    padding:  0 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom_nav ul li{
+    text-align: center;
+    cursor: pointer;
+}
+
+.bottom_nav ul li:nth-of-type(1) span{
+    color: #FF8F20;
+}
+
+.bottom_nav ul li span{
+    font-size: 13px;
+}
+
+/* 푸터 */
+
+footer{
+    background: #E4E4E4;
+    padding: 20px;
+    margin-top: 32px;
+    display: flex;
+    height: 370px;
+}
+
+footer .left{
+    display: flex;
+    flex-direction: column;
+    width: 69%;
+}
+
+footer .left strong{
+    margin-bottom: 13px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+footer .left a{
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+footer .left p:nth-of-type(1){
+    margin-bottom: 8px;
+
+}
+
+footer .left p:nth-of-type(2){
+    margin-bottom: 20px;
+
+}
+
+    footer .left p{
+
+        font-size: 14px;
+        color: #868686;
+    }
+
+    footer .left span{
+        margin-bottom: 8px;
+        font-size: 14px;
+        color: #868686;
+    }
+
+   
+footer .right{
+    width: 29%;
+  
+}
+
+footer .right ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .right ul li{
+    cursor: pointer;
+}
