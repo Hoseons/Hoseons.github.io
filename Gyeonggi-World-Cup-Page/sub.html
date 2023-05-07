@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/ci-symbol.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script defer src="./js/sub.js"></script>
+    <title>경기도월드컵관리재단</title>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+      <div class="nav_wrap">
+        <nav class="primary_nav">
+          <div class="inner">
+            <ul>
+                <li><a href="#">정보공개</a></li>
+                <li><a href="#">공공데이터</a></li>
+                <li class="size">
+                    <span></span>
+                    <p>글자크기</p>
+                    <span></span>
+                </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="second_nav">
+            <div class="inner">
+              <a href="index.html" class="logo"><img src="./images/top-logo.png" alt="logo"></a>
+              <input type="checkbox" id="ham" >
+              <label for="ham" class="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+              <ul class="nav">
+                <li>
+                    <a href="#">경기행사일정</a>
+                    <ul class="sub_manu">
+                        <li><a href="#">경기 및 행사일정</a></li>
+                        <li><a href="#">주경기장 좌석 안내</a></li>
+                        <li><a href="#">프로축구입장권안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">월드컵경기장</a>
+                    <ul class="sub_manu">
+                        <li><a href="#">경기장소개</a></li>
+                        <li><a href="#">경기장시설안내</a></li>
+                        <li><a href="#">주차안내</a></li>
+                        <li><a href="#">위치안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">부대시설안내</a>
+                    <ul class="sub_manu">
+                        <li><a href="#">월드컵스포츠센터</a></li>
+                        <li><a href="#">축구박물관</a></li>
+                        <li><a href="#">월드컵조각공원</a></li>
+                        <li><a href="#">인라인스케이트장</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub.html" class="sub_page">시설이용안내</a>
+                    <ul class="sub_manu">
+                        <li><a href="#">경기장시설예약</a></li>
+                        <li><a href="#">중앙광장상설무대</a></li>
+                        <li><a href="#">SKYBOX</a></li>
+                        <li><a href="#">옥외광고</a></li>
+                        <li><a href="#">상업행사신청</a></li>
+                        <li><a href="#">잔디보호대</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">참여공간</a>
+                    <ul class="sub_manu">
+                        <li><a href="#">참여게시판</a></li>
+                        <li><a href="#">성희롱 성폭력 피해 신고 센터</a></li>
+                        <li><a href="#">클린신고센터</a></li>
+                        <li><a href="#">월드컵자원봉사</a></li>
+                        <li><a href="#">유실물찾기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">사무처소개</a>
+                    <ul class="sub_manu">
+                        <li><a href="#">소개</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">CI</a></li>
+                        <li><a href="#">조직도</a></li>
+                        <li><a href="#">재단소식</a></li>
+                        <li><a href="#">행정정보공개</a></li>
+                        <li><a href="#">경영공시</a></li>
+                        <li><a href="#">공공데이터 개방</a></li>
+                        <li><a href="#">정책실명제</a></li>
+                        <li><a href="#">고객만족경영</a></li>
+                        <li><a href="#">윤리경영</a></li>
+                        <li><a href="#">인권경영 헌장</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="sub_bg"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- main -->
+    <main>
+        <section class="kate_select">
+          <div class="inner">
+            <div class="container1">
+              <h2 class="title">시설이용안내</h2>
+              <ul class="filter">
+                <li class="on"><a href="#filter1">경기장시설예약</a></li>
+                <li><a href="#filter2">중아광장상설무대</a></li>
+                <li><a href="#filter3">SKYBOX</a></li>
+                <li><a href="#filter4">옥외광고</a></li>
+                <li><a href="#filter5">상업행사신청</a></li>
+                <li><a href="#filter6">잔디보호대</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="contents">
+          <div class="inner">
+            <div class="container2">
+              <div class="content_box">
+                <ul>
+                  <li id="filter1">
+                    <div class="title_list">
+                      <h2>경기장시설예약</h2>
+                      <div class="quick_sns">
+                        <span>Home > 시설이용안내>경기장시설안내 </span>
+                      </div>
+                    </div>
+                    <div class="text">
+                      <strong>인조경기장 시설대관 시스템변경 공지 사항</strong>
+                      <p>1. 경기공유서비스(https://share.gg.go.kr/) ⇒ 수원월드컵경기장 검색 ⇒ 인조1경기장, 인조2경기장 클릭 ⇒ 해당일자 예약<br>
+                        2. 심야 3시간 이용 시 6회(22:30~00:00)만 예약하시면 됩니다. → 실제 운영 시간 22:30~01:30<br>
+                        3. 7월 18일 이전 예약은 그대로 승계됩니다.
+                      </p>
+                      <div class="img_wrap">
+                        <img src="./images/sub_img1.svg" alt="sub1" >
+                        <button>경기공유서비스바로가기</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li id="filter2">
+                    <div class="title_list">
+                      <h2>안내</h2>
+                      <div class="quick_sns">
+                        <span>Home > 시설이용안내>중앙광장상설무대 </span>
+                      </div>
+                    </div>
+                    <div class="text">
+                      <div class="text_content1">
+                        <div class="left"> <img src="./images/img-center5.png" alt="sub1"></div>
+                        <div class="right">
+                          <strong>스포츠와 문화예술 만나는 상설무대</strong>
+                          <p>예술인,문화공연단체,유치원생,청소년,대학생 등 다양한 계층이 문화이벤트 공연을 직접 선보이는 109.09㎡ 규모의 야외 무대공간입니다.<br>
+                            <br>
+                            온 가족이 함께 참여하고 즐길 수 있는 문화마당으로서 남녀노소를 불문하고 누구나 대중 앞에서 공연을 펼칠 수 있습니다.
+                            가로 17m, 세로 9m, 높이 8m 규모의 상설무대는 마이크와 음향 믹서 등의 음향시설을 갖추고 있어 어떤 종류의 공연과 행사도 원활히 소화해 낼 수 있는 소규모 공연 예술의 요람입니다.
+                            <br>
+                            세계 문화유산인 수원 화성의 이미지를 표현한 웅장한 무대 디자인은 여러분의 공연을 더욱 빛나게 할 것 입니다
+                            무대 중앙에 250″ 영상스크린과 조명시설이 설치되어 있어 다양한 장르의 공연은 물론 ‘영화 상영’과 ‘야간공연’에도 적합한 시설입니다.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="text_content2">
+                        <strong>대관용도</strong>
+                        <ul>
+                          <li><img src="./images/icon-purp01.png" alt="1"><span>콘서트</span></li>
+                          <li><img src="./images/icon-purp02.png" alt="2"><span>가요제</span></li>
+                          <li><img src="./images/icon-purp03.png" alt="3"><span>연극/인형극</span></li>
+                          <li><img src="./images/icon-purp04.png" alt="4"><span>각종발표회</span></li>
+                          <li><img src="./images/icon-purp05.png" alt="5"><span>연주회</span></li>
+                          <li><img src="./images/icon-purp06.png" alt="6"><span>영화상영</span></li>
+                          <li><img src="./images/icon-purp07.png" alt="7"><span>행사유지 방송촬영</span></li>
+                          <li><img src="./images/icon-purp08.png" alt="8"><span>플레이존 활용</span></li>
+                        </ul>
+                      </div>
+                      <div class="text_content3">
+                        <strong>대상</strong>
+                        <p>개인, 동아리, 동호회, 유치원, 학원, 기업체 등 누구나 환영</p>
+                      </div>
+                      <div class="text_content4">
+                        <strong>기간</strong>
+                        <p>연중(1월~12월)</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li id="filter3">
+                    <div class="title_list">
+                      <h2>SKYBOX</h2>
+                      <div class="quick_sns">
+                        <span>Home > 시설이용안내 > SKYBOX </span>
+                      </div>
+                    </div>
+                    <div class="text">
+                      <div class="text_content1">
+                        <div class="left"> <img src="./images/skybox_img.png" alt="sub1"></div>
+                        <div class="right">
+                          <strong>SKYBOX안내입니다.</strong>
+                          <p>스카이박스는 안락한 공간에서 경기시작 전 회의와 경기를 보며 고급 호텔 뷔페를 동시에 즐길 수 있는 고품격 관람 문화 공간으로 기존의 특화된 고객층에서 그 폭을 넓혀 기업 및 일반인들에게도 고품격의 경기관람 특권의 혜택을 드립니다.</p>
+                          <button>신청서 다운로드</button>
+                        </div>
+                      </div>
+                      <div class="text_content2">
+                        <table>
+                          <tr>
+                            <td>운영룸/크기/인원</td>
+                            <td>10실 / 60.72㎡ / 15인 기준</td>
+                          </tr>
+                          <tr>
+                            <td>경기(행사)시</td>
+                            <td>프로축구 등 경기(행사) 관람</td>
+                          </tr>
+                          <tr>
+                            <td>평시(일반 임대 등)</td>
+                            <td>사무실 임대, 각종 세미나 회의, 연회 및 가족모임 등</td>
+                          </tr>
+                          <tr>
+                            <td>실내시설</td>
+                            <td>냉ㆍ난방시설, 테이블, 의자, 화장실 등</td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="text_content3">
+                        <strong>대상</strong>
+                        <table>
+                          <tr>
+                            <td>운영시간</td>
+                            <td>08:00 ~ 22:00</td>
+                          </tr>
+                          <tr>
+                            <td>사용료</td>
+                            <td>49,500원 (3시간 기준/부가세 포함) / 30,000원(1일:전기, 냉‧난방비 등 부속시설사용료)</td>
+                          </tr>
+                          <tr>
+                            <td>용도</td>
+                            <td>세미나,소규모 강연회,비지니스 회의, 동호회 모임, 스터디, 면접장소 등</td>
+                          </tr>
+                          <tr>
+                            <td>운영실</td>
+                            <td>10개실(15인 기준, 최대 24명)</td>
+                          </tr>
+                          <tr>
+                            <td>주의</td>
+                            <td>토ㆍ일ㆍ공휴일 : 사용금액에 30%가산<br>
+                                야간 사용시 : 사용금액에 30% 가산</td>
+                          </tr>
+                          <tr>
+                            <td>문의</td>
+                            <td>전화 : 031-259-2045 / 팩스 :031-259-2019</td>
+                          </tr>
+                        </table>
+                        <ul class="img">
+                          <li><img src="./images/skybox_img02.png" alt="1"><span>6인용</span></li>
+                          <li><img src="./images/skybox_img03.png" alt="2"><span>8인용</span></li>
+                          <li><img src="./images/skybox_img04.png" alt="3"><span>10인용</span></li>
+                          <li><img src="./images/skybox_img05.png" alt="4"><span>12인용</span></li>
+                          <li><img src="./images/skybox_img06.png" alt="5"><span>16인용</span></li>
+                          <li><img src="./images/skybox_img07.png" alt="6"><span>24인용</span></li>
+                        </ul>
+                      </div>
+                      <div class="text_content4">
+                        <strong>K리그 클래식 경기 시 사용</strong>
+                        <p>- 수원블루윙즈축구단 최지숙 대리 (070-7013-5906)<br>
+                          - URL : http://www.bluewings.kr/ticket</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li id="filter4">
+                    <div class="title_list">
+                      <h2>옥외광고</h2>
+                      <div class="quick_sns">
+                        <span>Home > 시설이용안내 > 옥외광고</span>
+                      </div>
+                    </div>
+                    <div class="text">
+                      <div class="text_content1">
+                        <div class="right">
+                          <strong>경기도수원월드컵경기장 광고 효과</strong>
+                          <ul>
+                            <li><strong>세계적 구단을 지향하는 수원삼성축구단 홈구장</strong></li>
+                            <li>– K리그 타구단보다 월등한 관중동원</li>
+                            <li> – K리그 구단 중 가장 활성화된 서포터스 보유</li>
+                            <li> – 경기시 많은 이벤트로 시민 참여 유도</li>
+                          </ul>
+                          <ul>
+                            <li><strong>다양한 스포츠 문화 이벤트 개최</strong></li>
+                            <li>– 수원컵, 피스컵 등 K리그 경기 이외에도 많은 축구경기 유치</li>
+                            <li> – 대중가수 콘서트, 공중파 방송 프로그램과 연계한 다양한 행사 유치</li>
+                          </ul>
+                          <ul>
+                            <li><strong>많은 시민들이 즐겨 이용하는 경기장 주변 시설</strong></li>
+                            <li>– 주말과 휴일에 수많은 가족단위 시민들이 휴식할 수 있는 문화광장</li>
+                            <li> – 문화광장 상설무대에서 다채로운</li>
+                            <li> – 많은 시민 및 동호회 회원들이 찾아오는 인라인 트랙</li>
+                            <li> – 국내 최고 수준의 시설로 시민들에게 각광받는 스포츠센터</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="text_content2">
+                        <strong>월드컵경기장 광고 플랫폼</strong>
+                        <table>
+                          <tr><td colspan = "4" >동측</td></tr>
+                          <tr>
+                            <td rowspan="3">장내	</td>
+                            <td rowspan="2">2층난간</td>
+                            <td>9.8 x 0.9</td>
+                            <td>9</td>
+                          </tr>
+                          <tr>
+                            <td>5.2 x 0.9</td>
+                            <td>9</td>
+                          </tr>
+                          <tr>
+                            <td>1층 벽면</td>
+                            <td>10 x 2</td>
+                            <td>6</td>
+                          </tr>
+                          <tr>
+                            <td>장외</td>
+                            <td>2층난간</td>
+                            <td>6 x 1.1</td>
+                            <td>20</td>
+                          </tr>
+                        </table>
+                        <table>
+                          <tr><td colspan = "4" >서측</td></tr>
+                          <tr>
+                            <td rowspan="2">장내	</td>
+                            <td rowspan="2">2층난간</td>
+                            <td>10</td>
+                            <td>9.4 x 0.9	</td>
+                          </tr>
+                          <tr>
+                            <td>5.1 x 0.9</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td>장외</td>
+                            <td>인라인 도로 옆</td>
+                            <td>5 x 1.1		</td>
+                            <td>20</td>
+                          </tr>
+                        </table>
+                        <table>
+                          <tr><td colspan = "4" >남측</td></tr>
+                          <tr>
+                            <td rowspan="2">장내	</td>
+                            <td rowspan="2">2층난간</td>
+                            <td>9.4 x 0.9	</td>
+                            <td>7</td>
+                          </tr>
+                           <tr>
+                            <td>5.2 x 0.9</td>
+                            <td>7</td>
+                          </tr>
+                        </table>
+                        <table>
+                          <tr><td colspan = "4" >북측</td></tr>
+                          <tr>
+                            <td rowspan="3">장내	</td>
+                            <td rowspan="2">2층난간</td>
+                            <td>9.6 x 0.9</td>
+                            <td>7</td>
+                          </tr>
+                          <tr>
+                            <td>5.2 x 0.9</td>
+                            <td>7</td>
+                          </tr>
+                          <tr>
+                            <td>기둥</td>
+                            <td>0.8 x 1.3 x 4면</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">장외</td>
+                            <td>2층난간</td>
+                            <td>3.37 x 1.1</td>
+                            <td>10</td>         
+                          </tr>
+                          <tr>
+                            <td>화장실벽면</td>
+                            <td>2.5 x 2</td>
+                            <td>8</td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="text_content3">
+                        <strong>광고위치</strong>
+                        <img src="./images/worldcup-ad1.png" alt="ad1">
+                      </div>
+                    </div>
+                  </li>
+                    <li id="filter5">
+                      <div class="title_list">
+                        <h2>상업행사신청</h2>
+                        <div class="quick_sns">
+                          <span>Home > 시설이용안내 > 상업행사신청</span>
+                        </div>
+                      </div>
+                      <div class="text">
+                        <div class="text_content1">
+                          <div class="right">
+                            <strong>용도</strong>
+                            <p>– K리그 경기(수원삼성 홈경기) 및 재단 주최 경기, 행사 시 관람객을 대상으로 한 각종 홍보 활동 장소 제공<br>
+                              ※ 예시) 참여 및 체험형 기업 홍보 이벤트, 신차 전시회(판촉행사), 영화관 오픈 이벤트, 미니 풋살대회, 신제품 샘플링 등
+                            </p>
+                          </div>
+                        </div>
+                        <div class="text_content2">
+                          <strong>신청가능 경기 및 행사</strong>
+                          <p>– K리그 수원삼성 홈경기 및 재단 주최 경기ㆍ행사(경기 및 행사 일정표 참고)</p>
+                        </div>
+                        <div class="text_content3">
+                          <strong>사용료</strong>
+                          <table>
+                            <tr>
+                              <td>구분</td>
+                              <td>평일(3시간 기준)</td>
+                            </tr>
+                            <tr>
+                              <td>SP공간 사용료</td>
+                              <td>㎡당 20,000원<br>
+                                (토,일,공휴일 30% 가산)</td>
+                            </tr>
+                            <tr>
+                              <td>상업사용료<br>
+                                (광고물 게첨시)</td>
+                                <td>5㎡, 1점 기준 50,000원</td>
+                            </tr>
+                            <tr>
+                              <td>판매시</td>
+                              <td>판매액의 10%<br>
+                                (판매 물품은 협의)</td>
+                            </tr>
+                            <tr>
+                              <td>기타</td>
+                              <td>야간 사용시 20% 가산</td>
+                            </tr>
+                          </table>
+                          <p>※ 부속시설 사용료(전기등) 추후 정산<br>
+                            ※ 세일즈 프로모션 공간 임대와 옥외광고 등 다양한 방법으로 연계하여 진행가능<br>
+                            ※ 대관문의 : 스포츠마케팅팀 031-259-2044</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li id="filter6">
+                      <div class="title_list">
+                        <h2>잔디보호대</h2>
+                        <div class="quick_sns">
+                          <span>Home > 시설이용안내 > 잔디보호대</span>
+                        </div>
+                      </div>
+                      <div class="text">
+                        <div class="text_content1">
+                          <div class="left"><img src="./images/worldcup_grass1.png" alt="grass"></div>
+                          <div class="right">
+                            <strong>잔디보호대 이용안내</strong>
+                            <p>경기장이 본래의 용도가 아닌 다른 목적으로 사용될 때 잔디를 덮어 보호할 수 있는, 즉, 잔디가 깔린 스포츠 경기장을 잔디에 해를 주지 않고 다른 용도(ex. 야외 음악회 등)로 활용할 수 있게 하는 잔디 보호대 이용안내입니다.</p>
+                          </div>
+                        </div>
+                        <div class="text_content2">
+                          <strong>잔디보호대 임대로</strong>
+                          <table>
+                            <tr>
+                              <th>잔디보호대 설치비율	</th>
+                              <td>100% 설치시</td>
+                              <td>20,000,000원</td>
+                              <td>9,000㎡</td>
+                            </tr>
+                            <tr>
+                              <th>임대료</th>
+                              <td>50% 설치시	</td>
+                              <td>10,000,000원</td>
+                              <td>4,500㎡</td>
+                            </tr>
+                            <tr>
+                              <th>면적</th>
+                              <td>25% 설치시</td>
+                              <td>5,000,000원</td>
+                              <td>2,250㎡</td>
+                            </tr>
+                          </table>
+                          <p>
+                            ※ 잔디보호대 운반 및 설치ㆍ철거에 필요한 비용은 임차인이 부담<br>
+                            ※ 잔디보호대 손상에 대한 배상은 별도의 협약체결 내용에 따름
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+    </main>
+    <footer>
+        <div class="first">
+            <div class="inner">
+              <div class="sns_icon">
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+              </div>
+            <nav id="associate">
+                <p>관련기관</p>
+                <ul class="sub_menu">
+                    <li><a href="#">경기도축구협회</a></li>
+                    <li><a href="#">한국프로축구연맹</a></li>
+                    <li><a href="#">FIFA</a></li>
+                    <li><a href="#">대한축구협회</a></li>
+                    <li><a href="#">수원삼성블루윙즈축구단</a></li>
+                    <li><a href="#">수원시청</a></li>
+                    <li><a href="#">경기평택항만공사</a></li>
+                    <li><a href="#">수원시체육회</a></li>
+                </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="second">
+            <div class="inner">
+              <div class="left">
+                <ul>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">클린신고센터</a></li>
+                </ul>
+                <p>경기도청 : 16508 경기도 수원시 영통구 도청로 30<br>
+                    경기도수원월드컵경기장 : 16230 경기도 수원시 팔달구 월드컵로 310(우만동) 4층
+                   <br> Copyright © 2015 GYEONGGI PROVINCE All Rights Reserved.</p>
+              </div>
+            <div class="right_logo">
+                <img src="./images/footer_logo.png" alt="footer_logo">
+            </div>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>

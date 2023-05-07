@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/ci-symbol.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script defer src="./js/main.js"></script>
+    <title>경기도월드컵관리재단</title>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div class="nav_wrap">
+        <nav class="primary_nav">
+            <div class="inner">
+            <ul>
+                <li><a href="#">정보공개</a></li>
+                <li><a href="#">공공데이터</a></li>
+                <li class="size">
+                    <span></span>
+                    <p>글자크기</p>
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        <nav class="second_nav">
+            <div class="inner">
+            <a href="index.html" class="logo"><img src="./images/top-logo.png" alt="logo"></a>
+            
+            <input type="checkbox" id="ham" >
+            <label for="ham" class="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav">
+                <li>
+                    <a href="#">경기행사일정</a>
+                    <ul class="sub_manu">
+                        <li><a href="#">경기 및 행사일정</a></li>
+                        <li><a href="#">주경기장 좌석 안내</a></li>
+                        <li><a href="#">프로축구입장권안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">월드컵경기장</a>
+                    <ul class="sub_manu">
+                        <li><a href="#">경기장소개</a></li>
+                        <li><a href="#">경기장시설안내</a></li>
+                        <li><a href="#">주차안내</a></li>
+                        <li><a href="#">위치안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">부대시설안내</a>
+                    <ul class="sub_manu">
+                        <li><a href="#">월드컵스포츠센터</a></li>
+                        <li><a href="#">축구박물관</a></li>
+                        <li><a href="#">월드컵조각공원</a></li>
+                        <li><a href="#">인라인스케이트장</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub.html" class="sub_page">시설이용안내</a>
+                    <ul class="sub_manu">
+                        <li><a href="#">경기장시설예약</a></li>
+                        <li><a href="#">중앙광장상설무대</a></li>
+                        <li><a href="#">SKYBOX</a></li>
+                        <li><a href="#">옥외광고</a></li>
+                        <li><a href="#">상업행사신청</a></li>
+                        <li><a href="#">잔디보호대</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">참여공간</a>
+                    <ul class="sub_manu">
+                        <li><a href="#">참여게시판</a></li>
+                        <li><a href="#">성희롱 성폭력 피해 신고 센터</a></li>
+                        <li><a href="#">클린신고센터</a></li>
+                        <li><a href="#">월드컵자원봉사</a></li>
+                        <li><a href="#">유실물찾기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">사무처소개</a>
+                    <ul class="sub_manu">
+                        <li><a href="#">소개</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">CI</a></li>
+                        <li><a href="#">조직도</a></li>
+                        <li><a href="#">재단소식</a></li>
+                        <li><a href="#">행정정보공개</a></li>
+                        <li><a href="#">경영공시</a></li>
+                        <li><a href="#">공공데이터 개방</a></li>
+                        <li><a href="#">정책실명제</a></li>
+                        <li><a href="#">고객만족경영</a></li>
+                        <li><a href="#">윤리경영</a></li>
+                        <li><a href="#">인권경영 헌장</a></li>
+                    </ul>
+                </li>
+            </ul>
+         
+            <div class="sub_bg"></div>
+        </div>
+        </nav>
+    </div>
+    </header>
+    <!-- main -->
+    <main>
+        <section class="banner">
+            <h2>배너</h2>
+            <div class="inner">
+                <div class="container1">
+                    <div class="top_banner">
+                        <div class="banner_wrap">
+                        <div class="banner_img">
+                            <img src="./images/banner1.jpg" alt="1">
+                            <img src="./images/banne2.jpg" alt="2">
+                            <img src="./images/banner3.jpg" alt="3">
+                        </div>
+                         </div>
+                         <div class="arrow_banner">
+                            <span class="arrow_left" id="arrow_b_l"></span>
+                            <div class="peg">
+                                <span class="on"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="arrow_right" id="arrow_b_r"></span>
+                        </div>
+                        <div class="vs">
+                            <div class="text_list">
+                                <p>MATCH SCHEdULE</p>
+                                <span>2022 K리그1</span>
+                            </div>
+                             <div class="img_wrap">
+                                <div class="img_list">
+                                <div class="img">
+                                    <div class="left">
+                                        <img src="./images/con2_1.png" alt="1">
+                                        <span>수원삼성</span>
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="right">
+                                        <img src="./images/con2_2.png" alt="2">
+                                        <span>강원fc</span>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <div class="left">
+                                        <img src="./images/con2_1.png" alt="1">
+                                        <span>수원삼성</span>
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="right">
+                                        <img src="./images/con3_2.png" alt="2">
+                                        <span>인천유나이티드</span>
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <div class="left">
+                                        <img src="./images/con2_1.png" alt="1">
+                                        <span>수원삼성</span>
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="right">
+                                        <img src="./images/con4_2.png" alt="2">
+                                        <span>전북현대모터스</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="day">
+                                <div class="wrap">
+                                <div>
+                                    <p>2022. 08.27</p>
+                                    <p>2022. 09.11</p>
+                                    <p>2022.09.18</p>
+                                    
+                                </div>
+                            </div>
+                                <div class="arrow">
+                                    <span class="arrow_left" id="arrow_p_l"></span>
+                                    <span class="arrow_right" id="arrow_p_r"></span>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <form>
+                            <input type="text" placeholder="검색어를 입력하세요">
+                            <span class="search_icon"></span>
+                        </form>
+                        <div class="dropbox">
+                            <div class="select">
+                                    <p>통합검색</p>
+                                    <strong></strong>
+                                    <ul class="dropbox_sub">
+                                        <li>축구경기일정</li>
+                                        <li>장소대관</li>
+                                        <li>최근콘서트일정</li>
+                                    </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service">
+            <div class="inner">
+                <div class="container2">
+                    <h3 class="title">대표서비스</h3>
+                    <ul class="list">
+                        <li>
+                            <a href="#">
+                                <div><img src="./images/service_01.svg" alt="01"></div>
+                                <span>연습구장 대관</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div><img src="./images/service_02.svg" alt="02"></div>
+                                <span>중앙광장 대관</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div><img src="./images/service_03.svg" alt="03"></div>
+                                <span>세미나실 임대</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div><img src="./images/service_04.svg" alt="04"></div>
+                                <span>상업행사 신청</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div><img src="./images/service_05.svg" alt="05"></div>
+                                <span>축구박물관 박람</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div><img src="./images/service_06.svg" alt="06"></div>
+                                <span>월드컵스포츠센터</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="part3">
+        <section class="news">
+            <h2>뉴스</h2>
+            <div class="inner">
+                <div class="container3">
+                    <div class="kate">
+                        <ul>
+                            <li class="on"><a href="#news1">새소식</a></li>
+                            <li><a href="#news2">보도자료</a></li>
+                            <li><a href="#news3">입찰정보</a></li>
+                            <li><a href="#news4">수의계약</a></li>
+                        </ul>
+                        <span class="plus"></span>
+                    </div>
+                    <div class="contents">
+                        <ul id="news1">
+                            <li>
+                                <p>개인정보 제3자 제공사항 알림 공고</p>
+                                <span>2022-08-23</span>
+                            </li>
+                            <li>
+                                <p>‘SMTOWN LIVE 2022′ 주차장 현황(8.20 / 14:30 기준)</p>
+                                <span>2022-08-19
+                                </span>
+                            </li>
+                            <li>
+                                <p>‘워터밤 수원 2022’ 주차장 현황(8.13 / 15:30 기준)</p>
+                                <span>2022-08-16
+                                </span>
+                            </li>
+                          
+                            <li>
+                                <p>수원월드컵경기장 8월 행사 안내</p>
+                                <span>2022-08-13
+                                </span>
+                            </li>
+                        </ul>
+                        <ul id="news2">
+                            <li>
+                                <p>경기수원월드컵재단, 온라인 서포터즈 2기 발대식 개최</p>
+                                <span>2022.07.12</span>
+                            </li>
+                            <li>
+                                <p>경기수원월드컵재단, 2022 빅버드 그라운드 마켓 1회차 성료</p>
+                                <span>2022.07.12</span>
+                            </li>
+                            <li>
+                                <p>경기수원월드컵재단, ‘K리그1 2021’ 득점왕 황금발 전시</p>
+                                <span>2022.07.12</span>
+                            </li>
+                            <li>
+                                <p>경기수원월드컵재단, 2022 이웃사랑 나누기 캠페인 실시</p>
+                                <span>2022.01.21</span>
+                            </li>
+                        </ul>
+                        <ul id="news3">
+                            <li>
+                                <p>2022 나눔문화행사 대행 용역 입찰 우선협상대상자 선정 결과</p>
+                                <span>2022.05.25</span>
+                            </li>
+                            <li>
+                                <p>2022 빅버드 축구페스티벌 행사 대행용역 입찰공고(재공고)</p>
+                                <span>2022.05.18</span>
+                            </li>
+                            <li>
+                                <p>경기도수원월드컵스포츠센터 3층 옥상 바닥 개선공사 입찰 공고(재입찰)</p>
+                                <span>2022.05.11</span>
+                            </li>
+                            <li>
+                                <p>경기도수원월드컵스포츠센터 3층 옥상 바닥 개선공사 입찰 공고</p>
+                                <span>2022.05.03</span>
+                            </li>
+                        </ul>
+                        <ul id="news4">
+                            <li>
+                                <p>2022년 7월 수의계약공시</p>
+                                <span>2022.08.05</span>
+                            </li>
+                            <li>
+                                <p>2022년 6월 수의계약공시</p>
+                                <span>2022.07.06</span>
+                            </li>
+                            <li>
+                                <p>2022년 5월 수의계약공시</p>
+                                <span>2022.06.17</span>
+                            </li>
+                            <li>
+                                <p>2022년 4월 수의계약공시</p>
+                                <span>2022.05.02</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="quick">
+            <h2>빠른메뉴</h2>
+            <div class="inner">
+                <div class="container4">
+                    <ul>
+                        <li><img src="./images/quicklink-icon1.png" alt="01"><span>자원봉사안내</span></li>
+                        <li><img src="./images/quicklink-icon2.png" alt="02"><span>위치안내</span></li>
+                        <li><img src="./images/quicklink-icon3.png" alt="03"><span>주차안내</span></li>
+                        <li><img src="./images/quicklink-icon4.png" alt="04"><span>경영공시</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="part4">
+        <section class="photo">
+            <h2>포토</h2>
+            <div class="inner">
+                <div class="container5">
+                    <strong class="title">
+                        pHOTO gALLERY
+                    </strong>
+                    <ul>
+                        <li><img src="./images/gallery1.jpg" alt="01"></li>
+                        <li><img src="./images/gallery2.jpg" alt="02"></li>
+                        <li><img src="./images/gallery3.jpg" alt="03"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="sns">
+            <h2>sns</h2>
+            <div class="inner">
+                <div class="container6">
+                    <div class="top">
+                        <ul>
+                            <li><a href="#sns1"><img src="./images/fack_icon.svg" alt="facebook"></a></li>
+                            <li><a href="#sns2"><img src="./images/youtube_icon.svg" alt="youtube"></a></li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <ul id="sns1">
+                            <li><img src="./images/facebook.jpg" alt="facebook"><span>#명탐정트리콜로</span></li>
+                            <li><img src="./images/facebook2.jpg" alt="facebook"><span>유튜브 채널 오픈 기념 이...</span></li>
+                        </ul>
+                        <ul id="sns2">
+                            <li><img src="./images/blog1.png" alt="blog1"><span>[경기도수원월드컵경기장]SMTWON LIVE</span></li>
+                            <li><img src="./images/blog2.jpg" alt="blog2"><span>[경기도수원월드컵경기장]워터밤 수원</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </main>
+    <footer>
+        <div class="first">
+            <div class="inner">
+            <div class="sns_icon">
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <nav id="associate">
+                <p>관련기관</p>
+                <ul class="sub_menu">
+                    <li><a href="#">경기도축구협회</a></li>
+                    <li><a href="#">한국프로축구연맹</a></li>
+                    <li><a href="#">FIFA</a></li>
+                    <li><a href="#">대한축구협회</a></li>
+                    <li><a href="#">수원삼성블루윙즈축구단</a></li>
+                    <li><a href="#">수원시청</a></li>
+                    <li><a href="#">경기평택항만공사</a></li>
+                    <li><a href="#">수원시체육회</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+        <div class="second">
+            <div class="inner">
+            <div class="left">
+                <ul>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">클린신고센터</a></li>
+                </ul>
+                <p>경기도청 : 16508 경기도 수원시 영통구 도청로 30<br>
+                    경기도수원월드컵경기장 : 16230 경기도 수원시 팔달구 월드컵로 310(우만동) 4층
+                   <br> Copyright © 2015 GYEONGGI PROVINCE All Rights Reserved.</p>
+            </div>
+            <div class="right_logo">
+                <img src="./images/footer_logo.png" alt="footer_logo">
+            </div>
+        </div>
+        </div>
+    
+    </footer>
+</body>
+</html>
