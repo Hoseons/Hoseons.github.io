@@ -1,0 +1,467 @@
+@charset "utf-8";
+
+/* 1920 */
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.inner{
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.font_impact{
+    font-family: 'Charis SIL', serif;
+}
+.font_title{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h3{
+    display: none;
+}
+
+/* header */
+.min_banner{
+    width: 100%;
+    height: 37px;
+    background-color: #06BA70;
+
+}
+.min_banner a{
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    line-height: 37px;
+}
+/* nav */
+nav{
+    width: 100%;
+    position: fixed;
+    top: 37px;
+    z-index: 999;
+}
+.nav_inner{
+    display: flex;
+    height: 44px;
+    width: 1180px;
+    margin: 20px auto 0;
+    justify-content: space-between;
+}
+
+.nav_inner .logo{
+    width: 200px;
+    height: 20px;
+    margin-top: 12px;
+}
+.middle_nav{
+    width: 360px;
+}
+.middle_nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+.middle_nav ul li{
+    
+    line-height: 44px;
+}
+
+.middle_nav ul li a{
+    text-align: center;
+    display: block;
+}
+.middle_nav ul li:nth-of-type(1) a{
+    color: #06BA70;
+}
+.middle_nav ul li:hover a{
+    color: #F08A87;
+}
+
+.right_nav{
+    width: 246px;
+}
+.right_nav ul{
+    display: flex;
+    
+}
+.right_nav li{
+    line-height: 44px;
+}
+.right_nav li:hover a{
+    color: #F08A87;
+}
+.right_nav li:nth-child(2){
+    margin: 0 20px;
+}
+
+/* main */
+
+main{
+    margin-top: 264px;
+}
+
+/* 필터 */
+.container1 {
+    margin-bottom: 43px;
+}
+.container1 .filter{
+    display: flex;
+}
+
+.container1 .filter li{
+    color: #838383;
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.container1 .filter li.on{
+color: #008F54;
+}
+
+.container1 .filter li~li{
+    margin-left: 41px;
+}
+
+.container1 .filter li::after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 11px;
+    position: absolute;
+    right: -20px;
+    transform: translateY(-50%);
+    top: 50%;
+    background-color: #838383;
+}
+
+.container1 .filter li:last-child::after{
+    display: none;
+}
+
+/* 옷메뉴 */
+.img{
+    /* border:1px solid #f00; */
+    margin-bottom: 100px;
+}
+.container2 .big_img{
+        /* border:1px solid #f00; */
+}
+.container2 .big_img> div{
+    width: 580px;
+    height: 513px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    /* border:1px solid #f00; */
+}
+
+.container2 .big_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+
+    /* display: inline-block; */
+}
+.container2 .big_img> div > img{
+    transition: .3s;
+}
+
+.container2 .big_img:hover > div > img{
+    transform: scale(110%);
+}
+
+.container2 .big_img .title{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    line-height: 135.1%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container2 .big_img{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container2 .big_img .text >span{
+    position: absolute;
+    left: 50px;
+    bottom: 174px;
+    font-size: 24px;
+}
+
+.container2 .big_img ul{
+    display: flex;
+   
+    
+}
+
+.container2 .big_img li{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+.container2 .big_img ul li .img_div,
+.container2 .small_img li .img_div{
+    width: 280px;
+    height: 373px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.container2 .big_img li {
+    position: relative;
+    
+}
+.container2 .big_img li img,
+.container2 .small_img li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: .3s;
+}
+
+
+.container2 .big_img li:hover img,
+.container2 .small_img li:hover img{
+    transform: scale(110%);
+}
+
+
+.container2 .small_img ul{
+    margin-bottom: 20px;
+}
+.container2 .small_img li{
+    display: inline-block;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 14px;
+    height: 513px;
+    width: 280px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.container2 .small_img li p,
+.container2 .big_img li p{
+    white-space: wrap;
+    /* border: 1px solid #f00; */
+    width: 280px;
+    margin-top: 20px;
+    line-height: 153%;
+}
+
+.container2 .small_img li strong,
+.container2 .big_img li strong{
+    font-size: 18px;
+    font-weight: bold;
+   
+    display: block;
+}
+
+
+.container2 .small_img li:nth-of-type(1),
+.container2 .small_img li:nth-of-type(5),
+.container2 .small_img li:nth-of-type(9){
+    margin-left: 0;
+}
+.container2 ul li .bag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65px;
+    height: 30px;
+    background: #008F54;
+    z-index: 2;
+    border-radius: 10px 0 0 0;
+}
+
+.container2 ul li .bag span{
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.container2 ul li .decline{
+    display: inline-block;
+    margin-left: 5px;
+    text-decoration: line-through;
+    line-height: 18px;
+    font-size: 14px;
+    color: #525252;
+}
+
+.container2 .text2{
+    margin-top: 8px;
+    display: flex;
+}
+.container2 .icon{
+    margin-top: 20px;
+    display: flex;
+}
+.container2 .icon .review{
+    margin-left: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.container2 .icon .review::before,
+.container2 .icon .heart::before{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+   
+    position: absolute;
+    top: 50%;
+    left: -29px;
+    transform: translateY(-50%);
+}
+
+.container2 .icon .review::before{
+    background: url(../images/sub/chat_bubble_FILL0_wght200_GRAD0_opsz24.svg) no-repeat center center/cover;
+}
+
+.container2 .icon .heart::before{
+    background: url(../images/sub/favorite_FILL0_wght200_GRAD0_opsz24.svg) no-repeat center center/cover;
+}
+
+
+.container2 .icon .heart{
+    margin-left: 45px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* num */
+
+.num{
+ 
+    width: 373px;
+    height: 44px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.num .num_ul{
+    display: flex;
+}
+
+.num .num_ul li{
+    margin: 0 20px;
+    line-height: 44px;
+    cursor: pointer;
+}
+
+
+.num .arrow{
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+.num .arrow_left{
+
+background: url(../images/sub/Arrow/Chevron_Left.svg) no-repeat center center / cover;
+}
+
+.num .arrow_right{
+    background: url(../images/sub/Arrow/Chevron_Right.svg) no-repeat center center / cover;
+    }
+
+    /* 푸터 */
+    footer{
+        margin-top: 180px;
+        border-top: 1px solid #E6E6E6;
+        width: 100%;
+        height: 412px;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    footer .footer_con{
+        height: 148px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    footer .footer_con .footer_left .img{
+        width: 280px;
+        height: 30px;
+        margin-bottom: 30px;
+    }
+
+    footer .footer_con .footer_left .img img{
+        width: 100%;
+        height: 100%;
+   
+    }
+
+    footer .footer_con .footer_left a{
+        font-weight: bold;
+        font-size: 25px;
+        display: block;
+        margin-bottom: 16px;
+        cursor: pointer;
+    }
+
+    footer .footer_con .footer_left p{
+        font-size: 14px;
+        line-height: 153.2%;
+
+    }
+
+    footer .footer_con .footer_middle{
+        margin: 0 90px;
+    }
+
+    footer .footer_con .footer_middle ul{
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    footer .footer_con .footer_middle ul li{
+        font-size: 14px;
+        font-weight: 700;
+        
+    }
+
+    footer .footer_con .footer_middle ul li~li{
+        margin-left: 20px;
+    }
+
+    footer .footer_con .footer_middle p{
+        line-height: 1.4;
+        margin-bottom: 16px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    footer .footer_con .footer_middle span{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    footer .footer_con .footer_right{
+        height: 100%;
+    }
+    footer .footer_con .footer_right ul li~li{
+        margin-top: 16px;
+    }
+
+    footer .footer_con .footer_right ul li{
+        font-size: 14px;
+    }
