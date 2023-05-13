@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+   
+    <meta name="description" content="오아한 소형가전 오아 - 디자인에 반하고 성능에 놀라다.">
+    <meta property="og:title" content="오아 스토어">
+    <meta property="og:description" content="오아한 소형가전 오아 - 디자인에 반하고 성능에 놀라다.">
+    <meta property="og:image" content="https://dsfjpb8zhc170.cloudfront.net/static/img/icon/oa_meta.jpg">
+    <meta property="og:url" content="https://hoseons.github.io/oa/shop.html" >
+
+   
+    <link rel="shortcut icon" href="./fabicon/16PX.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/shop.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/swiper.min.js"></script>
+    <script defer src="js/shop.js"></script>
+   
+    <title>오아스토어</title>
+</head>
+<body>
+     <!-- 헤더 -->
+     <header>
+        <!-- 상단미니배너 -->
+        <div class="min_banner">
+            오아 보아르 친구 추가하면 <span>2000원 쿠폰 증정!</span>
+        </div>
+        <!-- 첫번째 네비 -->
+        <nav class="first">
+            <div class="inner">
+            <ul class="home">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="#">오아</a></li>
+                <li><a href="#">보아르</a></li>
+            </ul>
+            <ul class="login">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+        </nav>
+        <!-- 로고부분 -->
+        <nav class="logo_part" id="fixed">
+            <div class="inner">
+                <div class="tran"><span class="ham"></span></div>
+            <div class="logo">
+                <a href="shop.html"><img src="./images/sub_store/voar_tab_img.png" alt="logo"></a></div>
+            <div class="icon">
+                <img src="./images/sub_store/person.svg" alt="">
+                <img src="./images/sub_store/shop.svg" alt="">
+            </div>
+        </div>
+        </nav>
+       
+       <!-- 두번째 네비 -->
+        <nav class="second">
+            <div class="inner">
+                
+            <ul>
+                <li class="cate">
+                <strong><span class="ham"></span>전체 카테고리</strong>
+                
+                <div class="sub_bg">
+                <ul class="sub">
+                    <li><img src="./images/sub_store/category_airpurifier.png" alt=""><span>공기청정기</span></li>
+                    <li><img src="./images/sub_store/category_bathsupplies.png" alt=""><span>욕실용품</span></li>
+                    <li><img src="./images/sub_store/category_air.png" alt=""><span>가습기</span></li>
+                    <li><img src="./images/sub_store/category_beauty.png" alt=""><span>뷰티가전</span></li>
+                    <li><img src="./images/sub_store/category_health.png" alt=""><span>건강가전</span></li>
+                    <li><img src="./images/sub_store/category_season.png" alt=""><span>계절가전</span></li>
+                    <li><img src="./images/sub_store/category_vehicle.png" alt=""><span>차량용 기기</span></li>
+                    <li><img src="./images/sub_store/category_living.png" alt=""><span>생활가전</span></li>
+                    <li><img src="./images/sub_store/category_kitchen.png" alt=""><span>주방가전</span></li>
+                    <li><img src="./images/sub_store/category_refurbish.png" alt=""><span>오아한리퍼!</span></li>
+                </ul>
+                </div>
+                </li>
+                <li>
+                    <strong>신제품</strong>
+                </li>
+                <li>
+                    <strong>베스트</strong>
+                </li>
+                <li>
+                    <strong>기획전</strong>
+                </li>
+                <li>
+                    <strong>날씨추천</strong>
+                </li>
+                <li>
+                    <input type="text" placeholder="검색어를 입력하세요">
+                </li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <!-- 배너 -->
+        <section>
+            <div class="container1">
+                <h2>배너</h2>
+            <div class="banner_bg"></div>
+            <div class="inner">
+                <div class="text">
+                    <strong>여름가전모음 이벤트</strong>
+                    <p>올여름을 책임줘줄 특별한 가전 모음 이벤트</p>
+                    <span>바로가기</span>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section>
+            <div class="inner">
+                <div class="container2">
+                    <h2 class="title">카테고리</h2>
+                    <p>카테고리별로 원하는 가전 살펴보기!</p>
+                    <div class="slide_wrap">
+                    <ul>
+                        <li>
+                            <div>
+                                <img src="./images/sub_store/category_airpurifier.png" alt="">
+                            </div>
+                            <span>공기청정기</span>
+                    </li>
+                        <li>
+                            <div>
+                                <img src="./images/sub_store/category_bathsupplies.png" alt="">
+                            </div>
+                                    <span>욕실용품</span></li>
+                        <li>
+                            <div>
+                                <img src="./images/sub_store/category_air.png" alt="">
+                            </div>
+                            <span>가습기</span></li>
+                        <li>
+                            <div>
+                                <img src="./images/sub_store/category_beauty.png" alt="">
+                            </div>
+                            <span>뷰티가전</span>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./images/sub_store/category_health.png" alt="">
+                            </div>
+                            <span>건강가전</span>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./images/sub_store/category_season.png" alt="">
+                            </div>
+                           <span>계절가전</span>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./images/sub_store/category_vehicle.png" alt="">
+                            </div>
+                           <span>차량용 기기</span>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./images/sub_store/category_living.png" alt="">
+                            </div>
+                           <span>생활가전</span>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./images/sub_store/category_kitchen.png" alt="">
+                            </div>
+                           <span>주방가전</span>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./images/sub_store/category_refurbish.png" alt="">
+                            </div>
+                            <span>오아한리퍼!</span>
+                        </li>
+                        
+                    </ul>
+                </div>
+                    <div class="arrow">
+                        <div class="arrow_left prev1"></div>
+                        <div class="arrow_right next1"></div>
+                    </div>
+                </div>
+             
+            </div>
+        </section>
+        <section>
+            <div class="inner">
+                <div class="container3">
+                    <h2 class="title">베스트 아이템</h2>
+                    <p>쇼핑 인싸 화제의 아이템!</p>
+                    <div class="slide_wrap">
+                    <ul>
+                        <li>
+                            <div class="img_box">
+                                <img src="./images/sub_store/product_21.jpg" alt="">
+                                <span>Best</span>
+                            </div>
+                            
+                            <div class="text_list">
+                                <strong>보아르 휘겔리 공기청정기 원형 원룸 9평형</strong>
+                                <div class="text_desc">
+                                    <strong>86,000원</strong>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="./images/sub_store/product_07.jpg" alt="">
+                                <span>Best</span>
+                            </div>
+                            
+                            <div class="text_list">
+                                <strong>오아 넥쿨러 휴대용 넥밴드 선풍기</strong>
+                                <div class="text_desc">
+                                  
+                                    <strong>27,800원</strong>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="./images/sub_store/product_08.jpg" alt="">
+                                <span>Best</span>
+                            </div>
+                            
+                            <div class="text_list">
+                                <strong>오아 O2 미니 공기청정기</strong>
+                                <div class="text_desc">
+                                    <strong>27,800원</strong>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="./images/sub_store/product_24.jpg" alt="">
+                                <span>Best</span>
+                            </div>
+                            
+                            <div class="text_list">
+                                <strong>오아 클린이 핑크퐁 아기상어 아빠상어</strong>
+                                <div class="text_desc">
+                                 
+                                    <strong>32,800원</strong>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="./images/sub_store/product_16.jpg" alt="">
+                                <span>Best</span>
+                            </div>
+                            
+                            <div class="text_list">
+                                <strong>오아 무릎 무선 마사지기</strong>
+                                <div class="text_desc">
+                                  
+                                    <strong>87,900</strong>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="./images/sub_store/product_50.jpg" alt="">
+                                <span>Best</span>
+                            </div>
+                           
+                            <div class="text_list">
+                                <strong>오아 클린이소프트 음파 전동 칫솔</strong>
+                                <div class="text_desc">
+                                   
+                                    <strong>44,800원</strong>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="./images/sub_store/product_30.jpg" alt="">
+                                <span>Best</span>
+                            </div>
+                            
+                            <div class="text_list">
+                                <strong>오아 모노 에어 써클레이터 스탠드 선풍기</strong>
+                                <div class="text_desc">
+                                
+                                    <strong>103,900원</strong>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="./images/sub_store/product_02.jpg" alt="">
+                                <span>Best</span>
+                            </div>
+                            <div class="text_list">
+                                <strong>보아르 에이블나인 가정용 제빙기</strong>
+                                <div class="text_desc">
+                                 
+                                    <strong>159,000원</strong>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                    <div class="arrow">
+                        <div class="arrow_left prev2"></div>
+                        <div class="arrow_right next2"></div>
+                    </div>
+                </div>
+
+            </div>
+          
+        </section>
+        <section>
+            <div class="inner">
+                <div class="container4 slider-pro" id="example1">
+                    <h2 class="title">이 날씨에는 이 제품 어때?</h2>
+                    <div class="select">오늘같이 
+                        <ul class="select_wrap">
+                            <li><strong>무엇한 무슨 날씨?</strong></li>
+                            <li>
+                                <div>
+                                    <ul class="select_list">
+                                        <li><a href="#wea1">꿉꿉한 습한날씨!</a></li>
+                                        <li><a href="#wea2">땀나는 더운날씨!</a></li>
+                                        <li><a href="#wea3">티없는 파란하늘!</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        엔 이거 어때?
+                    </div>
+                <div class="swiper-container swiper1">
+                <ul id="wea1" class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <img src="./images/sub_store/product_26.jpg" alt="26">
+                        <div class="text_list">
+                            <strong>보아르 모아 M1000 공기청정 제습기</strong>
+                            <div class="text_desc">
+                                <strong>98,700원</strong>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/sub_store/product_57.jpg" alt="57">
+                        <div class="text_list">
+                            <strong>보아르 모아 파인 F2000 미니 제습기</strong>
+                            <div class="text_desc">
+                               
+                                <strong>25,900원</strong>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/sub_store/product_10.jpg" alt="10">
+                        <div class="text_list">
+                            <strong>보아르 모아 7L 파워 제습기</strong>
+                            <div class="text_desc">
+                                
+                                <strong>168,900원</strong>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/sub_store/product_58.jpg" alt="58">
+                        <div class="text_list">
+                            <strong>보아르 모아 14L 대용량 스마트 공기청정 제습기</strong>
+                            <div class="text_desc">
+                            
+                                <strong>248,900원</strong>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="swiper-container swiper2">
+                <ul id="wea2" class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <img src="./images/sub_store/product_67.jpg" alt="67">
+                        <div class="text_list">
+                            <strong>오아 메가 에어 탁상형 써큘레이터</strong>
+                            <div class="text_desc">
+                                <strong>98,900원</strong>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/sub_store/product_32.jpg" alt="32">
+                        <div class="text_list">
+                            <strong>오아 메가 에어 스탠드형 써큘레이터</strong>
+                            <div class="text_desc">
+                                
+                                <strong>25,900원</strong>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/sub_store/product_68.jpg" alt="68">
+                        <div class="text_list">
+                            <strong>오아 스퀘어 미니 탁상용 무선 선풍기</strong>
+                            <div class="text_desc">
+                        
+                                <strong>17,800원</strong>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/sub_store/product_69.jpg" alt="69">
+                        <div class="text_list">
+                            <strong>오아 캐치팬 핸디형 무선 미니 선풍기</strong>
+                            <div class="text_desc">
+                              
+                                <strong>24,800원</strong>
+                            </div>
+                        </div>
+                    </li>
+            
+                </ul>
+            </div>
+            <div class="swiper-container swiper3">
+                <ul id="wea3" class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <img src="./images/sub_store/product_65.jpg" alt="65">
+                        <div class="text_list">
+                            <strong>오아 큐티E1 블루투스 이어폰</strong>
+                            <div class="text_desc">
+                            
+                                <strong>59,900원</strong>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/sub_store/product_42.jpg" alt="42">
+                        <div class="text_list">
+                            <strong>오아 포터블 브릭 블루투스 스피커</strong>
+                            <div class="text_desc">
+                               
+                                <strong>27,000원</strong>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/sub_store/product_61.jpg" alt="61">
+                        <div class="text_list">
+                            <strong>오아 셀카프로 짐벌 셀카봉</strong>
+                            <div class="text_desc">
+                              
+                                <strong>49,700원</strong>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/sub_store/product_64.jpg" alt="64">
+                        <div class="text_list">
+                            <strong>오아 굿나잇 온열 안대</strong>
+                            <div class="text_desc">
+                              
+                                <strong>29,800원</strong>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+         
+        </div>
+     
+        </section>
+        <section>
+            <div class="inner">
+                <div class="container5">
+                    <h2 class="title">이달의 리뷰!</h2>
+                        <ul class="select">
+                                <li class="on"><a href="#review1" class="on">오아</a></li>
+                                <li><a href="#review2">보아르</a></li>
+                        </ul>
+                        <div class="review_list">
+                            <ul id="review1" class="sp-slides">
+                                <li class="sp-slide">
+                                    <div>
+                                        <img src="./images/sub_store/review_04.jpg" alt="4">
+                                        <div class="text_list">
+                                            <strong>완전 만족입니다</strong>
+                                            <div class="user">
+                                                <div class="star">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <span>eyea****</span>
+                                            </div>
+                                            <p>전동 칫솔 처음이긴 하지만 식구들이 p사 사용이 만<br>족
+                                                하지 못해서 구매에 고민했지만...</p>
+                                            <span>오아 클린이소프트 음파 전동 칫솔</span>
+                                           
+                                        </div>
+                                    </div>
+                                </li>
+                             
+                                <li class="sp-slide">
+                                    <div>
+                                        <img src="./images/sub_store/review_07.jpeg" alt="7">
+                                        <div class="text_list">
+                                            <strong>부모님께서 좋아하세요</strong>
+                                            <div class="user">
+                                                <div class="star">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span class="unfill_star"></span>
+                                                </div>
+                                                <span>hb**</span>
+                                            </div>
+                                            <p>부모님 설 선물로 샀습니다. 주문 하루만에 도착했고<br>
+                                                사용을 해보았는데 부모님께서 사우나 갔다가 온 느낌이라면서 매우 만족을 하셨습니다.</p>
+                                            <span>오아 슈퍼건 핸디 마사지기</span>
+                                          
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sp-slide">
+                                    <div>
+                                        <img src="./images/sub_store/review_06.jpg" alt="06">
+                                        <div class="text_list">
+                                            <strong>디자인이 너무 깔끔해요</strong>
+                                            <div class="user">
+                                                <div class="star">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span class="unfill_star"></span>
+                                                </div>
+                                                <span>goom****</span>
+                                            </div>
+                                            <p>배송도 빠르고 정말 소음이 없네요!! 조용히게 바람이<br> 강해요~ 12단 하니까 태풍이예요ㅋㅋ가습기랑 스팀 다리미도 오아껀데 디자인이 통일되어 더 이뻐요!
+                                            </p>
+                                            <span>오아 메가 에어 스탠드형 써큘레이터</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul id="review2" class="sp-slides">
+                                <li class="sp-slide">
+                                    <div>
+                                        <img src="./images/sub_store/review_01.jpg" alt="">
+                                        <div class="text_list">
+                                            <strong>우와우와합니다</strong>
+                                            <div class="user">
+                                                <div class="star">
+                                                    
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span class="unfill_star"></span>
+                                                </div>
+                                                <span>ipa***</span>
+                                            </div>
+                                            <p>제습이 너무 잘되서 가득찬 물을 버릴 때마다 우와우와<br> 합니다. 화장실 바닥도 빨리 말라서 더 깔끔하고 너무너무 잘산 것 같아요!</p>
+                                            <span>보아르 모아 7L 파워 제습기</span>
+                                          
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sp-slide">
+                                    <div>
+                                        <img src="./images/sub_store/review_02.jpg" alt="2">
+                                        <div class="text_list">
+                                            <strong>조용하고 괜찮습니다</strong>
+                                            <div class="user">
+                                                <div class="star">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <span>u2r***</span>
+                                            </div>
+                                            <p>아직 처음 사용이지만 조용하고 괜찮습니다:) 또 구매<br>하
+                                                고 싶네요.ㅎㅎ 오래오래 쓸것 같아서 기분이 좋네요.</p>
+                                            <span>보아르 V에어46 3면 흡입 공기청정기</span>
+                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sp-slide">
+                                    <div>
+                                        <img src="./images/sub_store/review_07.jpg" alt="">
+                                        <div class="text_list">
+                                            <strong>가격대비 짱이예요</strong>
+                                            <div class="user">
+                                                <div class="star">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <span>hoj***</span>
+                                            </div>
+                                            <p>가격 대비 청소기 좋아요 무선이라 편하고 다용도로<br> 사용하기 좋아요 아이템별로 노즐이 있어서 추천상품 입니다.</p>
+                                            <span>보아르 포스 D14 저소음 무선 청소기</span>
+                                         
+                                        </div>
+                                    </div>
+                                </li>
+                              
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>미니배너</h3>
+            <div class="inner">
+                <div class="container6"></div>
+            </div>
+        </section>
+        <section>
+            <div class="inner">
+                <div class="container7">
+                    <h2 class="title">고객님 이건 어떠세요?</h2>
+                    <ul class="select">
+                            <li class="on"><a href="#how1" class="on">집구석라이프</a></li>
+                            <li><a href="#how2">직장의 기술</a></li>
+                            <li><a href="#how3">선물하기 좋은</a></li>
+                            <li><a href="#how4">공기가 탁할 때</a></li>
+                    </ul>
+                    <div class="how_list">
+                        <ul id="how1">
+                            <li  class="big_img">
+                                <div>
+                                    <img src="./images/sub_store/product_23.jpg" alt="23">
+                                    <div class="text_list">
+                                        <span>오아 아이콕 눈 마사지기</span>
+                                        <strong>37,800원</strong>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="small_img">
+                                <ul>
+                                    <li>
+                                            <img src="./images/sub_store/product_02.jpg" alt="02">
+                                            <div class="text_list">
+                                                <span>보아르 에이블나인 <br>가정용 제빙기</span>
+                                                <strong>159,000원</strong>
+                                                </div>
+                                    </li>
+                                    <li>
+                                        <img src="./images/sub_store/product_03.jpg" alt="03">
+                                        <div class="text_list">
+                                            <span>보아르 굿나잇 클링 무선 침구청소기</span>
+                                            <strong>98,900원</strong>
+                                            </div>
+                                    </li>
+                                    <li>
+                                        <img src="./images/sub_store/product_12.jpg" alt="12">
+                                        <div class="text_list">
+                                            <span>보아르 에이블 초고속 <br>진공 블렌더 대용량 믹서기</span>
+                                            <strong>116,900원</strong>
+                                            </div>
+                                    </li>
+                                    <li>
+                                        <img src="./images/sub_store/product_05.jpg" alt="05">
+                                        <div class="text_list">
+                                            <span>보아르 혼요 멀티쿠커</span>
+                                            <strong>49,800원</strong>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                        <ul id="how2">
+                            <li class="big_img">
+                                <div>
+                                    <img src="./images/sub_store/product_38.jpg" alt="38">
+                                    <div class="text_list">
+                                        <span>오아 LED스퀘어 <br>사각 조명 거울</span>
+                                        <strong>19,800원</strong>
+                                        </div>
+                                </div>
+                            </li>
+                            <li class="small_img">
+                                <ul>
+                                    <li>
+                                            <img src="./images/sub_store/product_29.jpg" alt="29">
+                                            <div class="text_list">
+                                                <span>오아 접이식  <br>블루투스 키보드</span>
+                                                <strong>34,800원</strong>
+                                            </div>
+                                    </li>
+                                    <li>
+                                        <img src="./images/sub_store/product_39.jpg" alt="39">
+                                        <div class="text_list">
+                                            <span>오아 클린이소프트  <br>음파 전동칫솔</span>
+                                            <strong>44,800원</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./images/sub_store/product_37.jpg" alt="37">
+                                        <div class="text_list">
+                                            <span>오아 그래핀워머 무선  <br>온열 찜질기</span>
+                                            <strong>37,800원</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./images/sub_store/product_.jpg" alt="37">
+                                        <div class="text_list">
+                                            <span>오아 매직키퍼 온열 찜질기</span>
+                                            <strong>54,800원</strong>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                       
+                        <ul id="how3">
+                            <li class="big_img">
+                                <div>
+                                    <img src="./images/sub_store/product_50.jpg" alt="50">
+                                    <div class="text_list">
+                                        <span>오아 클린이소프트R 음파 전동칫솔</span>
+                                        <strong>54,800원</strong>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="small_img">
+                                <ul>
+                                    <li>
+                                        <img src="./images/sub_store/product_31.jpg" alt="31">
+                                        <div class="text_list">
+                                            <span>오아 클린이워터B  <br>구강세정기</span>
+                                            <strong>39,800원</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./images/sub_store/product_70.jpg" alt="70">
+                                        <div class="text_list">
+                                            <span>오아 클린이베어 유아  <br>음파 전동칫솔</span>
+                                            <strong>87,300원</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./images/sub_store/product_13.jpg" alt="13">
+                                        <div class="text_list">
+                                            <span>오아 와이더F3 차량용  <br>고속무선충전 거치대</span>
+                                            <strong>32,800원</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./images/sub_store/product_71.jpg" alt="71">
+                                        <div class="text_list">
+                                            <span>오아 O2보틀 차량용  <br>공기청정기</span>
+                                            <strong>59,300원</strong>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="how4">
+                            <li  class="big_img">
+                                <div>
+                                    <img src="./images/sub_store/product_58.jpg" alt="58">
+                                    <div class="text_list">
+                                        <span>보아르 모아 14L 대용량 스마트 공기청정 제습기</span>
+                                        <strong>248,900</strong>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="small_img">
+                                <ul>
+                                    <li>
+                                        <img src="./images/sub_store/product_54.jpg" alt="54">
+                                        <div class="text_list">
+                                            <span>보아르 모아 7L  <br>파워 제습기</span>
+                                            <strong>168,900원</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./images/sub_store/product_56.jpg" alt="56">
+                                        <div class="text_list">
+                                            <span>보아르 모아 파워 18L  <br>가정용 대용량 제습기</span>
+                                            <strong>277,900원</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./images/sub_store/product_59.jpg" alt="59">
+                                        <div class="text_list">
+                                            <span>보아르 모아 M600  <br>미니 제습기</span>
+                                            <strong>54,800원</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./images/sub_store/product_57.jpg" alt="57">
+                                        <div class="text_list">
+                                            <span>보아르 모아 파인 F2000  <br>미니 제습기</span>
+                                            <strong>96,900원</strong>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="inner">
+                <div class="container8">
+                    <h2 class="title">MD’s Pick</h2>
+                    <div class="more"><a href="">더보기</a></div>
+                    <div class="ref">
+                        <ul class="select">
+                            <li class="on">
+                                <a href="#ref1" class="on">
+                                    <span>01</span>주방필수 용품
+                                </a>
+                                <p>이제 장비 걱정하지 마세요!</p>
+                                <span class="more">자세히 보기</span>
+                            </li>
+                            <li>
+                                <a href="#ref2">
+                                    <span>02</span>계절가전 모음</a>
+                                <p>계절에 대비하세요!</p>
+                                <span class="more">자세히 보기</span>
+                            </li>
+                            <li>
+                                <a href="#ref3">
+                                    <span>03</span>생활가전 모음</a>
+                                <p>편리한 생활을 만드세요!</p>
+                                <span class="more">자세히 보기</span>
+                            </li>
+    
+                    </ul>
+                    <div class="img">
+
+                  
+                        <ul id="ref1">
+                            <li><img src="./images/sub_store/product_12.jpg" alt="12"></li>
+                            <li><img src="./images/sub_store/product_27.jpg" alt="27"></li>
+                            <li><img src="./images/sub_store/product_14.jpg" alt="14"></li>
+                        </ul>
+                        <ul id="ref2">
+                            <li><img src="./images/sub_store/product_39.jpg" alt="39"></li>
+                            <li><img src="./images/sub_store/product_50.jpg" alt="50"></li>
+                            <li><img src="./images/sub_store/product_24.jpg" alt="24"></li>
+                        </ul>
+                        <ul id="ref3">
+                            <li><img src="./images/sub_store/product_53.jpg" alt="53"></li>
+                            <li><img src="./images/sub_store/product_72.jpg" alt="72"></li>
+                            <li><img src="./images/sub_store/product_73.jpg" alt="73"></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <div class="side_navi">
+            <div class="img">
+            </div>
+            <div class="text">
+                <ul>
+                    <li>간편결제</li>
+                    <li>멤버십</li>
+                    <li>리뷰</li>
+                </ul>
+            </div>
+            <div class="recent">
+                <span>최근에 본 상품</span>
+                <img src="./images/sub_store/product_53.jpg" alt="53">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="inner">
+            <div class="top">
+            <ul>
+                <li>
+                    <strong><a href="">Brands</a></strong>
+                        <ul>
+                            <li><a href="">Brand Story</a></li>
+                            <li><a href="">Logotype&Font</a></li>
+                        </ul>
+                    
+                </li>
+                <li>
+                    <strong><a href="">magazine</a></strong>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Magazine</a></li>
+                            <li><a href="">Life Style</a></li>
+                            <li><a href="">Place</a></li>
+                        </ul>
+                    
+                </li>
+                <li>
+                    <strong><a href="">shop</a></strong>
+                       
+                    
+                </li>
+                <li>
+                    <strong><a href="">Investment</a></strong>
+                        
+                    
+                </li>
+                <li>
+                    <strong><a href="">Contact</a></strong>
+                        
+
+                </li>
+                <li>
+                    <strong><a href="">OA-Font</a></strong>
+                </li>
+            </ul>
+            <div>
+                <strong>고객만족센터</strong>
+                <a href="tel:1661-4555">1661-4555</a>
+                <p>월~금 09:30 ~ 17:00<br>
+                    점심시간 12:50 ~ 14:00</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="left">
+                <ul>
+                    <li>이용약관</li>
+                    <li>개인정보처리방침</li>
+                    <li>이메일 무단수집 거부</li>
+                    <li>대표이메일</li>
+                </ul>
+                <div class="desc">
+                    
+                    <p>오아 주식회사 </p>
+                    <p>사업장주소 : 서울특별시 서초구 효령로46길 97</p>
+                    <p>통신판매업제2014-서울서초-1108호</p>
+                    <p>사업자등록번호 : 114-87-14895</p>
+                    <a href="#">사업자번호확인</a>
+                    <p>대표이사 : 김상무</p>
+                </div>
+                <div class="copy">
+                    &copy;OA Co Ltd.All right Reserved
+                </div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><img src="./images/common/insta.svg" alt="insta"></li>
+                    <li><img src="./images/common/facebook.svg" alt="facebook"></li>
+                    <li><img src="./images/common/blog.svg" alt="blog"></li>
+                    <li><img src="./images/common/post.svg" alt="post"></li>
+                    <li><img src="./images/common/youtube.svg" alt="youtube"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </footer>
+</body>
+</html>
